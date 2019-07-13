@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 10px;
+  padding-right: 100px;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: #020202;
+  text-align: center;
+  padding: 14px 16px;
+  padding-top: 25px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  color: rgb(2, 162, 255);
+}
+
+/* Changes the font */
+body {
+  font-family: Arial;
+}
+
+/* Controls the boxes */
+input[type=text], input[type=number], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Controls the submit button */
+input[type=submit] {
+  width: 40%;
+  background-color: rgb(0, 192, 199);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Controls the body of the page*/
+div.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Style the footer */
+.upper-footer {
+  color: #ffffff;
+  text-align: center;
+  background-color: #055c6b;
+  padding: 40px;
+  padding-right: 30px;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #313131;
+  padding: 10px;
+  padding-right: 10px;
+}
