@@ -87,10 +87,10 @@ input[list=pcategory] {
 
 /* Controls the submit button */
 
-button[type=submit] {
+input[type=submit] {
+  width: 33.5%;
   background-color: rgba(250, 113, 1, 0.945);
   color: white;
-  width: 30%;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -98,7 +98,7 @@ button[type=submit] {
   cursor: pointer;
 }
 
-button[type=submit]:hover {
+input[type=submit]:hover {
   background-color: #055c6b;
 }
 
@@ -546,8 +546,25 @@ th, td {
   padding: 90px 130px 88px 148px;
 }
 
+.container-cart {
+  width: 1163px;
+  height: 100%;
+  background-image: linear-gradient(rgba(250, 249, 252, 0.808), rgba(250, 249, 252, 0.808));
+  border-radius: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 90px 130px 88px 148px;
+}
+
 /*INDEX [ Responsive ]*/
-@media screen and (max-width:375px) {
+@media screen and (max-width:392px) {
   .topnav-index {
     width: 100%;
   }
@@ -645,9 +662,5 @@ th, td {
   .container-glossary {
     width: 100%;
     padding: 0px 5px 15px 5px;
-  }
-
-  img{
-    width: 130%;
   }
 }
