@@ -87,10 +87,10 @@ input[list=pcategory] {
 
 /* Controls the submit button */
 
-input[type=submit] {
-  width: 33.5%;
+button[type=submit] {
   background-color: rgba(250, 113, 1, 0.945);
   color: white;
+  width: 30%;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -98,7 +98,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+button[type=submit]:hover {
   background-color: #055c6b;
 }
 
@@ -645,5 +645,9 @@ th, td {
   .container-glossary {
     width: 100%;
     padding: 0px 5px 15px 5px;
+  }
+
+  img{
+    width: 130%;
   }
 }
