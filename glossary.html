@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html>
+<title>Know Da Price - Duty Calculation</title>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145112772-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-145112772-1');
+    </script>
+
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/SketchIcon.png">
+    <meta charset="utf-8">
+    <meta name="description" content="Calculate the import tax to bring in items through a thirdparty shipper">
+    <meta name="keywords" content="Duty, Duty Calculator, Duty Calculation, Calculator, Bahamas Duty Calculator, Bahamas
+  Duty Calculation, Bahamas Duty Calculator">
+    <meta name="author" content="Antone Evans, Bry'Ton Rolle, Tim">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <div class="topnav" id="myTopnav">
+        <img src="images/NavLogo.png" style="width:225px;height:80px;" align="left">
+        <a href="contact">Contact</a>
+        <a href="about">About Us</a>
+        <a href="glossary">Glossary</a>
+        <a href="cart">Cart</a>
+        <a href="index">Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="contact1">
+        <div class="container-glossary">
+
+            <!--
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    -->
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/TopButton.png" width="90px"
+                    height="75px"></button>
+
+
+            <h1>Glossary</h1>
+            <p>Locate items that are designated to certain categories</p>
+
+            <table style="width: 100%">
+                <tr>
+                    <th>Category</th>
+                    <th>Subcategory</th>
+                </tr>
+                <tr>
+                    <td rowspan="3"> Alcohol</td>
+                    <td>Beer</td>
+                </tr>
+                <tr>
+                    <td>Rum</td>
+                </tr>
+                <tr>
+                    <td>Wine</td>
+                </tr>
+                <tr>
+                    <td rowspan="10"> Arts, Craft and Sewing</td>
+                    <td>Artwork (Original)</td>
+                </tr>
+                <tr>
+                    <td>Crayons</td>
+                </tr>
+                <tr>
+                    <td>Fabrics</td>
+                </tr>
+                <tr>
+                    <td>Flags of Nation & Other Flags</td>
+                </tr>
+                <tr>
+                    <td>Glitter</td>
+                </tr>
+                <tr>
+                    <td>Newspapers</td>
+                </tr>
+                <tr>
+                    <td>Paint - Artist</td>
+                </tr>
+                <tr>
+                    <td>Paint - Other</td>
+                </tr>
+                <tr>
+                    <td>Sewing Machine</td>
+                </tr>
+                <tr>
+                    <td>Thread</td>
+                </tr>
+                <tr>
+                    <td rowspan="5"> Bags and Luggage</td>
+                    <td> Bags (Paper)</td>
+                </tr>
+                <tr>
+                    <td> Bags (Plastic Shopping - Degradable)</td>
+                </tr>
+                <tr>
+                    <td>Bags (Plastic Shopping)</td>
+                </tr>
+                <tr>
+                    <td>Bags (School)</td>
+                </tr>
+                <tr>
+                    <td> Bags (Urinary)</td>
+                </tr>
+                <tr>
+                    <td rowspan="10"> Beauty</td>
+                    <td>Cologne</td>
+                </tr>
+                <tr>
+                    <td>Curling Iron</td>
+                </tr>
+                <tr>
+                    <td>Hair (Artificial / Human)</td>
+                </tr>
+                <tr>
+                    <td>Hair Conditioner</td>
+                </tr>
+                <tr>
+                    <td>Hair Dryer</td>
+                </tr>
+                <tr>
+                    <td>Hair Dye / Rinse</td>
+                </tr>
+                <tr>
+                    <td>Hair Preparations</td>
+                </tr>
+                <tr>
+                    <td>Make Up</td>
+                </tr>
+                <tr>
+                    <td>Perfumes</td>
+                </tr>
+                <tr>
+                    <td>Wigs</td>
+                </tr>
+                <tr>
+                    <td rowspan="18">Bed and Bath</td>
+                    <td>Bathroom Fixtures (Basins , Tubs)</td>
+                </tr>
+                <tr>
+                    <td>Bed Sheets (Linen)</td>
+                </tr>
+                <tr>
+                    <td>Comforters (Bed)</td>
+                </tr>
+                <tr>
+                    <td>Curtains</td>
+                </tr>
+                <tr>
+                    <td>Drapes</td>
+                </tr>
+                <tr>
+                    <td>Hangers (Plastic)</td>
+                </tr>
+                <tr>
+                    <td>Hangers (Wooden)</td>
+                </tr>
+                <tr>
+                    <td>Humidifiers</td>
+                </tr>
+                <tr>
+                    <td>Mattress</td>
+                </tr>
+                <tr>
+                    <td>Mattress (Air) </td>
+                </tr>
+                <tr>
+                    <td>Pads (Bed)</td>
+                </tr>
+                <tr>
+                    <td>Paper (Toilet)</td>
+                </tr>
+                <tr>
+                    <td>Pillows</td>
+                </tr>
+                <tr>
+                    <td>Sheets (Linen)</td>
+                </tr>
+                <tr>
+                    <td>Shower Curtain (Fabric)</td>
+                </tr>
+                <tr>
+                    <td>Shower Curtain (Plastic)</td>
+                </tr>
+                <tr>
+                    <td>Soaps</td>
+                </tr>
+                <tr>
+                    <td>Towels</td>
+                </tr>
+                <tr>
+                    <td rowspan="6">Beverages</td>
+                    <td>All Coffee</td>
+                </tr>
+                <tr>
+                    <td>Energy Drinks</td>
+                </tr>
+                <tr>
+                    <td>Gatorade</td>
+                </tr>
+                <tr>
+                    <td>Juice 100%</td>
+                </tr>
+                <tr>
+                    <td>Malt Beverages</td>
+                </tr>
+                <tr>
+                    <td>Tea</td>
+                </tr>
+                <tr>
+                    <td rowspan="11">Business Stationery</td>
+                    <td>Books (Coloring)</td>
+                </tr>
+                <tr>
+                    <td>Books (Exercise)</td>
+                </tr>
+                <tr>
+                    <td>Books (Reading)</td>
+                </tr>
+                <tr>
+                    <td>Books (Receipt)</td>
+                </tr>
+                <tr>
+                    <td>Brochures (Advertising)</td>
+                </tr>
+                <tr>
+                    <td>Brochures (Educational)</td>
+                </tr>
+                <tr>
+                    <td>Business Cards (Blanks)</td>
+                </tr>
+                <tr>
+                    <td>Business Cards (Printed)</td>
+                </tr>
+                <tr>
+                    <td>Catalogs</td>
+                </tr>
+                <tr>
+                    <td>Envelopes</td>
+                </tr>
+                <tr>
+                    <td>Novelties</td>
+                </tr>
+                <tr>
+                    <td rowspan="43">Electronics</td>
+                    <td>Amazon Echo</td>
+                </tr>
+                <tr>
+                    <td>Amazon Fire Sticks</td>
+                </tr>
+                <tr>
+                    <td>Amplifier</td>
+                </tr>
+                <tr>
+                    <td>Android / Apple TV Boxes</td>
+                </tr>
+                <tr>
+                    <td>Answering Machine</td>
+                </tr>
+                <tr>
+                    <td>Batteries (Primary Cell)</td>
+                </tr>
+                <tr>
+                    <td>Camcorder</td>
+                </tr>
+                <tr>
+                    <td>Camera (Digital)</td>
+                </tr>
+                <tr>
+                    <td>Camera (Surveillance)</td>
+                </tr>
+                <tr>
+                    <td>Camera / Camera Video</td>
+                </tr>
+                <tr>
+                    <td>CD (Blanks)</td>
+                </tr>
+                <tr>
+                    <td>CD Players</td>
+                </tr>
+                <tr>
+                    <td>CD with Music / Movies</td>
+                </tr>
+                <tr>
+                    <td>Computer Modem</td>
+                </tr>
+                <tr>
+                    <td>Computer Monitor</td>
+                </tr>
+                <tr>
+                    <td>Computer Multi-function Printer</td>
+                </tr>
+                <tr>
+                    <td>Computer Printer</td>
+                </tr>
+                <tr>
+                    <td>Computer Router</td>
+                </tr>
+                <tr>
+                    <td>Computer Scanner</td>
+                </tr>
+                <tr>
+                    <td>Computer Software</td>
+                </tr>
+                <tr>
+                    <td>Computers</td>
+                </tr>
+                <tr>
+                    <td>Drones with Camera</td>
+                </tr>
+                <tr>
+                    <td>DVD (Movies / Music / Blank)</td>
+                </tr>
+                <tr>
+                    <td>DVD Players</td>
+                </tr>
+                <tr>
+                    <td>E-Book Reader (Kindle / Nook / Sony Reader)</td>
+                </tr>
+                <tr>
+                    <td>Earphones</td>
+                </tr>
+                <tr>
+                    <td>Fax Machines</td>
+                </tr>
+                <tr>
+                    <td>Game Boy (Video Games)</td>
+                </tr>
+                <tr>
+                    <td>Games (On Disc)</td>
+                </tr>
+                <tr>
+                    <td>Headphones</td>
+                </tr>
+                <tr>
+                    <td>iPad</td>
+                </tr>
+                <tr>
+                    <td>iPod</td>
+                </tr>
+                <tr>
+                    <td>Karaoke Machine</td>
+                </tr>
+                <tr>
+                    <td>Keyboard</td>
+                </tr>
+                <tr>
+                    <td>Microphone</td>
+                </tr>
+                <tr>
+                    <td>MP3 Player</td>
+                </tr>
+                <tr>
+                    <td>Radio</td>
+                </tr>
+                <tr>
+                    <td>Remote Controls</td>
+                </tr>
+                <tr>
+                    <td>Telephone (Land / Cordless)</td>
+                </tr>
+                <tr>
+                    <td>Telephone (Cellular)</td>
+                </tr>
+                <tr>
+                    <td>Television</td>
+                </tr>
+                <tr>
+                    <td>Video Game Machine</td>
+                </tr>
+                <tr>
+                    <td>Walkie-Talkie</td>
+                </tr>
+                <tr>
+                    <td rowspan="58">Food</td>
+                    <td>All Flours</td>
+                </tr>
+                <tr>
+                    <td>All Sugars and Syrups</td>
+                </tr>
+                <tr>
+                    <td>Almond Butter</td>
+                </tr>
+                <tr>
+                    <td>Baking Powder</td>
+                </tr>
+                <tr>
+                    <td>Barbeque Sauce</td>
+                </tr>
+                <tr>
+                    <td>Biscuits</td>
+                </tr>
+                <tr>
+                    <td>Black Pepper</td>
+                </tr>
+                <tr>
+                    <td>Bread</td>
+                </tr>
+                <tr>
+                    <td>Cakes / Patries</td>
+                </tr>
+                <tr>
+                    <td>Candies (Hard / Soft)</td>
+                </tr>
+                <tr>
+                    <td>Cereal</td>
+                </tr>
+                <tr>
+                    <td>Cheese</td>
+                </tr>
+                <tr>
+                    <td>Chicken</td>
+                </tr>
+                <tr>
+                    <td>Chocolates</td>
+                </tr>
+                <tr>
+                    <td>Coloring (Food)</td>
+                </tr>
+                <tr>
+                    <td>Condensed Milk</td>
+                </tr>
+                <tr>
+                    <td>Corned Beef (Canned)</td>
+                </tr>
+                <tr>
+                    <td>Cream</td>
+                </tr>
+                <tr>
+                    <th>Deli Meats</th>
+                </tr>
+                <tr>
+                    <td>- Beef, Ham & Turkey Sliced / Unsliced</td>
+                </tr>
+                <tr>
+                    <td>- Others including Mixtures Sliced / Unsliced</td>
+                </tr>
+                <tr>
+                    <td>Dried Mixed Fruits (Packed)</td>
+                </tr>
+                <tr>
+                    <td>Dried Mixed Fruits ( Unpacked - >20lbs)</td>
+                </tr>
+                <tr>
+                    <td>Fresh Fruits</td>
+                </tr>
+                <tr>
+                    <td>Fruit Cocktail</td>
+                </tr>
+                <tr>
+                    <td>Fruit Snacks</td>
+                </tr>
+                <tr>
+                    <td>Grits</td>
+                </tr>
+                <tr>
+                    <td>Honey (Natural)</td>
+                </tr>
+                <tr>
+                    <td>Ice Cream</td>
+                </tr>
+                <tr>
+                    <td>Jams, Jellies, Marmalade etc.</td>
+                </tr>
+                <tr>
+                    <td>Ketchup</td>
+                </tr>
+                <tr>
+                    <td>Lime</td>
+                </tr>
+                <tr>
+                    <td>Noodles</td>
+                </tr>
+                <tr>
+                    <td>Nuts (Commercially Packaged - >20lbs)</td>
+                </tr>
+                <tr>
+                    <td>Nuts (Individually Packaged)</td>
+                </tr>
+                <tr>
+                    <td>Oil (Coconut for cooking)</td>
+                </tr>
+                <tr>
+                    <td>Oil (Virgin / Sesame / Soybean)</td>
+                </tr>
+                <tr>
+                    <td>Pasta</td>
+                </tr>
+                <tr>
+                    <td>Peanut Butter</td>
+                </tr>
+                <tr>
+                    <td>Pineapples</td>
+                </tr>
+                <tr>
+                    <th>Potato Chips</th>
+                </tr>
+                <tr>
+                    <td>- Other Chips</td>
+                </tr>
+                <tr>
+                    <td>Popsicles</td>
+                </tr>
+                <tr>
+                    <td>Prepared Chicken, Turkey, Ham, Beef</td>
+                </tr>
+                <tr>
+                    <td>Pudding / Jello-Pudding</td>
+                </tr>
+                <tr>
+                    <td>Rice</td>
+                </tr>
+                <tr>
+                    <td>Salad Dressing</td>
+                </tr>
+                <tr>
+                    <td>Salmon Fillet</td>
+                </tr>
+                <tr>
+                    <td>Sardines (Canned)</td>
+                </tr>
+                <tr>
+                    <td>Sausage</td>
+                </tr>
+                <tr>
+                    <td>Seasonings (Condiments)</td>
+                </tr>
+                <tr>
+                    <td>Shrimp</td>
+                </tr>
+                <tr>
+                    <td>Soup (Canned)</td>
+                </tr>
+                <tr>
+                    <td>Spice Buns</td>
+                </tr>
+                <tr>
+                    <td>Tuna (Canned)</td>
+                </tr>
+                <tr>
+                    <td>Turkey</td>
+                </tr>
+                <tr>
+                    <td>Yeast</td>
+                </tr>
+                <tr>
+                    <td>Yogurt</td>
+                </tr>
+                <tr>
+                    <td rowspan="10">Fashion Accesories</td>
+                    <td>Handbag</td>
+                </tr>
+                <tr>
+                    <td>Hats</td>
+                </tr>
+                <tr>
+                    <td>Jewelry (Costume)</td>
+                </tr>
+                <tr>
+                    <td>Jewelry (Gold / Silver / Platinum)</td>
+                </tr>
+                <tr>
+                    <td>Neck Tie</td>
+                </tr>
+                <tr>
+                    <td>Sunglasses </td>
+                </tr>
+                <tr>
+                    <td>Sunglasses (Prescription)</td>
+                </tr>
+                <tr>
+                    <td>Umbrella</td>
+                </tr>
+                <tr>
+                    <td>Wallets</td>
+                </tr>
+                <tr>
+                    <td>Watches</td>
+                </tr>
+                <tr>
+                    <td rowspan="32">Health</td>
+                    <td>Bandage</td>
+                </tr>
+                <tr>
+                    <td>Blood Glucose Test Strip</td>
+                </tr>
+                <tr>
+                    <td>Blood Pressure Monitor / Meter</td>
+                </tr>
+                <tr>
+                    <td>Catheters</td>
+                </tr>
+                <tr>
+                    <td>Cigarettes</td>
+                </tr>
+                <tr>
+                    <td>Cigarettes (Electronics)</td>
+                </tr>
+                <tr>
+                    <td>Cigarillors</td>
+                </tr>
+                <tr>
+                    <td>Cigars</td>
+                </tr>
+                <tr>
+                    <td>Condoms</td>
+                </tr>
+                <tr>
+                    <td>Contact Lens</td>
+                </tr>
+                <tr>
+                    <td>Cough Drops</td>
+                </tr>
+                <tr>
+                    <td>Defibrillator</td>
+                </tr>
+                <tr>
+                    <td>Deodorant</td>
+                </tr>
+                <tr>
+                    <td>Eye Glasses (Prescription)</td>
+                </tr>
+                <tr>
+                    <td>Floss (Dental)</td>
+                </tr>
+                <tr>
+                    <td>Gloves (Plastic / Rubber)</td>
+                </tr>
+                <tr>
+                    <td>Gloves (Surgical)</td>
+                </tr>
+                <tr>
+                    <td>Gum incl. Nicotene</td>
+                </tr>
+                <tr>
+                    <td>Hand Sanitizers</td>
+                </tr>
+                <tr>
+                    <td>Hearing Aids</td>
+                </tr>
+                <tr>
+                    <td>Heart Monitor</td>
+                </tr>
+                <tr>
+                    <td>HIV Test Strips</td>
+                </tr>
+                <tr>
+                    <td>Insulin</td>
+                </tr>
+                <tr>
+                    <td>Kidney Machines and Parts</td>
+                </tr>
+                <tr>
+                    <td>Mouthwash</td>
+                </tr>
+                <tr>
+                    <td>Nicotene Patches</td>
+                </tr>
+                <tr>
+                    <td>Oil (Body)</td>
+                </tr>
+                <tr>
+                    <td>Razor Blades</td>
+                </tr>
+                <tr>
+                    <td>Sanitary Napkins (Females)</td>
+                </tr>
+                <tr>
+                    <td>Shampoo</td>
+                </tr>
+                <tr>
+                    <td>Tooth Brush & Tooth Paste</td>
+                </tr>
+                <tr>
+                    <td>Vitamins</td>
+                </tr>
+                <tr>
+                    <td rowspan="16">Home</td>
+                </tr>
+                <tr>
+                    <td>All Doors</td>
+                </tr>
+                <tr>
+                    <td>Blocks (Concrete)</td>
+                </tr>
+                <tr>
+                    <td>Drywall</td>
+                </tr>
+                <tr>
+                    <td>Durock</td>
+                </tr>
+                <tr>
+                    <td>Flooring (Wood Parquet)</td>
+                </tr>
+                <tr>
+                    <td>Hardi Plank / Board</td>
+                </tr>
+                <tr>
+                    <td>Hurrican Shutters (Wood)</td>
+                </tr>
+                <tr>
+                    <td>Insultaed Steel Panels</td>
+                </tr>
+                <tr>
+                    <td>Inverters for Solar Panels</td>
+                </tr>
+                <tr>
+                    <td>Lumber</td>
+                </tr>
+                <tr>
+                    <td>Nails (Building)</td>
+                </tr>
+                <tr>
+                    <td>Pipes (PVC)</td>
+                </tr>
+                <tr>
+                    <td>Plywood Free Point of Sale System</td>
+                </tr>
+                <tr>
+                    <td>Sheet Rock</td>
+                </tr>
+                <tr>
+                    <td>Tiles</td>
+                </tr>
+                <tr>
+                    <td rowspan="37">Household Appliances</td>
+                </tr>
+                <tr>
+                    <td>Air Condition</td>
+                </tr>
+                <tr>
+                    <td>Air Condition (Solar)</td>
+                </tr>
+                <tr>
+                    <td>Awnings</td>
+                </tr>
+                <tr>
+                    <td>Blenders</td>
+                </tr>
+                <tr>
+                    <td>Blinds (Plastic / Wood)</td>
+                </tr>
+                <tr>
+                    <td>Cabinet (Wooden)</td>
+                </tr>
+                <tr>
+                    <td>Ceiling Fan</td>
+                </tr>
+                <tr>
+                    <td>Coffee Makers</td>
+                </tr>
+                <tr>
+                    <td>Dryer</td>
+                </tr>
+                <tr>
+                    <td>Fan</td>
+                </tr>
+                <tr>
+                    <td>Freezer (Household)</td>
+                </tr>
+                <tr>
+                    <td>Fryer (Non Electric)</td>
+                </tr>
+                <tr>
+                    <td>Heater (Tankless Water)</td>
+                </tr>
+                <tr>
+                    <td>Ice & Water Shield</td>
+                </tr>
+                <tr>
+                    <td>Ice Cream Machine</td>
+                </tr>
+                <tr>
+                    <td>Lavatory Seats, Covers & Fittings</td>
+                </tr>
+                <tr>
+                    <td>Microwave</td>
+                </tr>
+                <tr>
+                    <td>Oven (Electrical)</td>
+                </tr>
+                <tr>
+                    <td>Oven (Gas)</td>
+                </tr>
+                <tr>
+                    <td>Pool Table</td>
+                </tr>
+                <tr>
+                    <td>Refrigerator (Energy Efficient)</td>
+                </tr>
+                <tr>
+                    <td>Refrigerator (Regular)</td>
+                </tr>
+                <tr>
+                    <td>Satellite</td>
+                </tr>
+                <tr>
+                    <td>Stove (Gas)</td>
+                </tr>
+                <tr>
+                    <td>Stove (Electrical)</td>
+                </tr>
+                <tr>
+                    <td>Supplements</td>
+                </tr>
+                <tr>
+                    <td>Washer (Energy Efficient)</td>
+                </tr>
+                <tr>
+                    <td>Washer (Regular)</td>
+                </tr>
+                <tr>
+                    <td>Water Heater (Gas / Solar)</td>
+                </tr>
+                <tr>
+                    <td>Water Pump (Well)</td>
+                </tr>
+                <tr>
+                    <th>Windows</th>
+                </tr>
+                <tr>
+                    <td>- Aluminum Double Glazed or Vacuum Seal</td>
+                </tr>
+                <tr>
+                    <td>- Other (Aluminum)</td>
+                </tr>
+                <tr>
+                    <td>- Steel Windows</td>
+                </tr>
+                <tr>
+                    <td>- Vinyl Double Glazed or Vacuum Sealed</td>
+                </tr>
+                <tr>
+                    <td>- Wooden Windows</td>
+                </tr>
+                <tr>
+                    <td rowspan="34">Household Essentials</td>
+                </tr>
+                <tr>
+                    <td>Air Freshner (Canned / Spray)</td>
+                </tr>
+                <tr>
+                    <td>Aluminum Foil</td>
+                </tr>
+                <tr>
+                    <td>Bleach</td>
+                </tr>
+                <tr>
+                    <td>Broom</td>
+                </tr>
+                <tr>
+                    <td>Can Opener (Electrical / Portable)</td>
+                </tr>
+                <tr>
+                    <td>Candles</td>
+                </tr>
+                <tr>
+                    <td>Carpet</td>
+                </tr>
+                <tr>
+                    <td>Chafing Pans (Stainless Steel)</td>
+                </tr>
+                <tr>
+                    <td>Clock (Time - Payroll & Wall)</td>
+                </tr>
+                <tr>
+                    <td>Detergent</td>
+                </tr>
+                <tr>
+                    <td>Dishes (Ceramic</td>
+                </tr>
+                <tr>
+                    <td>Dishes (Porcelain / China)</td>
+                </tr>
+                <tr>
+                    <td>Fabric Softener</td>
+                </tr>
+                <tr>
+                    <td>Flashlights</td>
+                </tr>
+                <tr>
+                    <td>Flatware (Knife / Fork / Spoon)</td>
+                </tr>
+                <tr>
+                    <td>Furniture</td>
+                </tr>
+                <tr>
+                    <td>Garbage Bags</td>
+                </tr>
+                <tr>
+                    <td>Glassware</td>
+                </tr>
+                <tr>
+                    <td>Glassware (Crystal)</td>
+                </tr>
+                <tr>
+                    <td>Hand Towels (Paper)</td>
+                </tr>
+                <tr>
+                    <td>Iron</td>
+                </tr>
+                <tr>
+                    <td>Keys & Locks</td>
+                </tr>
+                <tr>
+                    <td>Mirrors (Unframed)</td>
+                </tr>
+                <tr>
+                    <td>Mop</td>
+                </tr>
+                <tr>
+                    <td>Padlocks</td>
+                </tr>
+                <tr>
+                    <td>Paper (Table Napkins)</td>
+                </tr>
+                <tr>
+                    <td>Plastic Bags (Degradable)</td>
+                </tr>
+                <tr>
+                    <td>Pots & Potting Soil</td>
+                </tr>
+                <tr>
+                    <td>Rugs</td>
+                </tr>
+                <tr>
+                    <td>Sanitary (Cups / Plates - Paper / Plastic)</td>
+                </tr>
+                <tr>
+                    <td>Tableware, Kitchenware (Bio-degradable)</td>
+                </tr>
+                <tr>
+                    <td>Toaster</td>
+                </tr>
+                <tr>
+                    <td>Vacuum Cleaner </td>
+                </tr>
+                <tr>
+                    <td rowspan="12">Kids and Babies</td>
+                    <td>Baby & Toddler Clothing (size 6 +)</td>
+                </tr>
+                <tr>
+                    <td>Baby Bottle</td>
+                </tr>
+                <tr>
+                    <td>Bottle Nipples</td>
+                </tr>
+                <tr>
+                    <td>Baby Car Seat</td>
+                </tr>
+                <tr>
+                    <td>Baby Cribs & Baby Playpen</td>
+                </tr>
+                <tr>
+                    <td>Baby High Chair</td>
+                </tr>
+                <tr>
+                    <td>Baby Pampers</td>
+                </tr>
+                <tr>
+                    <td>Baby Stroller</td>
+                </tr>
+                <tr>
+                    <td>Baby Wipes</td>
+                </tr>
+                <tr>
+                    <td>Dolls</td>
+                </tr>
+                <tr>
+                    <td>Incubators</td>
+                </tr>
+                <tr>
+                    <td>Toys</td>
+                </tr>
+                <tr>
+                    <td rowspan="22">Office Supplies</td>
+                    <td>Calculator</td>
+                </tr>
+                <tr>
+                    <td>Calendar</td>
+                </tr>
+                <tr>
+                    <td>Cards (ATM)</td>
+                </tr>
+                <tr>
+                    <td>Cash Register</td>
+                </tr>
+                <tr>
+                    <td>Copy Paper (Muli-Purpose)</td>
+                </tr>
+                <tr>
+                    <td>Flyers (Advertising)</td>
+                </tr>
+                <tr>
+                    <td>Fountain Pens</td>
+                </tr>
+                <tr>
+                    <td>Glue</td>
+                </tr>
+                <tr>
+                    <td>Ink (Computer)</td>
+                </tr>
+                <tr>
+                    <td>Labels (Printed)</td>
+                </tr>
+                <tr>
+                    <td>Magic Jack</td>
+                </tr>
+                <tr>
+                    <td>Paper (Printing / Multi-purpose)</td>
+                </tr>
+                <tr>
+                    <td>Pencils</td>
+                </tr>
+                <tr>
+                    <td>Pens</td>
+                </tr>
+                <tr>
+                    <td>Plastic Wire</td>
+                </tr>
+                <tr>
+                    <td>Postcards</td>
+                </tr>
+                <tr>
+                    <td>Posters</td>
+                </tr>
+                <tr>
+                    <td>Printer Multi-function</td>
+                </tr>
+                <tr>
+                    <td>Ruler (Other)</td>
+                </tr>
+                <tr>
+                    <td>Rulers (School)</td>
+                </tr>
+                <tr>
+                    <td>UPS System</td>
+                </tr>
+                <tr>
+                    <td>Visual Teaching Aids</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Others</td>
+                    <td>Cards (ATM)</td>
+                </tr>
+                <tr>
+                    <td>Cash Register</td>
+                </tr>
+                <tr>
+                    <td>Casket (Metal)</td>
+                </tr>
+                <tr>
+                    <td>Mannequins</td>
+                </tr>
+                <tr>
+                    <td rowspan="5">Party and Occasions</td>
+                    <td>Christmas Lights</td>
+                </tr>
+                <tr>
+                    <td>Christmas Ornaments</td>
+                </tr>
+                <tr>
+                    <td>Christmas Tree (Artificial)</td>
+                </tr>
+                <tr>
+                    <td>Christmas Tree (Fresh)</td>
+                </tr>
+                <tr>
+                    <td>Fireworks</td>
+                </tr>
+                <tr>
+                    <td rowspan="5">Patio and Garden</td>
+                    <td>Flowers (Artificial)</td>
+                </tr>
+                <tr>
+                    <td>Flowers (Fresh)</td>
+                </tr>
+                <tr>
+                    <td>Insecticides</td>
+                </tr>
+                <tr>
+                    <td>Pesticides</td>
+                </tr>
+                <tr>
+                    <td>Rodentcides</td>
+                </tr>
+                <tr>
+                    <td>Pets</td>
+                    <td>Animal Food</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Security</td>
+                    <td>Alarm System</td>
+                </tr>
+                <tr>
+                    <td>Car Alarm</td>
+                </tr>
+                <tr>
+                    <td>Surveillance Security System</td>
+                </tr>
+                <tr>
+                    <td rowspan="19">Shoes and Apparels</td>
+                    <td>Beadies</td>
+                </tr>
+                <tr>
+                    <td>Belts (Leather / Other)</td>
+                </tr>
+                <tr>
+                    <td>Bras</td>
+                </tr>
+                <tr>
+                    <td>Caps (Graduation / Nurse)</td>
+                </tr>
+                <tr>
+                    <td>Clothing (Outer Wear)</td>
+                </tr>
+                <tr>
+                    <td>Clothing (Underwear)</td>
+                </tr>
+                <tr>
+                    <td>Clothing (Used)</td>
+                </tr>
+                <tr>
+                    <td>Costumes of Textile</td>
+                </tr>
+                <tr>
+                    <td>Costumes other than Textile</td>
+                </tr>
+                <tr>
+                    <td>Disposable Underwear</td>
+                </tr>
+                <tr>
+                    <td>Gowns (Graduation)</td>
+                </tr>
+                <tr>
+                    <td>Other Wearing Apparel</td>
+                </tr>
+                <tr>
+                    <td>Pantyhose</td>
+                </tr>
+                <tr>
+                    <td>Sandals</td>
+                </tr>
+                <tr>
+                    <td>Shoes / Slippers</td>
+                </tr>
+                <tr>
+                    <td>Socks</td>
+                </tr>
+                <tr>
+                    <td>Stockings</td>
+                </tr>
+                <tr>
+                    <td>T-Shirts</td>
+                </tr>
+                <tr>
+                    <td>Tennis</td>
+                </tr>
+                <tr>
+                    <td rowspan="8">Sports and Outdoors</td>
+                    <td>Asphalt (Road Surfacing)</td>
+                </tr>
+                <tr>
+                    <td>Cement</td>
+                </tr>
+                <tr>
+                    <td>Degradable Bags</td>
+                </tr>
+                <tr>
+                    <td>Exercise Machines</td>
+                </tr>
+                <tr>
+                    <td>Fertilizers</td>
+                </tr>
+                <tr>
+                    <td>Fish Bait</td>
+                </tr>
+                <tr>
+                    <td>Life Jacket</td>
+                </tr>
+                <tr>
+                    <td>Shrimp Bait</td>
+                </tr>
+                <tr>
+                    <td rowspan="7">Tools</td>
+                    <td>Compressor (Air)</td>
+                </tr>
+                <tr>
+                    <td>Tools (Hand)</td>
+                </tr>
+                <tr>
+                    <td>Garden Hose</td>
+                </tr>
+                <tr>
+                    <td>Generators</td>
+                </tr>
+                <tr>
+                    <td>Ladder (Aluminum)</td>
+                </tr>
+                <tr>
+                    <td>Lawn Mower & Parts</td>
+                </tr>
+                <tr>
+                    <td>Fire Extinguishers</td>
+                </tr>
+                <tr>
+                    <td rowspan="14">Vehicles</td>
+                    <td>Backhoe</td>
+                </tr>
+                <tr>
+                    <td>Bicycle</td>
+                </tr>
+                <tr>
+                    <td>Boats (Pleasure / Tug)</td>
+                </tr>
+                <tr>
+                    <td>Electric Motorcycles</td>
+                </tr>
+                <tr>
+                    <td>Golf Carts</td>
+                </tr>
+                <tr>
+                    <td>Jet Skis</td>
+                </tr>
+                <tr>
+                    <td>Motorcycles</td>
+                </tr>
+                <tr>
+                    <td>Tricyle</td>
+                </tr>
+                <tr>
+                    <td>Vehicles ($10,001 - $40,000)</td>
+                </tr>
+                <tr>
+                    <td>Vehicles (Hybrids or Electrical)</td>
+                </tr>
+                <tr>
+                    <td>Vehicles (Over $40,000)</td>
+                </tr>
+                <tr>
+                    <td>Vehicles (Up to $10,000)</td>
+                </tr>
+                <tr>
+                    <td>Vehicles / Trucks (Cargo Carrying)</td>
+                </tr>
+                <tr>
+                    <td>Vehicles / Trucks (Over 20tons)</td>
+                </tr>
+                <tr>
+                    <td rowspan="6">Vehicle Accessories</td>
+                    <td>Anti Freeze</td>
+                </tr>
+                <tr>
+                    <td>Batteries (Lead Acid or Auto)</td>
+                </tr>
+                <tr>
+                    <td>Brake Fluid</td>
+                </tr>
+                <tr>
+                    <td>Degreasers</td>
+                </tr>
+                <tr>
+                    <td>Helmets</td>
+                </tr>
+                <tr>
+                    <td>Transmission Fluids</td>
+                </tr>
+                <tr>
+                    <td rowspan="13">Vehicle Parts</td>
+                    <td>Auto Parts</td>
+                </tr>
+                <tr>
+                    <td>Batteries (Deep Cycle)</td>
+                </tr>
+                <tr>
+                    <td>Belt (Transmission / Other)</td>
+                </tr>
+                <tr>
+                    <td>Brake Pads</td>
+                </tr>
+                <tr>
+                    <td>Engine (Aircraft / Boat)</td>
+                </tr>
+                <tr>
+                    <td>Engine (Car)</td>
+                </tr>
+                <tr>
+                    <td>Jack (Car)</td>
+                </tr>
+                <tr>
+                    <td>Oil (Motor)</td>
+                </tr>
+                <tr>
+                    <td>Rims (Auto)</td>
+                </tr>
+                <tr>
+                    <td>Stereo System</td>
+                </tr>
+                <tr>
+                    <td>Tires (Auto-Mounted)</td>
+                </tr>
+                <tr>
+                    <td>Tires (Auto-Unmounted)</td>
+                </tr>
+                <tr>
+                    <td>Water Pump (Vehicle)</td>
+                </tr>
+
+
+            </table>
+
+        </div>
+    </div>
+
+    <!--Upper Footer-->
+    <div class="upper-footer">
+        <font size="3">
+            <nav>
+                <a style="color:#ffffff; text-decoration:none" href="terms">Terms of Use | </a>
+                <a style="color:#ffffff; text-decoration:none" href="privacy">Privacy Policy | </a>
+                <a style="color:#ffffff; text-decoration:none" target="_blank" href="/images/ratesofduty.pdf">Bahamas
+                    Duty Guide | </a>
+                <a style="color:#ffffff; text-decoration:none" target="_blank"
+                    href="https://bahamas.prod.3ceonline.com/bsgov">Tariff Code</a>
+            </nav>
+        </font>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <font size="2">
+            <p style="color:lightgray;">&copy Know Da Price 2019</p>
+        </font>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<title>Know Da Price - Duty Calculation</title>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145112772-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-145112772-1');
+  </script>
+
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="images/SketchIcon.png">
+  <meta charset="utf-8">
+  <meta name="description" content="Calculate the import tax to bring in items through a thirdparty shipper">
+  <meta name="keywords" content="Duty, Duty Calculator, Duty Calculation, Calculator, Bahamas Duty Calculator, Bahamas
+  Duty Calculation, Bahamas Duty Calculator">
+  <meta name="author" content="Antone Evans, Bry'Ton Rolle, Tim">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <!--Navigation Bar-->
+  <div class="topnav" id="myTopnav">
+    <img src="images/NavLogo.png" style="width:225px;height:80px;" align="left">
+    <a href="contact">Contact</a>
+    <a href="about">About Us</a>
+    <a href="glossary">Glossary</a>
+    <a href="cart">Cart</a>
+    <a href="index">Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="contact1">
+    <div class="container-contact1">
+      <form class="contact1-form validate-form">
+        <span class="contact1-form-title">
+          <b>Start Calculating</b>
+        </span>
+
+        <form action="#">
+          <!--Product category-->
+          <label for="pcategory">Product Category:</label>
+          <input list="pcategory" name="p-category">
+          <datalist id="pcategory">
+            <option value="Alcohol">
+            <option value="Arts Craft and Sewing">
+            <option value="Bags and Luggage">
+            <option value="Beauty">
+            <option value="Bed and Bath">
+            <option value="Beverage">
+            <option value="Business Stationery">
+            <option value="Electronics">
+            <option value="Fashion Accessories">
+            <option value="Food">
+            <option value="Health">
+            <option value="Home">
+            <option value="Household Appliance">
+            <option value="Household Essential">
+            <option value="Kids and Baby">
+            <option value="Office Supplies">
+            <option value="Others">
+            <option value="Party and Occasions">
+            <option value="Patio and Garden">
+            <option value="Pets">
+            <option value="Security">
+            <option value="Shoes and Apparels">
+            <option value="Sports and Outdoors">
+            <option value="Tools">
+            <option value="Vehicle">
+            <option value="Vehicle Accessories">
+            <option value="Vehicle Parts">
+          </datalist>
+
+          <!--Product sub-catergory-->
+          <label for="subcategory">Product Sub-Category:</label>
+          <select id="subcategory" name="subcategories">
+            <option value="Blank">Sub Category will be updated</option>
+            <option value="Alcohol">Beers</option>
+            <option value="Alcohol">Rum</option>
+            <option value="Alcohol">Wine</option>
+            <!--Arts Crafts and Sewing (ACS)-->
+            <option value="ACS">Artwork (Original)</option>
+            <option value="ACS">Crayons</option>
+            <option value="ACS">Fabrics</option>
+            <option value="ACS">Flags of Nation & Other Flags</option>
+            <option value="ACS">Glitter</option>
+            <option value="ACS">Newspapers</option>
+            <option value="ACS">Paint—Artist</option>
+            <option value="ACS">Paint—Other</option>
+            <option value="ACS">Sewing Machine</option>
+            <option value="ACS">Thread</option>
+            <!--Bags and Lagguage (BL)-->
+            <option value="BL">Bags (Paper)</option>
+            <option value="BL">Bags (Plastic Shopping - Degradable)</option>
+            <option value="BL">Bags (Plastic Shopping)</option>
+            <option value="BL">Bags (School)</option>
+            <option value="BL">Bags (Urinary)</option>
+            <option value="Beauty">Cologne</option>
+            <option value="Beauty">Curling Iron</option>
+            <option value="Beauty">Hair (Artificial/Human)</option>
+            <option value="Beauty">Hair Conditioner</option>
+            <option value="Beauty">Hair Dryers</option>
+            <option value="Beauty">Hair Dye/Rinse</option>
+            <option value="Beauty"> Hair Preparations</option>
+            <option value="Beauty">Make Up</option>
+            <option value="Beauty">Perfumes</option>
+            <option value="Beauty">Wigs</option>
+            <!--Bed and Bath (BB)-->
+            <option value="BB">Bathroom Fixtures (Basins, Tubs)</option>
+            <option value="BB">Bed Sheets (Linen)</option>
+            <option value="BB">Comforters (Bed)</option>
+            <option value="BB">Curtains</option>
+            <option value="BB">Drapes</option>
+            <option value="BB">Hangers (Plastic)</option>
+            <option value="BB">Hangers (Wooden)</option>
+            <option value="BB">Humidifiers</option>
+            <option value="BB">Mattress</option>
+            <option value="BB">Mattress (Air)</option>
+            <option value="BB">Pads (Bed)</option>
+            <option value="BB">Paper (Toilet)</option>
+            <option value="BB">Pillows</option>
+            <option value="BB">Sheets (Linen)</option>
+            <option value="BB">Shower Curtain (Fabric)</option>
+            <option value="BB">Shower Curtain (Plastic)</option>
+            <option value="BB">Soaps</option>
+            <option value="BB">Towels</option>
+            <option value="Beverages">All Coffee</option>
+            <option value="Beverages">Energy Drinks</option>
+            <option value="Beverages">Gatorade</option>
+            <option value="Beverages">Juice 100%</option>
+            <option value="Beverages">Malt Beverages</option>
+            <option value="Beverages">Tea</option>
+            <!--Business Stationery (BS)-->
+            <option value="BS">Books (Coloring)</option>
+            <option value="BS">Books (Exercise)</option>
+            <option value="BS">Books (Reading)</option>
+            <option value="BS">Books (Receipt)</option>
+            <option value="BS">Brochures (Advertising)</option>
+            <option value="BS">Brochures (Educational)</option>
+            <option value="BS">Business Cards (Blanks)</option>
+            <option value="BS">Business Cards (Printed)</option>
+            <option value="BS">Catalogs</option>
+            <option value="BS">Envelopes</option>
+            <option value="BS">Novelties</option>
+            <option value="Electronics">Amazon Echo</option>
+            <option value="Electronics">Amazon Fire Sticks</option>
+            <option value="Electronics">Amplifier</option>
+            <option value="Electronics">Android/Apple TV boxes</option>
+            <option value="Electronics">Answering Machine</option>
+            <option value="Electronics">Batteries (Primary Cell)</option>
+            <option value="Electronics">Camcorder</option>
+            <option value="Electronics">Camera (Digital)</option>
+            <option value="Electronics">Camera (Surveillance)</option>
+            <option value="Electronics">Camera/Camera Video</option>
+            <option value="Electronics">CD (Blank)</option>
+            <option value="Electronics">CD Players</option>
+            <option value="Electronics">CD with Music/Movies</option>
+            <option value="Electronics">Computer Modem</option>
+            <option value="Electronics">Computer Monitor</option>
+            <option value="Electronics">Computer Multi-function Printer</option>
+            <option value="Electronics">Computer Printer</option>
+            <option value="Electronics">Computer Router</option>
+            <option value="Electronics">Computer Scanner</option>
+            <option value="Electronics">Computer Software</option>
+            <option value="Electronics">Computers</option>
+            <option value="Electronics">Drones with camera</option>
+            <option value="Electronics">DVD (with Movies/Music/Blank)</option>
+            <option value="Electronics">DVD Players</option>
+            <option value="Electronics">E-Book Reader (Kindle/Nook/Sony Reader)</option>
+            <option value="Electronics">Earphones</option>
+            <option value="Electronics">Fax Machines</option>
+            <option value="Electronics">Game Boy (Video Games)</option>
+            <option value="Electronics">Games (On Disc)</option>
+            <option value="Electronics">Headphones</option>
+            <option value="Electronics">iPad</option>
+            <option value="Electronics">iPod</option>
+            <option value="Electronics">Karaoke Machine</option>
+            <option value="Electronics">Keyboard</option>
+            <option value="Electronics">Microphone</option>
+            <option value="Electronics">MP3 Player</option>
+            <option value="Electronics">Remote Controls</option>
+            <option value="Electronics">Telephone (Land/Cordless)</option>
+            <option value="Electronics">Telephones (Cellular)</option>
+            <option value="Electronics">Television</option>
+            <option value="Electronics">Video Game Machine</option>
+            <option value="Electronics">Walkie-Talkie</option>
+            <option value="Electronics">Radio</option>
+            <!--Fashion Accesories (FA)-->
+            <option value="FA">Handbags</option>
+            <option value="FA">Hats</option>
+            <option value="FA">Jewelry (Costume)</option>
+            <option value="FA">Jewelry (Gold / Silver / Platinum)</option>
+            <option value="FA">Neck Ties</option>
+            <option value="FA">Sunglasses (Other)</option>
+            <option value="FA">Sunglasses (Prescription)</option>
+            <option value="FA">Umbrella</option>
+            <option value="FA">Wallets</option>
+            <option value="FA">Watches</option>
+            <option value="Food">Beef, Ham & Turkey Sliced/Unsliced</option>
+            <option value="Food">Other Chips</option>
+            <option value="Food">Other Including Mixtures Sliced/Unsliced</option>
+            <option value="Food">Baking Powder</option>
+            <option value="Food">Barbeque Sauce</option>
+            <option value="Food">Biscuits</option>
+            <option value="Food">Black Pepper</option>
+            <option value="Food">Bread</option>
+            <option value="Food">Cakes, Pastries, Biscuits</option>
+            <option value="Food">Candies (Hard)</option>
+            <option value="Food">Candies (Soft)</option>
+            <option value="Food">Cereal</option>
+            <option value="Food">Cheese</option>
+            <option value="Food">Chicken</option>
+            <option value="Food">Chocolates</option>
+            <option value="Food">Coloring (Food)</option>
+            <option value="Food">Condensed Milk</option>
+            <option value="Food">Corned Beef (Canned)</option>
+            <option value="Food">Cream</option>
+            <option value="Food">Dried Mixed Fruit (Packed)</option>
+            <option value="Food">Dried Mixed Fruits (Unpacked— >20lb)</option>
+            <option value="Food">Fresh Fruits</option>
+            <option value="Food">Fruit Cocktail</option>
+            <option value="Food">Fruit Snacks</option>
+            <option value="Food">Grits</option>
+            <option value="Food">Honey (Natural)</option>
+            <option value="Food">Ice Cream</option>
+            <option value="Food">Ice cream & popsicles</option>
+            <option value="Food">Jams, Jellies, Marmalade etc</option>
+            <option value="Food">Ketchup</option>
+            <option value="Food">Lime</option>
+            <option value="Food">Noodles</option>
+            <option value="Food">Nuts (Commercially Packaged — >20lbs)</option>
+            <option value="Food">Nuts (Individually Packaged)</option>
+            <option value="Food">Oil (Coconut for cooking)</option>
+            <option value="Food">Oil (Virgin/Sesame/Soybean)</option>
+            <option value="Food">Pasta</option>
+            <option value="Food">Peanut Butter</option>
+            <option value="Food">Pineapples (WHICH ONE)</option>
+            <option value="Food">Pineapples (WHICH ONE)</option>
+            <option value="Food">Potato Chips **</option>
+            <option value="Food">Prepared Chicken, Turkey, - Ham, Beef</option>
+            <option value="Food">Pudding / Jello-Pudding</option>
+            <option value="Food">Rice</option>
+            <option value="Food">Salad Dressing</option>
+            <option value="Food">Salmon Fillet</option>
+            <option value="Food">Sardines (Canned)</option>
+            <option value="Food">Sausage</option>
+            <option value="Food">Seasonings (Condiments)</option>
+            <option value="Food">Shrimp</option>
+            <option value="Food">Soup (Canned)</option>
+            <option value="Food">Spice Buns</option>
+            <option value="Food">Tuna (Canned)</option>
+            <option value="Food">Turkey</option>
+            <option value="Food">Turkey: Deli</option>
+            <option value="Food">Yeast</option>
+            <option value="Food">Yogurt</option>
+            <option value="Food">All Flours</option>
+            <option value="Food">All Sugars and Syrups</option>
+            <option value="Food">Almond Butter</option>
+            <option value="Health">Bandages</option>
+            <option value="Health">Blood Glucose Test Strip</option>
+            <option value="Health">Blood Pressure Monitor/Meter</option>
+            <option value="Health">Catheters</option>
+            <option value="Health">Cigarettes</option>
+            <option value="Health">Cigarettes (Electronic)</option>
+            <option value="Health">Cigarillos, etc (Other)</option>
+            <option value="Health">Cigars</option>
+            <option value="Health">Condoms</option>
+            <option value="Health">Contact Lens</option>
+            <option value="Health">Cough Drops</option>
+            <option value="Health">Defibrillator</option>
+            <option value="Health">Deodorant</option>
+            <option value="Health">Eye Glasses (Prescription)</option>
+            <option value="Health">Floss (Dental)</option>
+            <option value="Health">Gloves (Plastic, Rubber)</option>
+            <option value="Health">Gum incl. Nicotene</option>
+            <option value="Health">Hand Sanitizers</option>
+            <option value="Health">Hearing Aids</option>
+            <option value="Health">Heart Monitor</option>
+            <option value="Health">HIV Test Strips</option>
+            <option value="Health">Insulin</option>
+            <option value="Health">Kidney Machines and Parts</option>
+            <option value="Health">Mouthwash</option>
+            <option value="Health">Nicotene Patches</option>
+            <option value="Health">Oil (Body)</option>
+            <option value="Health">Razor Blades</option>
+            <option value="Health">Sanitary Napkins (Female)</option>
+            <option value="Health">Shampoo</option>
+            <option value="Health">Tooth Brush & Tooth Paste</option>
+            <option value="Health">Vitamins</option>
+            <option value="Health">Gloves (Surgical)</option>
+            <option value="Home">All Doors</option>
+            <option value="Home">Blocks (Concrete)</option>
+            <option value="Home">Drywall</option>
+            <option value="Home">Durock</option>
+            <option value="Home">Flooring (Wood Parquet)</option>
+            <option value="Home">Hardi Plank/Board</option>
+            <option value="Home">Hurricane Shutters (Wood)</option>
+            <option value="Home">Insulated Steel Panels</option>
+            <option value="Home">Inverters for Solar panels</option>
+            <option value="Home">Lumber</option>
+            <option value="Home">Nails (Building)</option>
+            <option value="Home">Pipes (PVC)</option>
+            <option value="Home">Plywood Free Point Of Sale System</option>
+            <option value="Home">Sheet Rock</option>
+            <option value="Home">Tiles</option>
+            <!--Household Appliance (HA)-->
+            <option value="HA">Aluminum double glazed or vacuum seal</option>
+            <option value="HA">Other (Aluminum)</option>
+            <option value="HA">Steel Windows (All)</option>
+            <option value="HA">Vinyl double glazed or vacuum Sealed</option>
+            <option value="HA">Wooden Windows</option>
+            <option value="HA">Air Condition</option>
+            <option value="HA">Air Condition (Solar)</option>
+            <option value="HA">Awnings</option>
+            <option value="HA">Blenders</option>
+            <option value="HA">Blinds (Plastic)</option>
+            <option value="HA">Blinds (Wood)</option>
+            <option value="HA">Cabinets (Wooden)</option>
+            <option value="HA">Ceiling Fans</option>
+            <option value="HA">Coffee Makers</option>
+            <option value="HA">Dryer</option>
+            <option value="HA">Fan</option>
+            <option value="HA">Freezer (Household type)</option>
+            <option value="HA">Fryer (Non Electric)</option>
+            <option value="HA">Heater (Tankless Water)</option>
+            <option value="HA">Ice & water shield</option>
+            <option value="HA">Ice Cream Machine</option>
+            <option value="HA">Lavatory seats and covers & fittings</option>
+            <option value="HA">Microwave</option>
+            <option value="HA">Oven (Electric)</option>
+            <option value="HA">Oven (Gas)</option>
+            <option value="HA">Pool Table</option>
+            <option value="HA">Refrigerator (Energy Efficient)</option>
+            <option value="HA">Refrigerator (Regular)</option>
+            <option value="HA">Satellite</option>
+            <option value="HA">Stove (Gas)</option>
+            <option value="HA">Stoves (Electric)</option>
+            <option value="HA">Supplements</option>
+            <option value="HA">Washer (Energy Efficient)</option>
+            <option value="HA">Washer (Regular)</option>
+            <option value="HA">Water Heater (Gas)</option>
+            <option value="HA">Water Heaters (Solar)</option>
+            <option value="HA">Water Pump (Well)</option>
+            <!--Household Essential (HE)-->
+            <option value="HE">Air Fresheners (Canned/Spray)</option>
+            <option value="HE">All Detergent (Washing)</option>
+            <option value="HE">Aluminum Foil</option>
+            <option value="HE">Bleach</option>
+            <option value="HE">Broom</option>
+            <option value="HE">Can Opener (Electric)</option>
+            <option value="HE">Can Opener (Portable)</option>
+            <option value="HE">Candles</option>
+            <option value="HE">Carpet</option>
+            <option value="HE">Chafing Pans (Stainless Steel)</option>
+            <option value="HE">Clock (Time - Payroll & Wall)</option>
+            <option value="HE">Dishes (Ceramic)</option>
+            <option value="HE">Dishes (Porcelain/China)</option>
+            <option value="HE">Fabric Softener</option>
+            <option value="HE">Flashlights</option>
+            <option value="HE">Flatware (Knife/Fork/Spoon)</option>
+            <option value="HE">Furniture</option>
+            <option value="HE">Garbage bags</option>
+            <option value="HE">Glassware</option>
+            <option value="HE">Glassware (Crystal)</option>
+            <option value="HE">Hand Towels (Paper)</option>
+            <option value="HE">Iron</option>
+            <option value="HE">Keys & Locks</option>
+            <option value="HE">Mirrors (Unframed)</option>
+            <option value="HE">Mop</option>
+            <option value="HE">Padlocks</option>
+            <option value="HE">Paper (Table Napkins)</option>
+            <option value="HE">Plastic Bags (Degradable)</option>
+            <option value="HE">Pots & Potting Soil</option>
+            <option value="HE">Rugs</option>
+            <option value="HE">Sanitary (Cups/Plates - Paper/Plastic)</option>
+            <option value="HE">Tableware, Kitchenware (Bio-degradable)</option>
+            <option value="HE">Toaster</option>
+            <option value="HE">Vacuum Cleaner</option>
+            <!--Kids and Baby (KB)-->
+            <option value="KB">Baby & Toddler Clothing (size 6)</option>
+            <option value="KB">Baby Bottle</option>
+            <option value="KB">Baby Bottle and Bottle Nipples</option>
+            <option value="KB">Baby Car Seat</option>
+            <option value="KB">Baby Cribs and Baby Playpen</option>
+            <option value="KB">Baby High Chair</option>
+            <option value="KB">Baby Pampers</option>
+            <option value="KB">Baby Stroller</option>
+            <option value="KB">Baby Wipes</option>
+            <option value="KB">Dolls</option>
+            <option value="KB">Incubators</option>
+            <option value="KB">Toys</option>
+            <!--Office Supplies (OS)-->
+            <option value="OS">Calculator</option>
+            <option value="OS">Calendars</option>
+            <option value="OS">Copy Paper (Multi-purpose)</option>
+            <option value="OS">Flyers (advertising)</option>
+            <option value="OS">Fountain Pens</option>
+            <option value="OS">Glue</option>
+            <option value="OS">Ink (Computer)</option>
+            <option value="OS">Labels (printed)</option>
+            <option value="OS">Magic Jack</option>
+            <option value="OS">Paper (Printing/Multipurpose)</option>
+            <option value="OS">Pencils</option>
+            <option value="OS">Pens (Other)</option>
+            <option value="OS">Plastic Wares</option>
+            <option value="OS">Postcards (Other)</option>
+            <option value="OS">Postcards (w/ Bahamian Scenes)</option>
+            <option value="OS">Posters</option>
+            <option value="OS">Printer Multifunction</option>
+            <option value="OS">Ruler (Other)</option>
+            <option value="OS">Rulers (School)</option>
+            <option value="OS">UPS System</option>
+            <option value="OS">Visual Teaching Aids</option>
+            <option value="Others">Cards (ATM)</option>
+            <option value="Others">Cash Register</option>
+            <option value="Others">Casket (Metal)</option>
+            <option value="Others">Mannequins</option>
+            <!--Party and Occasions (PO)-->
+            <option value="PO">Christmas Lights</option>
+            <option value="PO">Christmas Ornaments</option>
+            <option value="PO">Christmas Tree (Artificial)</option>
+            <option value="PO">Christmas Tree (Fresh)</option>
+            <option value="PO">Fireworks</option>
+            <!--Patio and Garden (PG)-->
+            <option value="PG">Flowers (Artificial)</option>
+            <option value="PG">Flowers (Fresh)</option>
+            <option value="PG">Insecticides</option>
+            <option value="PG">Pesticides</option>
+            <option value="PG">Rodenticides</option>
+            <option value="Pets">All Animal Food</option>
+            <option value="Security">Alarm System</option>
+            <option value="Security">Car Alarm</option>
+            <option value="Security">Surveillance Security System</option>
+            <!--Shoes and Apparels (SA)-->
+            <option value="SA">Beadies</option>
+            <option value="SA">Belts (Leather/Other)</option>
+            <option value="SA">Bras</option>
+            <option value="SA">Caps (Graduation/Nurse)</option>
+            <option value="SA">Clothing (Outer Wear)</option>
+            <option value="SA">Clothing (Underwear)</option>
+            <option value="SA">Clothing (Used)</option>
+            <option value="SA">Costumes of Textile</option>
+            <option value="SA">Costumes other than Textile</option>
+            <option value="SA">Disposable Underwear</option>
+            <option value="SA">Gowns (Graduation)</option>
+            <option value="SA">Other Wearing Apparel</option>
+            <option value="SA">Pantyhose</option>
+            <option value="SA">Sandals</option>
+            <option value="SA">Shoes/Slippers</option>
+            <option value="SA">Socks</option>
+            <option value="SA">Stockings</option>
+            <option value="SA">T-Shirts: No Collar</option>
+            <option value="SA">T-Shirts: With Collar</option>
+            <option value="SA">Tennis</option>
+            <!--Sports and Outdoors (SO)-->
+            <option value="SO">Asphalt (Road Surfacing)</option>
+            <option value="SO">Cement</option>
+            <option value="SO">Degradable bags</option>
+            <option value="SO">Exercise Machines</option>
+            <option value="SO">Fertilizers</option>
+            <option value="SO">Fish Bait</option>
+            <option value="SO">Life Jackets</option>
+            <option value="SO">Shrimp Bait</option>
+            <option value="Tools">Compressor (Air)</option>
+            <option value="Tools">Tools (Hand)</option>
+            <option value="Tools">Garden Hose</option>
+            <option value="Tools">Generators</option>
+            <option value="Tools">Ladder (Aluminum)</option>
+            <option value="Tools">Lawn Mower & Parts</option>
+            <option value="Tools">Fire Extinguishers</option>
+            <option value="Vehicle">Bicycle</option>
+            <option value="Vehicle">Boats (Pleasure/Tug)</option>
+            <option value="Vehicle">Electric Motorcycles</option>
+            <option value="Vehicle">Golf Carts</option>
+            <option value="Vehicle">Jet Skis</option>
+            <option value="Vehicle">Motorcycles</option>
+            <option value="Vehicle">Tricycle</option>
+            <option value="Vehicle">Vehicles ($10,001 to $40,000)</option>
+            <option value="Vehicle">Vehicles (All Hybrids or All Electric)</option>
+            <option value="Vehicle">Vehicles (over $40,000)</option>
+            <option value="Vehicle">Vehicles (up to $10,000)</option>
+            <option value="Vehicle">Vehicles/Trucks (Cargo Carrying)</option>
+            <option value="Vehicle">Vehicles/Trucks (over 20 tons)</option>
+            <option value="Vehicle">Backhoe</option>
+            <!--Vehicle Accessories (VA)-->
+            <option value="VA">Brake Fluid</option>
+            <option value="VA">Helmets</option>
+            <option value="VA">Anti Freeze</option>
+            <option value="VA">Batteries (Lead Acid or Auto)</option>
+            <option value="VA">Degreasers</option>
+            <option value="VA">Transmission Fluids</option>
+            <!--Vehicle Parts (VP)-->
+            <option value="VP">Auto Parts</option>
+            <option value="VP">Batteries (Deep Cycle)</option>
+            <option value="VP">Belt (Transmission/Other)</option>
+            <option value="VP">Brake Pads</option>
+            <option value="VP">Engine (Aircraft)</option>
+            <option value="VP">Engine (Boat)</option>
+            <option value="VP">Engine (Car)</option>
+            <option value="VP">Jack (Car)</option>
+            <option value="VP">Oil (Motor)</option>
+            <option value="VP">Rims (Auto)</option>
+            <option value="VP">Stereo System</option>
+            <option value="VP">Tires (Auto-Mounted)</option>
+            <option value="VP">Tires (Auto-Unmounted)</option>
+            <option value="VP">Water Pump (vehicle)</option>
+          </select>
+
+          <!--Product value-->
+          <label for="pprice">Product Price:</label>
+          <input type="number" id="pprice" name="price" placeholder="Enter Price of Item" min="0">
+
+          <!--Product quantity-->
+          <label for="pquantity">Product Quantity:</label>
+          <input type="number" id="pquantity" name="quantity" placeholder="Enter Quantity" min="0">
+
+          <!--Product weight-->
+          <label for="pweight">Product Weight:</label>
+          <input type="number" id="pweight" name="weight" placeholder="Enter Weight" min="0">
+
+          <!--Product dimensions (height, length and width)-->
+          <label for="pdimensions">Product Dimensions:</label>
+          <br>
+          <input type="number" id="pdimensions" name="height" placeholder="Height" min="0">
+          <input type="number" id="pdimensions" name="length" placeholder="Length" min="0">
+          <input type="number" id="pdimensions" name="width" placeholder="Width" min="0">
+
+          <br>
+          <!-- Submit Button-->
+          <button type="submit" value="Submit">Submit</button>
+
+          <!--Add Remove Button-->
+          <button onclick="addItem()">add item</button>
+          <button onclick="removeItem()">remove item</button>
+    </div>
+    </form>
+  </div>
+  </div>
+  </div>
+
+  <!--Upper Footer-->
+  <div class="upper-footer">
+    <font size="3">
+      <nav>
+        <a style="color:#ffffff; text-decoration:none" href="terms">Terms of Use | </a>
+        <a style="color:#ffffff; text-decoration:none" href="privacy">Privacy Policy | </a>
+        <a style="color:#ffffff; text-decoration:none" target="_blank"
+          href="images/ratesofduty.pdf">Bahamas
+          Duty Guide | </a>
+        <a style="color:#ffffff; text-decoration:none" target="_blank"
+          href="https://bahamas.prod.3ceonline.com/bsgov">Tariff Code</a>
+      </nav>
+    </font>
+  </div>
+
+
+  <!--Footer-->
+  <div class="footer">
+    <font size="2">
+      <p style="color:lightgray;">&copy Know Da Price 2019</p>
+    </font>
+  </div>
+
+</body>
+
+</html>

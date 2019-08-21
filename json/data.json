@@ -1,0 +1,1771 @@
+{
+    "alcohol": {
+        "text": "Alcohol",
+        "sub_categories": {
+            "beers": {
+                "text": "Beers",
+                "price": 10
+            },
+            "rum": {
+                "text": "Rum",
+                "price": 15
+            },
+            "wine": {
+                "text": "Wine",
+                "price": 50
+            }
+        }
+    },
+    "arts_craft_and_sewing": {
+        "text": "Arts Craft and Sewing",
+        "sub_categories": {
+            "artwork_original": {
+                "text": "Artwork (Original)",
+                "price": 10
+            },
+            "crayons": {
+                "text": "Crayons",
+                "price": 10
+            },
+            "fabrics": {
+                "text": "Fabrics",
+                "price": 30
+            },
+            "flags_of_nations_and_other_flags": {
+                "text": "Flags of Nation & Other Flags",
+                "price": 25
+            },
+            "glitter": {
+                "text": "Glitter",
+                "price": 45
+            },
+            "newpapers": {
+                "text": "Newpapers",
+                "price": 5
+            },
+            "paint_artist": {
+                "text": "Paint Artist",
+                "price": 25
+            },
+            "paint_other": {
+                "text": "Paint Other",
+                "price": 45
+            },
+            "sewing_machine": {
+                "text": "Sewing Machine",
+                "price": 5
+            },
+            "thread": {
+                "text": "Thread",
+                "price": 10
+            }
+        }
+    },
+    "bags_and_luggage": {
+        "text": "Bags and Luggage",
+        "sub_categories": {
+            "bags_paper": {
+                "text": "Bags (Paper)",
+                "price": 45
+            },
+            "bags_plastic_shopping_degradable": {
+                "text": "Bags (Plastic Shopping - Degradable)",
+                "price": 5
+            },
+            "bags_plastic_shopping": {
+                "text": "Bags (Plastic Shopping)",
+                "price": 60
+            },
+            "bags_school": {
+                "text": "Bags (School)",
+                "price": 0
+            },
+            "bags_urinary": {
+                "text": "Bags (Urinary)",
+                "price": 0
+            }
+        }
+    },
+    "beauty": {
+        "text": "Beauty",
+        "sub_categories": {
+            "cologne": {
+                "text": "Cologne",
+                "price": 0
+            },
+            "curling_iron": {
+                "text": "Curling Iron",
+                "price": 35
+            },
+            "hair_artificial_human": {
+                "text": "Hair (Artificial/Human)",
+                "price": 45
+            },
+            "hair_conditioner": {
+                "text": "Hair Conditioner",
+                "price": 20
+            },
+            "hair_dryers)": {
+                "text": "Hair Dryers",
+                "price": 35
+            },
+            "hair_dye_rinse": {
+                "text": "Hair Dye/Rinse",
+                "price": 20
+            },
+            "hair_preparations": {
+                "text": "Hair Preparations",
+                "price": 20
+            },
+            "make_up": {
+                "text": "Make Up",
+                "price": 35
+            },
+            "perfumes": {
+                "text": "Perfumes",
+                "price": 0
+            },
+            "wigs": {
+                "text": "Wigs",
+                "price": 45
+            }
+        }
+    },
+    "bed_and_bath": {
+        "text": "Bed and Bath",
+        "sub_categories": {
+            "bathroom_fixtures_basins_tubs": {
+                "text": "Bathroom Fixtures (Basins, Tubs)",
+                "price": 25
+            },
+            "bed_sheets_linen": {
+                "text": "Bed Sheets (Linen)",
+                "price": 30
+            },
+            "comforters_bed": {
+                "text": "Comforters (Bed)",
+                "price": 45
+            },
+            "curtains": {
+                "text": "Curtains",
+                "price": 30
+            },
+            "drapes": {
+                "text": "Drapes",
+                "price": 30
+            },
+            "hangers_plastic": {
+                "text": "Hangers (Plastic)",
+                "price": 45
+            },
+            "hangers_wooden": {
+                "text": "Hangers (Wooden)",
+                "price": 35
+            },
+            "humidifiers": {
+                "text": "Humidifiers",
+                "price": 0
+            },
+            "mattress": {
+                "text": "Mattress",
+                "price": 60
+            },
+            "mattress_air": {
+                "text": "Mattress (Air)",
+                "price": 45
+            },
+            "pads_bed": {
+                "text": "Pads (Bed)",
+                "price": 0
+            },
+            "paper_toilet": {
+                "text": "Paper (Toilet)",
+                "price": 25
+            },
+            "pillows": {
+                "text": "Pillows",
+                "price": 45
+            },
+            "sheets_linen": {
+                "text": "Sheets Linen",
+                "price": 30
+            },
+            "shower_curtain_fabric": {
+                "text": "Shower Curtain (Fabric)",
+                "price": 30
+            },
+            "shower_curtain_plastic": {
+                "text": "Shower Curtain (Plastic)",
+                "price": 45
+            },
+            "soaps": {
+                "text": "Soaps",
+                "price": 0
+            },
+            "towels": {
+                "text": "Towels",
+                "price": 30
+            }
+        }
+    },
+    "beverage": {
+        "text": "Beverage",
+        "sub_categories": {
+            "all_coffee": {
+                "text": "All Coffee",
+                "price": 0
+            },
+            "energy_drinks": {
+                "text": "Energy Drinks",
+                "price": 30
+            },
+            "gatorade": {
+                "text": "Gatorade",
+                "price": 30
+            },
+            "juice_100": {
+                "text": "Juice 100%",
+                "price": 0
+            },
+            "malt_beverages": {
+                "text": "Malt Beverages",
+                "price": 55
+            },
+            "tea": {
+                "text": "Tea",
+                "price": 0
+            }
+        }
+    },
+    "business_stationery": {
+        "text": "Business Stationery",
+        "sub_categories": {
+            "books_coloring": {
+                "text": "Books (Coloring)",
+                "price": 0
+            },
+            "books_exercise": {
+                "text": "Books (Exercise)",
+                "price": 0
+            },
+            "books_reading": {
+                "text": "Books (Reading)",
+                "price": 0
+            },
+            "books_receipt": {
+                "text": "Books (Receipt)",
+                "price": 45
+            },
+            "brochures_advertising": {
+                "text": "Brochures (Advertising)",
+                "price": 40
+            },
+            "brochures_educational": {
+                "text": "Brochures (Educational)",
+                "price": 30
+            },
+            "business_cards_blanks": {
+                "text": "Business Cards (Blanks)",
+                "price": 40
+            },
+            "business_cards_printed": {
+                "text": "Business Cards (Printed)",
+                "price": 60
+            },
+            "catalogs": {
+                "text": "Catalogs",
+                "price": 0
+            },
+            "envelopes": {
+                "text": "Envelopes",
+                "price": 25
+            },
+            "novelties": {
+                "text": "Novelties",
+                "price": 45
+            }
+        }
+    },
+    "electronics": {
+        "text": "Electronics",
+        "sub_categories": {
+            "amazon_echo": {
+                "text": "Amazon Echo",
+                "price": 10
+            },
+            "amazon_fire_sticks": {
+                "text": "Amazon Fire Sticks",
+                "price": 10
+            },
+            "amplifier": {
+                "text": "Amplifier",
+                "price": 45
+            },
+            "android_apple_tv_boxes": {
+                "text": "Android/Apple TV boxes",
+                "price": 10
+            },
+            "answering_machine": {
+                "text": "Answering Machine",
+                "price": 45
+            },
+            "batteries_primary_cell": {
+                "text": "Batteries (Primary Cell)",
+                "price": 25
+            },
+            "camcorder": {
+                "text": "Camcorder",
+                "price": 0
+            },
+            "camera_digital": {
+                "text": "Camera (Digital)",
+                "price": 0
+            },
+            "camera_surveillance": {
+                "text": "Camera (Surveillance)",
+                "price": 0
+            },
+            "camera_camera_video": {
+                "text": "Camera/Camera Video",
+                "price": 0
+            },
+            "cd_blank": {
+                "text": "CD (Blank)",
+                "price": 10
+            },
+            "cd_players": {
+                "text": "CD Players",
+                "price": 35
+            },
+            "cd_with_music_movies": {
+                "text": "CD with Music/Movies",
+                "price": 10
+            },
+            "computer_modem": {
+                "text": "Computer Modem",
+                "price": 10
+            },
+            "computer_monitor": {
+                "text": "Computer Monitor",
+                "price": 0
+            },
+            "computer_multi_function_printer": {
+                "text": "Computer Multi-function Printer",
+                "price": 5
+            },
+            "computer_printer": {
+                "text": "Computer Printer",
+                "price": 0
+            },
+            "computer_router": {
+                "text": "Computer Router",
+                "price": 10
+            },
+            "computer_scanner": {
+                "text": "Computer Scanner",
+                "price": 5
+            },
+            "computer_software": {
+                "text": "Computer Software",
+                "price": 0
+            },
+            "computers": {
+                "text": "Computers",
+                "price": 0
+            },
+            "drones_with_camera": {
+                "text": "Drones with camera",
+                "price": 10
+            },
+            "dvd_with_movies_music_blank": {
+                "text": "DVD (with Movies/Music/Blank)",
+                "price": 10
+            },
+            "dvd_players": {
+                "text": "DVD Players",
+                "price": 35
+            },
+            "e_book_reader_kindle_nook_sony_reader": {
+                "text": "E-Book Reader (Kindle/Nook/Sony Reader)",
+                "price": 0
+            },
+            "earphones": {
+                "text": "Earphones",
+                "price": 45
+            },
+            "fax_machines": {
+                "text": "Fax Machines",
+                "price": 10
+            },
+            "game_boy_video_games": {
+                "text": "Game Boy (Video Games)",
+                "price": 45
+            },
+            "games_on_disc": {
+                "text": "Games (On Disc)",
+                "price": 10
+            },
+            "headphones": {
+                "text": "Headphones",
+                "price": 45
+            },
+            "ipad": {
+                "text": "iPad",
+                "price": 0
+            },
+            "ipod": {
+                "text": "iPod",
+                "price": 35
+            },
+            "karaoke_machine": {
+                "text": "Karaoke Machine",
+                "price": 35
+            },
+            "keyboard": {
+                "text": "Keyboard",
+                "price": 10
+            },
+            "microphone": {
+                "text": "Microphone",
+                "price": 35
+            },
+            "mp3_player": {
+                "text": "MP3 Player",
+                "price": 35
+            },
+            "remote_controls": {
+                "text": "Remote Controls",
+                "price": 45
+            },
+            "telephone_land_cordless": {
+                "text": "Telephone (Land/Cordless)",
+                "price": 10
+            },
+            "telephones_cellular": {
+                "text": "Telephones (Cellular)",
+                "price": 10
+            },
+            "television": {
+                "text": "Television",
+                "price": 35
+            },
+            "video_game_machine": {
+                "text": "Video Game Machine",
+                "price": 45
+            },
+            "walkie_talkie": {
+                "text": "Walkie-Talkie",
+                "price": 45
+            },
+            "radio": {
+                "text": "Radio",
+                "price": 35
+            }
+        }
+    },
+    "fashion_accessories": {
+        "text": "Fashion Accessories",
+        "sub_categories": {
+            "handbags": {
+                "text": "Handbags",
+                "price": 0
+            },
+            "hats": {
+                "text": "Hats",
+                "price": 45
+            },
+            "jewelry_costume": {
+                "text": "Jewelry (Costume)",
+                "price": 0
+            },
+            "jewelry_gold_silver_platinum": {
+                "text": "Jewelry (Gold / Silver / Platinum)",
+                "price": 0
+            },
+            "neck_ties": {
+                "text": "Neck Ties",
+                "price": 20
+            },
+            "sunglasses_other": {
+                "text": "Sunglasses (Other)",
+                "price": 0
+            },
+            "sunglasses_prescription": {
+                "text": "Sunglasses (Prescription)",
+                "price": 0
+            },
+            "umbrella": {
+                "text": "Umbrella",
+                "price": 45
+            },
+            "wallets": {
+                "text": "Wallets",
+                "price": 0
+            },
+            "watches": {
+                "text": "Watches",
+                "price": 0
+            }
+        }
+    },
+    "food": {
+        "text": "Food",
+        "sub_categories": {
+            "beef_ham_turkey_sliced_unsliced": {
+                "text": "Beef, Ham & Turkey Sliced/Unsliced",
+                "price": 0
+            },
+            "other_chips": {
+                "text": "Other Chips",
+                "price": 20
+            },
+            "other_including_mixtures_sliced_unsliced": {
+                "text": "Other Including Mixtures Sliced/Unsliced",
+                "price": 0
+            },
+            "baking_powder": {
+                "text": "Baking Powder",
+                "price": 5
+            },
+            "barbeque_sauce": {
+                "text": "Barbeque Sauce",
+                "price": 5
+            },
+            "biscuits": {
+                "text": "Biscuits",
+                "price": 20
+            },
+            "black_pepper": {
+                "text": "Black Pepper",
+                "price": 5
+            },
+            "bread": {
+                "text": "Bread",
+                "price": 0
+            },
+            "cakes_pastries_biscuits": {
+                "text": "Cakes, Pastries, Biscuits",
+                "price": 20
+            },
+            "candies_hard": {
+                "text": "Candies (Hard)",
+                "price": 60
+            },
+            "candies_soft": {
+                "text": "Candies (Soft)",
+                "price": 30
+            },
+            "cereal": {
+                "text": "Cereal",
+                "price": 0
+            },
+            "cheese": {
+                "text": "Cheese",
+                "price": 5
+            },
+            "chicken": {
+                "text": "Chicken",
+                "price": 30
+            },
+            "chocolates": {
+                "text": "Chocolates",
+                "price": 40
+            },
+            "coloring_food": {
+                "text": "Coloring (Food)",
+                "price": 45
+            },
+            "condensed_milk": {
+                "text": "Condensed Milk",
+                "price": 0
+            },
+            "corned_beef_canned": {
+                "text": "Corned Beef (Canned)",
+                "price": 0
+            },
+            "cream": {
+                "text": "Cream",
+                "price": 0
+            },
+            "dried_mixed_fruit_packed": {
+                "text": "Dried Mixed Fruit (Packed)",
+                "price": 35
+            },
+            "dried_mixed_fruits_unpacked_20lb": {
+                "text": "Dried Mixed Fruits (Unpacked— >20lb)",
+                "price": 5
+            },
+            "fresh_fruits": {
+                "text": "Fresh Fruits",
+                "price": 0
+            },
+            "fruit_cocktail": {
+                "text": "Fruit Cocktail",
+                "price": 0
+            },
+            "fruit_snacks": {
+                "text": "Fruit Snacks",
+                "price": 20
+            },
+            "grits": {
+                "text": "Grits",
+                "price": 0
+            },
+            "honey_natural": {
+                "text": "Honey (Natural)",
+                "price": 0
+            },
+            "ice_cream": {
+                "text": "Ice Cream",
+                "price": 20
+            },
+            "ice_cream_popsicles": {
+                "text": "Ice cream & popsicles",
+                "price": 20
+            },
+            "jams_jellies_marmalade_etc": {
+                "text": "Jams, Jellies, Marmalade etc",
+                "price": 0
+            },
+            "ketchup": {
+                "text": "Ketchup",
+                "price": 0
+            },
+            "lime": {
+                "text": "Lime",
+                "price": 5
+            },
+            "noodles": {
+                "text": "noodles",
+                "price": 0
+            },
+            "nuts_commercially_packaged_20lbs": {
+                "text": "Nuts (Commercially Packaged — >20lbs)",
+                "price": 5
+            },
+            "nuts_individually_packaged": {
+                "text": "Nuts (Individually Packaged)",
+                "price": 25
+            },
+            "oil_coconut_for_cooking": {
+                "text": "Oil (Coconut for cooking)",
+                "price": 0
+            },
+            "oil_virgin_sesame_soybean": {
+                "text": "Oil (Virgin/Sesame/Soybean)",
+                "price": 0
+            },
+            "pasta": {
+                "text": "Pasta",
+                "price": 0
+            },
+            "peanut_butter": {
+                "text": "Peanut Butter",
+                "price": 0
+            },
+            "pineapples": {
+                "text": "Pineapples",
+                "price": 40
+            },
+            "potato_chips": {
+                "text": "Potato Chips",
+                "price": 25
+            },
+            "prepared_chicken_turkey_ham_beef": {
+                "text": "Prepared Chicken, Turkey, - Ham, Beef",
+                "price": 20
+            },
+            "pudding_jello_pudding": {
+                "text": "Pudding / Jello-Pudding",
+                "price": 20
+            },
+            "Rice": {
+                "text": "rice",
+                "price": 0
+            },
+            "salad_dressing": {
+                "text": "Salad Dressing",
+                "price": 5
+            },
+            "salmon_fillet": {
+                "text": "Salmon Fillet",
+                "price": 0
+            },
+            "sardines_canned": {
+                "text": "Sardines (Canned)",
+                "price": 0
+            },
+            "sausage": {
+                "text": "Sausage",
+                "price": 0
+            },
+            "seasonings_condiments": {
+                "text": "Seasonings (Condiments)",
+                "price": 5
+            },
+            "shrimp": {
+                "text": "Shrimp",
+                "price": 0
+            },
+            "soup_canned": {
+                "text": "Soup (Canned)",
+                "price": 0
+            },
+            "spice_buns": {
+                "text": "Spice Buns",
+                "price": 20
+            },
+            "tuna_canned": {
+                "text": "Tuna (Canned)",
+                "price": 0
+            },
+            "turkey": {
+                "text": "Turkey",
+                "price": 5
+            },
+            "turkey_deli": {
+                "text": "Turkey: Deli",
+                "price": 0
+            },
+            "yeast": {
+                "text": "Yeast",
+                "price": 5
+            },
+            "yogurt": {
+                "text": "Yogurt",
+                "price": 0
+            },
+            "all_flours": {
+                "text": "All Flours",
+                "price": 0
+            },
+            "all_sugars_and_syrups": {
+                "text": "All Sugars and Syrups",
+                "price": 0
+            },
+            "almond_butter": {
+                "text": "Almond Butter",
+                "price": 0
+            }
+        }
+    },
+    "health": {
+        "text": "Health",
+        "sub_categories": {
+            "bandages": {
+                "text": "Bandages",
+                "price": 0
+            },
+            "blood_glucose_test_strip": {
+                "text": "Blood Glucose Test Strip",
+                "price": 0
+            },
+            "blood_pressure_monitor_meter": {
+                "text": "Blood Pressure Monitor/Meter",
+                "price": 0
+            },
+            "catheters": {
+                "text": "Catheters",
+                "price": 0
+            },
+            "cigarettes": {
+                "text": "Cigarettes",
+                "price": 0.15,
+                "_comment": "per stick"
+            },
+            "cigarettes_electronic": {
+                "text": "Cigarettes (Electronic)",
+                "price": 45
+            },
+            "cigarillos_etc_other": {
+                "text": "Cigarillos, etc (Other)",
+                "price": 0.25,
+                "_comment": "per stick"
+            },
+            "cigars": {
+                "text": "Cigars",
+                "price": 0.50,
+                "_comment": "per stick + 220%"
+            },
+            "condoms": {
+                "text": "Condoms",
+                "price": 0
+            },
+            "contact_lens": {
+                "text": "Contact Lens",
+                "price": 0
+            },
+            "cough_drops": {
+                "text": "Cough Drops",
+                "price": 0
+            },
+            "defibrillator": {
+                "text": "Defibrillator",
+                "price": 0
+            },
+            "deodorant": {
+                "text": "Deodorant",
+                "price": 0
+            },
+            "eye_glasses_prescription": {
+                "text": "Eye Glasses (Prescription)",
+                "price": 0
+            },
+            "floss_dental": {
+                "text": "Floss (Dental)",
+                "price": 5
+            },
+            "gloves_plastic_rubber": {
+                "text": "Gloves (Plastic, Rubber)",
+                "price": 45
+            },
+            "gum_incl_nicotene": {
+                "text": "Gum incl. Nicotene",
+                "price": 30
+            },
+            "hand_sanitizers": {
+                "text": "Hand Sanitizers",
+                "price": 45
+            },
+            "hearing_aids": {
+                "text": "Hearing Aids",
+                "price": 0
+            },
+            "heart_monitor": {
+                "text": "Heart Monitor",
+                "price": 0
+            },
+            "hiv_test_strips": {
+                "text": "HIV Test Strips",
+                "price": 0
+            },
+            "insulin": {
+                "text": "Insulin",
+                "price": 0
+            },
+            "kidney_machines_and_parts": {
+                "text": "Kidney Machines and Parts",
+                "price": 0
+            },
+            "mouthwash": {
+                "text": "Mouthwash",
+                "price": 5
+            },
+            "nicotene_patches": {
+                "text": "Nicotene Patches",
+                "price": 0
+            },
+            "oil_body": {
+                "text": "Oil (Body)",
+                "price": 45
+            },
+            "razor_blades": {
+                "text": "Razor Blades",
+                "price": 25
+            },
+            "sanitary_napkins_female": {
+                "text": "Sanitary Napkins (Female)",
+                "price": 0
+            },
+            "shampoo": {
+                "text": "Shampoo",
+                "price": 20
+            },
+            "tooth_brush_tooth_paste": {
+                "text": "Tooth Brush & Tooth Paste",
+                "price": 0
+            },
+            "vitamins": {
+                "text": "Vitamins",
+                "price": 5
+            },
+            "gloves_surgical": {
+                "text": "Gloves (Surgical)",
+                "price": 10
+            }
+        }
+    },
+    "home": {
+        "text": "Home",
+        "sub_categories": {
+            "all_doors": {
+                "text": "All Doors",
+                "price": 0
+            },
+            "blocks_concrete": {
+                "text": "Blocks (Concrete)",
+                "price": 45
+            },
+            "drywall": {
+                "text": "Drywall",
+                "price": 0
+            },
+            "durock": {
+                "text": "Durock",
+                "price": 0
+            },
+            "flooring_wood_parquet": {
+                "text": "Flooring (Wood Parquet)",
+                "price": 25
+            },
+            "hardi_plank_board": {
+                "text": "Hardi Plank/Board",
+                "price": 0
+            },
+            "hurricane_shutters_wood": {
+                "text": "Hurricane Shutters (Wood)",
+                "price": 5
+            },
+            "insulated_steel_panels": {
+                "text": "Insulated Steel Panels",
+                "price": 25
+            },
+            "inverters_for_solar_panels": {
+                "text": "Inverters for Solar panels",
+                "price": 0
+            },
+            "lumber": {
+                "text": "Lumber",
+                "price": 0
+            },
+            "nails_building": {
+                "text": "Nails (Building)",
+                "price": 0
+            },
+            "pipes_pvc": {
+                "text": "Pipes (PVC)",
+                "price": 35
+            },
+            "plywood_free_point_of_sale_system": {
+                "text": "Plywood Free Point Of Sale System",
+                "price": 0
+            },
+            "sheet_rock": {
+                "text": "Sheet Rock",
+                "price": 0
+            },
+            "tiles": {
+                "text": "Tiles",
+                "price": 35
+            }
+        }
+    },
+    "household_appliance": {
+        "text": "Household Appliance",
+        "sub_categories": {
+            "aluminum_double_glazed_or_vacuum_seal": {
+                "text": "Aluminum double glazed or vacuum seal",
+                "price": 25
+            },
+            "other_aluminum": {
+                "text": "Other (Aluminum)",
+                "price": 35
+            },
+            "steel_windows_all": {
+                "text": "Steel Windows (All)",
+                "price": 0
+            },
+            "vinyl_double_glazed_or_vacuum_sealed": {
+                "text": "Vinyl double glazed or vacuum Sealed",
+                "price": 5
+            },
+            "wooden_windows": {
+                "text": "Wooden Windows",
+                "price": 25
+            },
+            "air_condition": {
+                "text": "Air Condition",
+                "price": 40
+            },
+            "air_condition_solar": {
+                "text": "Air Condition (Solar)",
+                "price": 0
+            },
+            "awnings": {
+                "text": "Awnings",
+                "price": 45
+            },
+            "blenders": {
+                "text": "Blenders",
+                "price": 35
+            },
+            "blinds_plastic": {
+                "text": "Blinds (Plastic)",
+                "price": 45
+            },
+            "blinds_wood": {
+                "text": "Blinds (Wood)",
+                "price": 30
+            },
+            "cabinets_wooden": {
+                "text": "Cabinets (Wooden)",
+                "price": 45
+            },
+            "ceiling_fans": {
+                "text": "Ceiling Fans",
+                "price": 0
+            },
+            "coffee_makers": {
+                "text": "Coffee Makers",
+                "price": 35
+            },
+            "dryer": {
+                "text": "Dryer",
+                "price": 5
+            },
+            "fan": {
+                "text": "Fan",
+                "price": 0
+            },
+            "freezer_household_type": {
+                "text": "Freezer (Household type)",
+                "price": 5
+            },
+            "fryer_non_electric": {
+                "text": "Fryer (Non Electric)",
+                "price": 5
+            },
+            "heater_tankless_water": {
+                "text": "Heater (Tankless Water)",
+                "price": 5
+            },
+            "ice_water_shield": {
+                "text": "Ice & water shield",
+                "price": 0
+            },
+            "ice_cream_machine": {
+                "text": "Ice Cream Machine",
+                "price": 45
+            },
+            "lavatory_seats_and_covers_fittings": {
+                "text": "Lavatory seats and covers & fittings",
+                "price": 25
+            },
+            "microwave": {
+                "text": "Microwave",
+                "price": 35
+            },
+            "oven_electric": {
+                "text": "Oven (Electric)",
+                "price": 35
+            },
+            "oven_gas": {
+                "text": "Oven (Gas)",
+                "price": 5
+            },
+            "pool_table": {
+                "text": "Pool Table",
+                "price": 60
+            },
+            "refrigerator_energy_efficient": {
+                "text": "Refrigerator (Energy Efficient)",
+                "price": 5
+            },
+            "refrigerator_regular": {
+                "text": "Refrigerator (Regular)",
+                "price": 5
+            },
+            "satellite": {
+                "text": "Satellite",
+                "price": 45
+            },
+            "stove_gas": {
+                "text": "Stove (Gas)",
+                "price": 5
+            },
+            "stoves_electric": {
+                "text": "Stoves (Electric)",
+                "price": 35
+            },
+            "supplements": {
+                "text": "Supplements",
+                "price": 0
+            },
+            "washer_energy_efficient": {
+                "text": "Washer (Energy Efficient)",
+                "price": 5
+            },
+            "washer_regular": {
+                "text": "Washer (Regular)",
+                "price": 5
+            },
+            "water_heater_gas": {
+                "text": "Water Heater (Gas)",
+                "price": 25
+            },
+            "water_heaters_solar": {
+                "text": "Water Heaters (Solar)",
+                "price": 5
+            },
+            "water_pump_well": {
+                "text": "Water Pump (Well)",
+                "price": 45
+            }
+        }
+    },
+    "household_essential": {
+        "text": "Household Essential",
+        "sub_categories": {
+            "air_fresheners_canned_spray": {
+                "text": "Air Fresheners (Canned/Spray)",
+                "price": 45
+            },
+            "all_detergent_washing": {
+                "text": "All Detergent (Washing)",
+                "price": 0
+            },
+            "aluminum_foil": {
+                "text": "Aluminum Foil",
+                "price": 30
+            },
+            "bleach": {
+                "text": "Bleach",
+                "price": 60
+            },
+            "broom": {
+                "text": "Broom",
+                "price": 45
+            },
+            "can_opener_electric": {
+                "text": "Can Opener (Electric)",
+                "price": 45
+            },
+            "can_opener_portable": {
+                "text": "Can Opener (Portable)",
+                "price": 25
+            },
+            "candles": {
+                "text": "Candles",
+                "price": 45
+            },
+            "carpet": {
+                "text": "Carpet",
+                "price": 45
+            },
+            "chafing_pans_stainless_steel": {
+                "text": "Chafing Pans (Stainless Steel)",
+                "price": 45
+            },
+            "clock_time__payroll_wall": {
+                "text": "Clock (Time - Payroll & Wall)",
+                "price": 45
+            },
+            "dishes_ceramic": {
+                "text": "Dishes (Ceramic)",
+                "price": 45
+            },
+            "dishes_porcelain_china": {
+                "text": "Dishes (Porcelain/China)",
+                "price": 5
+            },
+            "fabric_softener": {
+                "text": "Fabric Softener",
+                "price": 45
+            },
+            "fabric_softner": {
+                "text": "Fabric Softner",
+                "price": 45
+            },
+            "flashlights": {
+                "text": "Flashlights",
+                "price": 45
+            },
+            "flatware_knife_fork_spoon": {
+                "text": "Flatware (Knife/Fork/Spoon)",
+                "price": 25
+            },
+            "furniture": {
+                "text": "Furniture",
+                "price": 45
+            },
+            "garbage_bags": {
+                "text": "Garbage bags",
+                "price": 45
+            },
+            "glassware": {
+                "text": "Glassware",
+                "price": 45
+            },
+            "glassware_crystal": {
+                "text": "Glassware (Crystal)",
+                "price": 5
+            },
+            "hand_towels_paper": {
+                "text": "Hand Towels (Paper)",
+                "price": 25
+            },
+            "iron": {
+                "text": "Iron",
+                "price": 35
+            },
+            "keys_locks": {
+                "text": "Keys & Locks",
+                "price": 20
+            },
+            "mirrors_unframed": {
+                "text": "Mirrors (Unframed)",
+                "price": 45
+            },
+            "mop": {
+                "text": "Mop",
+                "price": 45
+            },
+            "padlocks": {
+                "text": "Padlocks",
+                "price": 20
+            },
+            "plastic_bags_degradable": {
+                "text": "Plastic Bags (Degradable)",
+                "price": 5
+            },
+            "pots_potting_soil": {
+                "text": "Pots & Potting Soil",
+                "price": 25
+            },
+            "rugs": {
+                "text": "Rugs",
+                "price": 45
+            },
+            "sanitary_cups_plates_paper_plastic": {
+                "text": "Sanitary (Cups/Plates - Paper/Plastic)",
+                "price": 45
+            },
+            "tableware_kitchenware_bio_degradable": {
+                "text": "Tableware, Kitchenware (Bio-degradable)",
+                "price": 5
+            },
+            "toaster": {
+                "text": "Toaster",
+                "price": 35
+            },
+            "vacuum_cleaner": {
+                "text": "Vacuum Cleaner",
+                "price": 45
+            }
+        }
+    },
+    "kids_baby": {
+        "text": "Kids and Baby",
+        "sub_categories": {
+            "baby_toddler_clothing_size_6": {
+                "text": "Baby & Toddler Clothing (<size 6)",
+                "price": 0
+            },
+            "baby_bottle": {
+                "text": "Baby Bottle",
+                "price": 0
+            },
+            "baby_bottle_and_bottle_nipples": {
+                "text": "Baby Bottle and Bottle Nipples",
+                "price": 0
+            },
+            "baby_car_seat": {
+                "text": "Baby Car Seat",
+                "price": 0
+            },
+            "baby_cribs_and_baby_playpen": {
+                "text": "Baby Cribs and Baby Playpen",
+                "price": 0
+            },
+            "baby_high_chair": {
+                "text": "Baby High Chair",
+                "price": 0
+            },
+            "baby_pampers": {
+                "text": "Baby Pampers",
+                "price": 0
+            },
+            "baby_stroller": {
+                "text": "Baby Stroller",
+                "price": 0
+            },
+            "baby_wipes": {
+                "text": "Baby Wipes",
+                "price": 0
+            },
+            "dolls": {
+                "text": "Dolls",
+                "price": 20
+            },
+            "incubators": {
+                "text": "Incubators",
+                "price": 0
+            },
+            "toys": {
+                "text": "Toys",
+                "price": 0
+            }
+        }
+    },
+    "office_supplies": {
+        "text": "Office Supplies",
+        "sub_categories": {
+            "calculator": {
+                "text": "Calculator",
+                "price": 5
+            },
+            "calendars": {
+                "text": "Calendars",
+                "price": 60
+            },
+            "copy_paper_multi_purpose": {
+                "text": "Copy Paper (Multi-purpose)",
+                "price": 5
+            },
+            "flyers_advertising": {
+                "text": "Flyers (advertising)",
+                "price": 40
+            },
+            "fountain_pens": {
+                "text": "Fountain Pens",
+                "price": 0
+            },
+            "glue": {
+                "text": "Glue",
+                "price": 45
+            },
+            "ink_computer": {
+                "text": "Ink (Computer)",
+                "price": 5
+            },
+            "labels_printed": {
+                "text": "Labels (printed)",
+                "price": 45
+            },
+            "magic_jack": {
+                "text": "Magic Jack",
+                "price": 10
+            },
+            "paper_printing_multipurpose": {
+                "text": "Paper (Printing/Multipurpose)",
+                "price": 5
+            },
+            "pencils": {
+                "text": "Pencils",
+                "price": 10
+            },
+            "pens_other": {
+                "text": "Pens (Other)",
+                "price": 10
+            },
+            "plastic_wares": {
+                "text": "Plastic Wares",
+                "price": 45
+            },
+            "postcards_other": {
+                "text": "Postcards (Other)",
+                "price": 45
+            },
+            "postcards_w_bahamian_scenes": {
+                "text": "Postcards (w/ Bahamian Scenes)",
+                "price": 25
+            },
+            "posters": {
+                "text": "Posters",
+                "price": 40
+            },
+            "printer_multifunction": {
+                "text": "Printer Multifunction",
+                "price": 5
+            },
+            "ruler_other": {
+                "text": "Ruler (Other)",
+                "price": 45
+            },
+            "rulers_school": {
+                "text": "Rules (School)",
+                "price": 10
+            },
+            "ups_system": {
+                "text": "UPS System",
+                "price": 45
+            },
+            "visual_teaching_aids": {
+                "text": "Visual Teaching Aids",
+                "price": 0
+            }
+        }
+    },
+    "others": {
+        "text": "Others",
+        "sub_categories": {
+            "cards_atm": {
+                "text": "Cards (ATM)",
+                "price": 45
+            },
+            "cash_register": {
+                "text": "Cash Register",
+                "price": 45
+            },
+            "casket_metal": {
+                "text": "Casket (Metal)",
+                "price": 55
+            },
+            "mannequins": {
+                "text": "Mannequins",
+                "price": 45
+            }
+        }
+    },
+    "patio_and_garden": {
+        "text": "Patio and Garden",
+        "sub_categories": {
+            "flowers_artificial": {
+                "text": "Flowers (Artificial)",
+                "price": 45
+            },
+            "flowers_fresh": {
+                "text": "Flowers Fresh",
+                "price": 35
+            },
+            "insecticides": {
+                "text": "Insecticides",
+                "price": 0
+            },
+            "pesticides": {
+                "text": "Pesticides",
+                "price": 0
+            },
+            "rodenticides": {
+                "text": "Rodenticides",
+                "price": 0
+            }
+        }
+    },
+    "pets": {
+        "text": "Pets",
+        "sub_categories": {
+            "flowers_artificial": {
+                "text": "All Animal Food",
+                "price": 0
+            }
+        }
+    },
+    "security": {
+        "text": "Security",
+        "sub_categories": {
+            "alarm_system": {
+                "text": "Alarm System",
+                "price": 0
+            },
+            "car_alarm": {
+                "text": "Car Alarm",
+                "price": 45
+            },
+            "surveillance_security_system": {
+                "text": "Surveillance Security System",
+                "price": 0
+            },
+            "pesticides": {
+                "text": "Pesticides",
+                "price": 0
+            },
+            "rodenticides": {
+                "text": "Rodenticides",
+                "price": 0
+            }
+        }
+    },
+    "shoes_and_apparels": {
+        "text": "Shoes and Apparels",
+        "sub_categories": {
+            "beadies": {
+                "text": "Beadies",
+                "price": 200
+            },
+            "belts_leather_other": {
+                "text": "Belts (Leather/Other)",
+                "price": 20
+            },
+            "bras": {
+                "text": "Bras",
+                "price": 20
+            },
+            "caps_graduation_nurse": {
+                "text": "Caps (Graduation/Nurse)",
+                "price": 45
+            },
+            "clothing_outer_wear": {
+                "text": "Clothing (Outer Wear)",
+                "price": 20
+            },
+            "clothing_underwear": {
+                "text": "Clothing (Underwear)",
+                "price": 20
+            },
+            "clothing_used": {
+                "text": "Clothing (Used)",
+                "price": 20
+            },
+            "costumes_of_textile": {
+                "text": "Costumes of Textile",
+                "price": 20
+            },
+            "costumes_other_than_textile": {
+                "text": "Costumes other than Textile",
+                "price": 45
+            },
+            "disposable_underwear": {
+                "text": "Disposable Underwear",
+                "price": 0
+            },
+            "gowns_graduation": {
+                "text": "Gowns (Graduation)",
+                "price": 20
+            },
+            "other_wearing_apparel": {
+                "text": "Other Wearing Apparel",
+                "price": 20
+            },
+            "pantyhose": {
+                "text": "Pantyhose",
+                "price": 20
+            },
+            "Sandals": {
+                "text": "Sandals",
+                "price": 20
+            },
+            "shoes_slippers": {
+                "text": "Shoes/Slippers",
+                "price": 20
+            },
+            "socks": {
+                "text": "Socks",
+                "price": 20
+            },
+            "stockings": {
+                "text": "Stockings",
+                "price": 20
+            },
+            "t_shirts_no_collar": {
+                "text": "T-Shirts: No Collar",
+                "price": 20
+            },
+            "t_shirts_with_collar": {
+                "text": "T-Shirts: With Collar",
+                "price": 20
+            },
+            "tennis": {
+                "text": "Teenis",
+                "price": 20
+            }
+        }
+    },
+    "sports_and_outdoors": {
+        "text": "Sports and Outdoors",
+        "sub_categories": {
+            "asphalt_road_surfacing": {
+                "text": "Asphalt (Road Surfacing)",
+                "price": 45
+            },
+            "cement": {
+                "text": "Cement",
+                "price": 0
+            },
+            "degradable_bags": {
+                "text": "Degradable bags",
+                "price": 5
+            },
+            "exercise_machines": {
+                "text": "Exercise Machines",
+                "price": 20
+            },
+            "fertilizers": {
+                "text": "Fertilizers",
+                "price": 0
+            },
+            "fish_bait": {
+                "text": "Fish Bait",
+                "price": 0
+            },
+            "life_jackets": {
+                "text": "Life Jackets",
+                "price": 0
+            },
+            "shrimp_bait": {
+                "text": "Shrimp Bait",
+                "price": 0
+            }
+        }
+    },
+    "tools": {
+        "text": "Sports and Outdoors",
+        "sub_categories": {
+            "compressor_air": {
+                "text": "Compressor (Air)",
+                "price": 45
+            },
+            "tools_hand": {
+                "text": "Tools (Hand)",
+                "price": 25
+            },
+            "garden_hose": {
+                "text": "Garden Hose",
+                "price": 45
+            },
+            "generators": {
+                "text": "Generators",
+                "price": 5
+            },
+            "ladder_aluminum": {
+                "text": "Ladder (Aluminum)",
+                "price": 45
+            },
+            "lawn_mower_parts": {
+                "text": "Lawn Mower & Parts",
+                "price": 35
+            },
+            "fire_extinguishers": {
+                "text": "Fire Extinguishers",
+                "price": 45
+            }
+        }
+    },
+    "vehicle": {
+        "text": "Vehicle",
+        "sub_categories": {
+            "bicycle": {
+                "text": "Bicycle",
+                "price": 0
+            },
+            "boats_pleasure_tug": {
+                "text": "Boats (Pleasure/Tug)",
+                "price": 10
+            },
+            "electric_motorcycles": {
+                "text": "Electric Motorcycles",
+                "price": 25
+            },
+            "golf_carts": {
+                "text": "Golf Carts",
+                "price": 30
+            },
+            "jet_skis": {
+                "text": "Jet Skis",
+                "price": 10
+            },
+            "motorcycles": {
+                "text": "Motorcycles",
+                "price": 75
+            },
+            "tricycle": {
+                "text": "Tricycle",
+                "price": 0
+            },
+            "vehicles_10001_to_40000": {
+                "text": "Vehicles ($10,001 to $40,000)",
+                "price": 65
+            },
+            "vehicles_all_hybrids_or_all_electric": {
+                "text": "Vehicles (All Hybrids or All Electric)",
+                "price": 25
+            },
+            "vehicles_over_40000": {
+                "text": "Vehicles (over $40,000)",
+                "price": 65
+            },
+            "vehicles_up_to_10000": {
+                "text": "Vehicles (up to $10,000)",
+                "price": 65
+            },
+            "vehicles_trucks_cargo_carrying": {
+                "text": "Vehicles/Trucks (Cargo Carrying)",
+                "price": 65
+            },
+            "vehicles_trucks_over_20_tons": {
+                "text": "Vehicles/Trucks (over 20 tons)",
+                "price": 85
+            },
+            "backhoe": {
+                "text": "Backhoe",
+                "price": 45
+            }
+        }
+    },
+    "vehicle_accessories": {
+        "text": "Vehicle Accessories",
+        "sub_categories": {
+            "brake_fluid": {
+                "text": "Brake Fluid",
+                "price": 40
+            },
+            "helmets": {
+                "text": "Helmets",
+                "price": 10
+            },
+            "anti_freeze": {
+                "text": "Anti Freeze",
+                "price": 40
+            },
+            "batteries_lead_acid_or_auto": {
+                "text": "Batteries (Lead Acid or Auto)",
+                "price": 60
+            },
+            "degreasers": {
+                "text": "Degreasers",
+                "price": 45
+            },
+            "transmission_fluids": {
+                "text": "Transmission Fluids",
+                "price": 75
+            }
+        }
+    },
+    "vehicle_parts": {
+        "text": "Vehicle Parts",
+        "sub_categories": {
+            "auto_parts": {
+                "text": "Auto Parts",
+                "price": 60
+            },
+            "batteries_deep_cycle": {
+                "text": "Batteries (Deep Cycle)",
+                "price": 35
+            },
+            "belt_transmission_other": {
+                "text": "Belt (Transmission/Other)",
+                "price": 45
+            },
+            "brake_pads": {
+                "text": "Brake Pads",
+                "price": 60
+            },
+            "engine_aircraft": {
+                "text": "Engine (Aircraft)",
+                "price": 5
+            },
+            "engine_car": {
+                "text": "Engine (Car)",
+                "price": 60
+            },
+            "jack_car": {
+                "text": "Jack (Car)",
+                "price": 45
+            },
+            "oil_motor": {
+                "text": "Oil (Motor)",
+                "price": 45
+            },
+            "rims_auto": {
+                "text": "Rims Auto",
+                "price": 60
+            },
+            "stereo_system": {
+                "text": "Stereo System",
+                "price": 35
+            },
+            "tires_auto_mounted": {
+                "text": "Tires (Auto-Mounted)",
+                "price": 60
+            },
+            "tires_auto_unmounted": {
+                "text": "Tires (Auto-Unmounted)",
+                "price": 25
+            },
+            "water_pump_vehicle": {
+                "text": "Water Pump (vehicle)",
+                "price": 45
+            }
+        }
+    }
+}
