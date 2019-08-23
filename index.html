@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -36,9 +36,8 @@
         </div>
     </nav>
 
-
     <!-- Container -->
-    <div class="container">
+    <div class="container" id="main_container">
 
 
         <div class="alert alert-info" id="info_msg">
@@ -93,9 +92,86 @@
                         data-content="Some content inside the popover"></a>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col text-center">
+                    <button type="button" class="btn btn-primary" id="preview_btn">Preview</button>
+                </div>
+            </div>
+
+            <div id="preview_container">
+                <div id="list_item">
+                    <button id="x">x</button>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Item Price</th>
+                                <td>$400.26</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Qty</th>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Duty rate</th>
+                                <td>40%</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Environmental Levy fee</th>
+                                <td>$50</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Processing fee</th>
+                                <td>$50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="list_item">
+                    <button id="x">x</button>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Item Price</th>
+                                <td>$400.26</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Qty</th>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Duty rate</th>
+                                <td>40%</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Environmental Levy fee</th>
+                                <td>$50</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Processing fee</th>
+                                <td>$50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="row">
+                    <div class="col text-center">
+                        <button type="button" class="btn btn-danger" id="preview_btn">Add more</button>
+                        <button type="button" class="btn btn-primary" id="preview_btn">Calculate</button>
+                    </div>
+                </div>
+            </div>
         </form>
 
+        <div id="result">
+            <p>$10324.49</p>
+        </div>
     </div>
+
+
+
     <!-- Bootstrap Required Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

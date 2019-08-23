@@ -13,9 +13,7 @@ body {
     margin: auto;
     margin-top: 20px;
     width: 500px;
-    /* text-align: center; */
     padding: 15px;
-    
 }
 
 #info_msg {
@@ -24,4 +22,32 @@ body {
 
 .my_icon a {
     vertical-align: -50%;
+}
+
+/* For listed items */
+#list_item {
+    width: 95%;
+    margin: auto;
+    border: 1px solid Black;
+    border-radius: 10px;
+    padding: 15px 15px 15px 15px;
+    margin: 20px 20px 20px 20px;
+    position: relative;
+}
+
+#x {
+    position: absolute;
+    border-radius: 20%;
+    color: black;
+    top: -10px;
+    right: -10px;
+}
+
+/* Result  */
+#result {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+    font-size: 250%;
 }
