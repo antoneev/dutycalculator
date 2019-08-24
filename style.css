@@ -16,6 +16,13 @@ body {
     padding: 15px;
 }
 
+#main_container strong {
+    padding-bottom: 20px;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+
 #info_msg {
     text-align: center;
 }
@@ -31,7 +38,7 @@ body {
     border: 1px solid Black;
     border-radius: 10px;
     padding: 15px 15px 15px 15px;
-    margin: 20px 20px 20px 20px;
+    margin-top: 20px;
     position: relative;
 }
 
@@ -43,6 +50,11 @@ body {
     right: -10px;
 }
 
+#preview_buttons {
+    margin-top: 20px;
+}
+
+
 /* Result  */
 #result {
     width: 90%;
@@ -50,4 +62,24 @@ body {
     text-align: center;
     padding: 30px 30px 30px 30px;
     font-size: 250%;
+}
+
+/* Footer  */
+.footer {
+    color: #ffffff;
+    text-align: center;
+    background-color: #055c6b;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+.footer p {
+    color: lightgray;
+    font-size: small;
+}
+
+.footer a {
+    color:#ffffff;
+    text-decoration:none;
 }

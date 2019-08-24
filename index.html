@@ -30,16 +30,14 @@
         <div class="collapse navbar-collapse text-right" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">About</a>
-                <a class="nav-item nav-link" href="#">Glossary</a>
+                <a class="nav-item nav-link" href="about.html">About</a>
+                <a class="nav-item nav-link" href="glossary.html">Glossary</a>
             </div>
         </div>
     </nav>
 
     <!-- Container -->
     <div class="container" id="main_container">
-
-
         <div class="alert alert-info" id="info_msg">
             These prices are not 100% guaranteed. However, it is a close estimate
         </div>
@@ -69,13 +67,13 @@
 
             <div class="form-group row">
                 <div class="col-5">
-                    <input class="form-control" type="number" placeholder="No of items" id="quantity">
+                    <input class="form-control" type="number" min="0" placeholder="No of items" id="quantity">
                 </div>
             </div>
 
             <div class="form-group row">
                 <div class="col-7">
-                    <input class="form-control" type="number" placeholder="Processing fee ($)" id="quantity">
+                    <input class="form-control" type="number" min="0" placeholder="Processing fee ($)" id="quantity">
                 </div>
                 <div class="my_icon">
                     <a href="#" class="fa fa-question-circle-o" data-toggle="popover" title="Popover Header"
@@ -85,7 +83,8 @@
 
             <div class="form-group row">
                 <div class="col-7">
-                    <input class="form-control" type="number" placeholder="Environmental levy fee ($)" id="quantity">
+                    <input class="form-control" type="number" min="0" placeholder="Environmental levy fee ($)"
+                        id="quantity">
                 </div>
                 <div class="my_icon">
                     <a href="#" class="fa fa-question-circle-o" data-toggle="popover" title="Popover Header"
@@ -156,7 +155,7 @@
                     </table>
                 </div>
 
-                <div class="row">
+                <div class="row" id="preview_buttons">
                     <div class="col text-center">
                         <button type="button" class="btn btn-danger" id="preview_btn">Add more</button>
                         <button type="button" class="btn btn-primary" id="preview_btn">Calculate</button>
@@ -170,7 +169,17 @@
         </div>
     </div>
 
-
+    <footer class="footer">
+        <nav>
+            <a href="terms">Terms of Use | </a>
+            <a href="privacy">Privacy Policy | </a>
+            <a target="_blank" href="ratesofduty.pdf">Bahamas
+                Duty Guide | </a>
+            <a target="_blank" href="https://bahamas.prod.3ceonline.com/bsgov">Tariff Code</a>
+        </nav>
+        <br>
+        <p>&copy Know Da Price 2019</p>
+    </footer>
 
     <!-- Bootstrap Required Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -190,7 +199,6 @@
             $('[data-toggle="popover"]').popover();
         });
     </script>
-
 </body>
 
 </html>
