@@ -1,0 +1,1768 @@
+{
+    "alcohol": {
+        "text": "Alcohol",
+        "sub_categories": {
+            "beers": {
+                "text": "Beers",
+                "duty_rate": 10
+            },
+            "rum": {
+                "text": "Rum",
+                "duty_rate": 15
+            },
+            "wine": {
+                "text": "Wine",
+                "duty_rate": 50
+            }
+        }
+    },
+    "arts_craft_and_sewing": {
+        "text": "Arts Craft and Sewing",
+        "sub_categories": {
+            "artwork_original": {
+                "text": "Artwork (Original)",
+                "duty_rate": 10
+            },
+            "crayons": {
+                "text": "Crayons",
+                "duty_rate": 10
+            },
+            "fabrics": {
+                "text": "Fabrics",
+                "duty_rate": 30
+            },
+            "flags_of_nations_and_other_flags": {
+                "text": "Flags of Nation & Other Flags",
+                "duty_rate": 25
+            },
+            "glitter": {
+                "text": "Glitter",
+                "duty_rate": 45
+            },
+            "newpapers": {
+                "text": "Newpapers",
+                "duty_rate": 5
+            },
+            "paint_artist": {
+                "text": "Paint Artist",
+                "duty_rate": 25
+            },
+            "paint_other": {
+                "text": "Paint Other",
+                "duty_rate": 45
+            },
+            "sewing_machine": {
+                "text": "Sewing Machine",
+                "duty_rate": 5
+            },
+            "thread": {
+                "text": "Thread",
+                "duty_rate": 10
+            }
+        }
+    },
+    "bags_and_luggage": {
+        "text": "Bags and Luggage",
+        "sub_categories": {
+            "bags_paper": {
+                "text": "Bags (Paper)",
+                "duty_rate": 45
+            },
+            "bags_plastic_shopping_degradable": {
+                "text": "Bags (Plastic Shopping - Degradable)",
+                "duty_rate": 5
+            },
+            "bags_plastic_shopping": {
+                "text": "Bags (Plastic Shopping)",
+                "duty_rate": 60
+            },
+            "bags_school": {
+                "text": "Bags (School)",
+                "duty_rate": 0
+            },
+            "bags_urinary": {
+                "text": "Bags (Urinary)",
+                "duty_rate": 0
+            }
+        }
+    },
+    "beauty": {
+        "text": "Beauty",
+        "sub_categories": {
+            "cologne": {
+                "text": "Cologne",
+                "duty_rate": 0
+            },
+            "curling_iron": {
+                "text": "Curling Iron",
+                "duty_rate": 35
+            },
+            "hair_artificial_human": {
+                "text": "Hair (Artificial/Human)",
+                "duty_rate": 45
+            },
+            "hair_conditioner": {
+                "text": "Hair Conditioner",
+                "duty_rate": 20
+            },
+            "hair_dryers)": {
+                "text": "Hair Dryers",
+                "duty_rate": 35
+            },
+            "hair_dye_rinse": {
+                "text": "Hair Dye/Rinse",
+                "duty_rate": 20
+            },
+            "hair_preparations": {
+                "text": "Hair Preparations",
+                "duty_rate": 20
+            },
+            "make_up": {
+                "text": "Make Up",
+                "duty_rate": 35
+            },
+            "perfumes": {
+                "text": "Perfumes",
+                "duty_rate": 0
+            },
+            "wigs": {
+                "text": "Wigs",
+                "duty_rate": 45
+            }
+        }
+    },
+    "bed_and_bath": {
+        "text": "Bed and Bath",
+        "sub_categories": {
+            "bathroom_fixtures_basins_tubs": {
+                "text": "Bathroom Fixtures (Basins, Tubs)",
+                "duty_rate": 25
+            },
+            "bed_sheets_linen": {
+                "text": "Bed Sheets (Linen)",
+                "duty_rate": 30
+            },
+            "comforters_bed": {
+                "text": "Comforters (Bed)",
+                "duty_rate": 45
+            },
+            "curtains": {
+                "text": "Curtains",
+                "duty_rate": 30
+            },
+            "drapes": {
+                "text": "Drapes",
+                "duty_rate": 30
+            },
+            "hangers_plastic": {
+                "text": "Hangers (Plastic)",
+                "duty_rate": 45
+            },
+            "hangers_wooden": {
+                "text": "Hangers (Wooden)",
+                "duty_rate": 35
+            },
+            "humidifiers": {
+                "text": "Humidifiers",
+                "duty_rate": 0
+            },
+            "mattress": {
+                "text": "Mattress",
+                "duty_rate": 60
+            },
+            "mattress_air": {
+                "text": "Mattress (Air)",
+                "duty_rate": 45
+            },
+            "pads_bed": {
+                "text": "Pads (Bed)",
+                "duty_rate": 0
+            },
+            "paper_toilet": {
+                "text": "Paper (Toilet)",
+                "duty_rate": 25
+            },
+            "pillows": {
+                "text": "Pillows",
+                "duty_rate": 45
+            },
+            "sheets_linen": {
+                "text": "Sheets Linen",
+                "duty_rate": 30
+            },
+            "shower_curtain_fabric": {
+                "text": "Shower Curtain (Fabric)",
+                "duty_rate": 30
+            },
+            "shower_curtain_plastic": {
+                "text": "Shower Curtain (Plastic)",
+                "duty_rate": 45
+            },
+            "soaps": {
+                "text": "Soaps",
+                "duty_rate": 0
+            },
+            "towels": {
+                "text": "Towels",
+                "duty_rate": 30
+            }
+        }
+    },
+    "beverage": {
+        "text": "Beverage",
+        "sub_categories": {
+            "all_coffee": {
+                "text": "All Coffee",
+                "duty_rate": 0
+            },
+            "energy_drinks": {
+                "text": "Energy Drinks",
+                "duty_rate": 30
+            },
+            "gatorade": {
+                "text": "Gatorade",
+                "duty_rate": 30
+            },
+            "juice_100": {
+                "text": "Juice 100%",
+                "duty_rate": 0
+            },
+            "malt_beverages": {
+                "text": "Malt Beverages",
+                "duty_rate": 55
+            },
+            "tea": {
+                "text": "Tea",
+                "duty_rate": 0
+            }
+        }
+    },
+    "business_stationery": {
+        "text": "Business Stationery",
+        "sub_categories": {
+            "books_coloring": {
+                "text": "Books (Coloring)",
+                "duty_rate": 0
+            },
+            "books_exercise": {
+                "text": "Books (Exercise)",
+                "duty_rate": 0
+            },
+            "books_reading": {
+                "text": "Books (Reading)",
+                "duty_rate": 0
+            },
+            "books_receipt": {
+                "text": "Books (Receipt)",
+                "duty_rate": 45
+            },
+            "brochures_advertising": {
+                "text": "Brochures (Advertising)",
+                "duty_rate": 40
+            },
+            "brochures_educational": {
+                "text": "Brochures (Educational)",
+                "duty_rate": 30
+            },
+            "business_cards_blanks": {
+                "text": "Business Cards (Blanks)",
+                "duty_rate": 40
+            },
+            "business_cards_printed": {
+                "text": "Business Cards (Printed)",
+                "duty_rate": 60
+            },
+            "catalogs": {
+                "text": "Catalogs",
+                "duty_rate": 0
+            },
+            "envelopes": {
+                "text": "Envelopes",
+                "duty_rate": 25
+            },
+            "novelties": {
+                "text": "Novelties",
+                "duty_rate": 45
+            }
+        }
+    },
+    "electronics": {
+        "text": "Electronics",
+        "sub_categories": {
+            "amazon_echo": {
+                "text": "Amazon Echo",
+                "duty_rate": 10
+            },
+            "amazon_fire_sticks": {
+                "text": "Amazon Fire Sticks",
+                "duty_rate": 10
+            },
+            "amplifier": {
+                "text": "Amplifier",
+                "duty_rate": 45
+            },
+            "android_apple_tv_boxes": {
+                "text": "Android/Apple TV boxes",
+                "duty_rate": 10
+            },
+            "answering_machine": {
+                "text": "Answering Machine",
+                "duty_rate": 45
+            },
+            "batteries_primary_cell": {
+                "text": "Batteries (Primary Cell)",
+                "duty_rate": 25
+            },
+            "camcorder": {
+                "text": "Camcorder",
+                "duty_rate": 0
+            },
+            "camera_digital": {
+                "text": "Camera (Digital)",
+                "duty_rate": 0
+            },
+            "camera_surveillance": {
+                "text": "Camera (Surveillance)",
+                "duty_rate": 0
+            },
+            "camera_camera_video": {
+                "text": "Camera/Camera Video",
+                "duty_rate": 0
+            },
+            "cd_blank": {
+                "text": "CD (Blank)",
+                "duty_rate": 10
+            },
+            "cd_players": {
+                "text": "CD Players",
+                "duty_rate": 35
+            },
+            "cd_with_music_movies": {
+                "text": "CD with Music/Movies",
+                "duty_rate": 10
+            },
+            "computer_modem": {
+                "text": "Computer Modem",
+                "duty_rate": 10
+            },
+            "computer_monitor": {
+                "text": "Computer Monitor",
+                "duty_rate": 0
+            },
+            "computer_multi_function_printer": {
+                "text": "Computer Multi-function Printer",
+                "duty_rate": 5
+            },
+            "computer_printer": {
+                "text": "Computer Printer",
+                "duty_rate": 0
+            },
+            "computer_router": {
+                "text": "Computer Router",
+                "duty_rate": 10
+            },
+            "computer_scanner": {
+                "text": "Computer Scanner",
+                "duty_rate": 5
+            },
+            "computer_software": {
+                "text": "Computer Software",
+                "duty_rate": 0
+            },
+            "computers": {
+                "text": "Computers",
+                "duty_rate": 0
+            },
+            "drones_with_camera": {
+                "text": "Drones with camera",
+                "duty_rate": 10
+            },
+            "dvd_with_movies_music_blank": {
+                "text": "DVD (with Movies/Music/Blank)",
+                "duty_rate": 10
+            },
+            "dvd_players": {
+                "text": "DVD Players",
+                "duty_rate": 35
+            },
+            "e_book_reader_kindle_nook_sony_reader": {
+                "text": "E-Book Reader (Kindle/Nook/Sony Reader)",
+                "duty_rate": 0
+            },
+            "earphones": {
+                "text": "Earphones",
+                "duty_rate": 45
+            },
+            "fax_machines": {
+                "text": "Fax Machines",
+                "duty_rate": 10
+            },
+            "game_boy_video_games": {
+                "text": "Game Boy (Video Games)",
+                "duty_rate": 45
+            },
+            "games_on_disc": {
+                "text": "Games (On Disc)",
+                "duty_rate": 10
+            },
+            "headphones": {
+                "text": "Headphones",
+                "duty_rate": 45
+            },
+            "ipad": {
+                "text": "iPad",
+                "duty_rate": 0
+            },
+            "ipod": {
+                "text": "iPod",
+                "duty_rate": 35
+            },
+            "karaoke_machine": {
+                "text": "Karaoke Machine",
+                "duty_rate": 35
+            },
+            "keyboard": {
+                "text": "Keyboard",
+                "duty_rate": 10
+            },
+            "microphone": {
+                "text": "Microphone",
+                "duty_rate": 35
+            },
+            "mp3_player": {
+                "text": "MP3 Player",
+                "duty_rate": 35
+            },
+            "remote_controls": {
+                "text": "Remote Controls",
+                "duty_rate": 45
+            },
+            "telephone_land_cordless": {
+                "text": "Telephone (Land/Cordless)",
+                "duty_rate": 10
+            },
+            "telephones_cellular": {
+                "text": "Telephones (Cellular)",
+                "duty_rate": 10
+            },
+            "television": {
+                "text": "Television",
+                "duty_rate": 35
+            },
+            "video_game_machine": {
+                "text": "Video Game Machine",
+                "duty_rate": 45
+            },
+            "walkie_talkie": {
+                "text": "Walkie-Talkie",
+                "duty_rate": 45
+            },
+            "radio": {
+                "text": "Radio",
+                "duty_rate": 35
+            }
+        }
+    },
+    "fashion_accessories": {
+        "text": "Fashion Accessories",
+        "sub_categories": {
+            "handbags": {
+                "text": "Handbags",
+                "duty_rate": 0
+            },
+            "hats": {
+                "text": "Hats",
+                "duty_rate": 45
+            },
+            "jewelry_costume": {
+                "text": "Jewelry (Costume)",
+                "duty_rate": 0
+            },
+            "jewelry_gold_silver_platinum": {
+                "text": "Jewelry (Gold / Silver / Platinum)",
+                "duty_rate": 0
+            },
+            "neck_ties": {
+                "text": "Neck Ties",
+                "duty_rate": 20
+            },
+            "sunglasses_other": {
+                "text": "Sunglasses (Other)",
+                "duty_rate": 0
+            },
+            "sunglasses_prescription": {
+                "text": "Sunglasses (Prescription)",
+                "duty_rate": 0
+            },
+            "umbrella": {
+                "text": "Umbrella",
+                "duty_rate": 45
+            },
+            "wallets": {
+                "text": "Wallets",
+                "duty_rate": 0
+            },
+            "watches": {
+                "text": "Watches",
+                "duty_rate": 0
+            }
+        }
+    },
+    "food": {
+        "text": "Food",
+        "sub_categories": {
+            "beef_ham_turkey_sliced_unsliced": {
+                "text": "Beef, Ham & Turkey Sliced/Unsliced",
+                "duty_rate": 0
+            },
+            "other_chips": {
+                "text": "Other Chips",
+                "duty_rate": 20
+            },
+            "other_including_mixtures_sliced_unsliced": {
+                "text": "Other Including Mixtures Sliced/Unsliced",
+                "duty_rate": 0
+            },
+            "baking_powder": {
+                "text": "Baking Powder",
+                "duty_rate": 5
+            },
+            "barbeque_sauce": {
+                "text": "Barbeque Sauce",
+                "duty_rate": 5
+            },
+            "biscuits": {
+                "text": "Biscuits",
+                "duty_rate": 20
+            },
+            "black_pepper": {
+                "text": "Black Pepper",
+                "duty_rate": 5
+            },
+            "bread": {
+                "text": "Bread",
+                "duty_rate": 0
+            },
+            "cakes_pastries_biscuits": {
+                "text": "Cakes, Pastries, Biscuits",
+                "duty_rate": 20
+            },
+            "candies_hard": {
+                "text": "Candies (Hard)",
+                "duty_rate": 60
+            },
+            "candies_soft": {
+                "text": "Candies (Soft)",
+                "duty_rate": 30
+            },
+            "cereal": {
+                "text": "Cereal",
+                "duty_rate": 0
+            },
+            "cheese": {
+                "text": "Cheese",
+                "duty_rate": 5
+            },
+            "chicken": {
+                "text": "Chicken",
+                "duty_rate": 30
+            },
+            "chocolates": {
+                "text": "Chocolates",
+                "duty_rate": 40
+            },
+            "coloring_food": {
+                "text": "Coloring (Food)",
+                "duty_rate": 45
+            },
+            "condensed_milk": {
+                "text": "Condensed Milk",
+                "duty_rate": 0
+            },
+            "corned_beef_canned": {
+                "text": "Corned Beef (Canned)",
+                "duty_rate": 0
+            },
+            "cream": {
+                "text": "Cream",
+                "duty_rate": 0
+            },
+            "dried_mixed_fruit_packed": {
+                "text": "Dried Mixed Fruit (Packed)",
+                "duty_rate": 35
+            },
+            "dried_mixed_fruits_unpacked_20lb": {
+                "text": "Dried Mixed Fruits (Unpacked— >20lb)",
+                "duty_rate": 5
+            },
+            "fresh_fruits": {
+                "text": "Fresh Fruits",
+                "duty_rate": 0
+            },
+            "fruit_cocktail": {
+                "text": "Fruit Cocktail",
+                "duty_rate": 0
+            },
+            "fruit_snacks": {
+                "text": "Fruit Snacks",
+                "duty_rate": 20
+            },
+            "grits": {
+                "text": "Grits",
+                "duty_rate": 0
+            },
+            "honey_natural": {
+                "text": "Honey (Natural)",
+                "duty_rate": 0
+            },
+            "ice_cream": {
+                "text": "Ice Cream",
+                "duty_rate": 20
+            },
+            "ice_cream_popsicles": {
+                "text": "Ice cream & popsicles",
+                "duty_rate": 20
+            },
+            "jams_jellies_marmalade_etc": {
+                "text": "Jams, Jellies, Marmalade etc",
+                "duty_rate": 0
+            },
+            "ketchup": {
+                "text": "Ketchup",
+                "duty_rate": 0
+            },
+            "lime": {
+                "text": "Lime",
+                "duty_rate": 5
+            },
+            "noodles": {
+                "text": "noodles",
+                "duty_rate": 0
+            },
+            "nuts_commercially_packaged_20lbs": {
+                "text": "Nuts (Commercially Packaged — >20lbs)",
+                "duty_rate": 5
+            },
+            "nuts_individually_packaged": {
+                "text": "Nuts (Individually Packaged)",
+                "duty_rate": 25
+            },
+            "oil_coconut_for_cooking": {
+                "text": "Oil (Coconut for cooking)",
+                "duty_rate": 0
+            },
+            "oil_virgin_sesame_soybean": {
+                "text": "Oil (Virgin/Sesame/Soybean)",
+                "duty_rate": 0
+            },
+            "pasta": {
+                "text": "Pasta",
+                "duty_rate": 0
+            },
+            "peanut_butter": {
+                "text": "Peanut Butter",
+                "duty_rate": 0
+            },
+            "pineapples": {
+                "text": "Pineapples",
+                "duty_rate": 40
+            },
+            "potato_chips": {
+                "text": "Potato Chips",
+                "duty_rate": 25
+            },
+            "prepared_chicken_turkey_ham_beef": {
+                "text": "Prepared Chicken, Turkey, - Ham, Beef",
+                "duty_rate": 20
+            },
+            "pudding_jello_pudding": {
+                "text": "Pudding / Jello-Pudding",
+                "duty_rate": 20
+            },
+            "Rice": {
+                "text": "rice",
+                "duty_rate": 0
+            },
+            "salad_dressing": {
+                "text": "Salad Dressing",
+                "duty_rate": 5
+            },
+            "salmon_fillet": {
+                "text": "Salmon Fillet",
+                "duty_rate": 0
+            },
+            "sardines_canned": {
+                "text": "Sardines (Canned)",
+                "duty_rate": 0
+            },
+            "sausage": {
+                "text": "Sausage",
+                "duty_rate": 0
+            },
+            "seasonings_condiments": {
+                "text": "Seasonings (Condiments)",
+                "duty_rate": 5
+            },
+            "shrimp": {
+                "text": "Shrimp",
+                "duty_rate": 0
+            },
+            "soup_canned": {
+                "text": "Soup (Canned)",
+                "duty_rate": 0
+            },
+            "spice_buns": {
+                "text": "Spice Buns",
+                "duty_rate": 20
+            },
+            "tuna_canned": {
+                "text": "Tuna (Canned)",
+                "duty_rate": 0
+            },
+            "turkey": {
+                "text": "Turkey",
+                "duty_rate": 5
+            },
+            "turkey_deli": {
+                "text": "Turkey: Deli",
+                "duty_rate": 0
+            },
+            "yeast": {
+                "text": "Yeast",
+                "duty_rate": 5
+            },
+            "yogurt": {
+                "text": "Yogurt",
+                "duty_rate": 0
+            },
+            "all_flours": {
+                "text": "All Flours",
+                "duty_rate": 0
+            },
+            "all_sugars_and_syrups": {
+                "text": "All Sugars and Syrups",
+                "duty_rate": 0
+            },
+            "almond_butter": {
+                "text": "Almond Butter",
+                "duty_rate": 0
+            }
+        }
+    },
+    "health": {
+        "text": "Health",
+        "sub_categories": {
+            "bandages": {
+                "text": "Bandages",
+                "duty_rate": 0
+            },
+            "blood_glucose_test_strip": {
+                "text": "Blood Glucose Test Strip",
+                "duty_rate": 0
+            },
+            "blood_pressure_monitor_meter": {
+                "text": "Blood Pressure Monitor/Meter",
+                "duty_rate": 0
+            },
+            "catheters": {
+                "text": "Catheters",
+                "duty_rate": 0
+            },
+            "cigarettes": {
+                "text": "Cigarettes",
+                "duty_rate": "0.15 per stick"
+            },
+            "cigarettes_electronic": {
+                "text": "Cigarettes (Electronic)",
+                "duty_rate": 45
+            },
+            "cigarillos_etc_other": {
+                "text": "Cigarillos, etc (Other)",
+                "duty_rate": "0.25 per stick"
+            },
+            "cigars": {
+                "text": "Cigars",
+                "duty_rate": "0.50 per stick + 220%"
+            },
+            "condoms": {
+                "text": "Condoms",
+                "duty_rate": 0
+            },
+            "contact_lens": {
+                "text": "Contact Lens",
+                "duty_rate": 0
+            },
+            "cough_drops": {
+                "text": "Cough Drops",
+                "duty_rate": 0
+            },
+            "defibrillator": {
+                "text": "Defibrillator",
+                "duty_rate": 0
+            },
+            "deodorant": {
+                "text": "Deodorant",
+                "duty_rate": 0
+            },
+            "eye_glasses_prescription": {
+                "text": "Eye Glasses (Prescription)",
+                "duty_rate": 0
+            },
+            "floss_dental": {
+                "text": "Floss (Dental)",
+                "duty_rate": 5
+            },
+            "gloves_plastic_rubber": {
+                "text": "Gloves (Plastic, Rubber)",
+                "duty_rate": 45
+            },
+            "gum_incl_nicotene": {
+                "text": "Gum incl. Nicotene",
+                "duty_rate": 30
+            },
+            "hand_sanitizers": {
+                "text": "Hand Sanitizers",
+                "duty_rate": 45
+            },
+            "hearing_aids": {
+                "text": "Hearing Aids",
+                "duty_rate": 0
+            },
+            "heart_monitor": {
+                "text": "Heart Monitor",
+                "duty_rate": 0
+            },
+            "hiv_test_strips": {
+                "text": "HIV Test Strips",
+                "duty_rate": 0
+            },
+            "insulin": {
+                "text": "Insulin",
+                "duty_rate": 0
+            },
+            "kidney_machines_and_parts": {
+                "text": "Kidney Machines and Parts",
+                "duty_rate": 0
+            },
+            "mouthwash": {
+                "text": "Mouthwash",
+                "duty_rate": 5
+            },
+            "nicotene_patches": {
+                "text": "Nicotene Patches",
+                "duty_rate": 0
+            },
+            "oil_body": {
+                "text": "Oil (Body)",
+                "duty_rate": 45
+            },
+            "razor_blades": {
+                "text": "Razor Blades",
+                "duty_rate": 25
+            },
+            "sanitary_napkins_female": {
+                "text": "Sanitary Napkins (Female)",
+                "duty_rate": 0
+            },
+            "shampoo": {
+                "text": "Shampoo",
+                "duty_rate": 20
+            },
+            "tooth_brush_tooth_paste": {
+                "text": "Tooth Brush & Tooth Paste",
+                "duty_rate": 0
+            },
+            "vitamins": {
+                "text": "Vitamins",
+                "duty_rate": 5
+            },
+            "gloves_surgical": {
+                "text": "Gloves (Surgical)",
+                "duty_rate": 10
+            }
+        }
+    },
+    "home": {
+        "text": "Home",
+        "sub_categories": {
+            "all_doors": {
+                "text": "All Doors",
+                "duty_rate": 0
+            },
+            "blocks_concrete": {
+                "text": "Blocks (Concrete)",
+                "duty_rate": 45
+            },
+            "drywall": {
+                "text": "Drywall",
+                "duty_rate": 0
+            },
+            "durock": {
+                "text": "Durock",
+                "duty_rate": 0
+            },
+            "flooring_wood_parquet": {
+                "text": "Flooring (Wood Parquet)",
+                "duty_rate": 25
+            },
+            "hardi_plank_board": {
+                "text": "Hardi Plank/Board",
+                "duty_rate": 0
+            },
+            "hurricane_shutters_wood": {
+                "text": "Hurricane Shutters (Wood)",
+                "duty_rate": 5
+            },
+            "insulated_steel_panels": {
+                "text": "Insulated Steel Panels",
+                "duty_rate": 25
+            },
+            "inverters_for_solar_panels": {
+                "text": "Inverters for Solar panels",
+                "duty_rate": 0
+            },
+            "lumber": {
+                "text": "Lumber",
+                "duty_rate": 0
+            },
+            "nails_building": {
+                "text": "Nails (Building)",
+                "duty_rate": 0
+            },
+            "pipes_pvc": {
+                "text": "Pipes (PVC)",
+                "duty_rate": 35
+            },
+            "plywood_free_point_of_sale_system": {
+                "text": "Plywood Free Point Of Sale System",
+                "duty_rate": 0
+            },
+            "sheet_rock": {
+                "text": "Sheet Rock",
+                "duty_rate": 0
+            },
+            "tiles": {
+                "text": "Tiles",
+                "duty_rate": 35
+            }
+        }
+    },
+    "household_appliance": {
+        "text": "Household Appliance",
+        "sub_categories": {
+            "aluminum_double_glazed_or_vacuum_seal": {
+                "text": "Aluminum double glazed or vacuum seal",
+                "duty_rate": 25
+            },
+            "other_aluminum": {
+                "text": "Other (Aluminum)",
+                "duty_rate": 35
+            },
+            "steel_windows_all": {
+                "text": "Steel Windows (All)",
+                "duty_rate": 0
+            },
+            "vinyl_double_glazed_or_vacuum_sealed": {
+                "text": "Vinyl double glazed or vacuum Sealed",
+                "duty_rate": 5
+            },
+            "wooden_windows": {
+                "text": "Wooden Windows",
+                "duty_rate": 25
+            },
+            "air_condition": {
+                "text": "Air Condition",
+                "duty_rate": 40
+            },
+            "air_condition_solar": {
+                "text": "Air Condition (Solar)",
+                "duty_rate": 0
+            },
+            "awnings": {
+                "text": "Awnings",
+                "duty_rate": 45
+            },
+            "blenders": {
+                "text": "Blenders",
+                "duty_rate": 35
+            },
+            "blinds_plastic": {
+                "text": "Blinds (Plastic)",
+                "duty_rate": 45
+            },
+            "blinds_wood": {
+                "text": "Blinds (Wood)",
+                "duty_rate": 30
+            },
+            "cabinets_wooden": {
+                "text": "Cabinets (Wooden)",
+                "duty_rate": 45
+            },
+            "ceiling_fans": {
+                "text": "Ceiling Fans",
+                "duty_rate": 0
+            },
+            "coffee_makers": {
+                "text": "Coffee Makers",
+                "duty_rate": 35
+            },
+            "dryer": {
+                "text": "Dryer",
+                "duty_rate": 5
+            },
+            "fan": {
+                "text": "Fan",
+                "duty_rate": 0
+            },
+            "freezer_household_type": {
+                "text": "Freezer (Household type)",
+                "duty_rate": 5
+            },
+            "fryer_non_electric": {
+                "text": "Fryer (Non Electric)",
+                "duty_rate": 5
+            },
+            "heater_tankless_water": {
+                "text": "Heater (Tankless Water)",
+                "duty_rate": 5
+            },
+            "ice_water_shield": {
+                "text": "Ice & water shield",
+                "duty_rate": 0
+            },
+            "ice_cream_machine": {
+                "text": "Ice Cream Machine",
+                "duty_rate": 45
+            },
+            "lavatory_seats_and_covers_fittings": {
+                "text": "Lavatory seats and covers & fittings",
+                "duty_rate": 25
+            },
+            "microwave": {
+                "text": "Microwave",
+                "duty_rate": 35
+            },
+            "oven_electric": {
+                "text": "Oven (Electric)",
+                "duty_rate": 35
+            },
+            "oven_gas": {
+                "text": "Oven (Gas)",
+                "duty_rate": 5
+            },
+            "pool_table": {
+                "text": "Pool Table",
+                "duty_rate": 60
+            },
+            "refrigerator_energy_efficient": {
+                "text": "Refrigerator (Energy Efficient)",
+                "duty_rate": 5
+            },
+            "refrigerator_regular": {
+                "text": "Refrigerator (Regular)",
+                "duty_rate": 5
+            },
+            "satellite": {
+                "text": "Satellite",
+                "duty_rate": 45
+            },
+            "stove_gas": {
+                "text": "Stove (Gas)",
+                "duty_rate": 5
+            },
+            "stoves_electric": {
+                "text": "Stoves (Electric)",
+                "duty_rate": 35
+            },
+            "supplements": {
+                "text": "Supplements",
+                "duty_rate": 0
+            },
+            "washer_energy_efficient": {
+                "text": "Washer (Energy Efficient)",
+                "duty_rate": 5
+            },
+            "washer_regular": {
+                "text": "Washer (Regular)",
+                "duty_rate": 5
+            },
+            "water_heater_gas": {
+                "text": "Water Heater (Gas)",
+                "duty_rate": 25
+            },
+            "water_heaters_solar": {
+                "text": "Water Heaters (Solar)",
+                "duty_rate": 5
+            },
+            "water_pump_well": {
+                "text": "Water Pump (Well)",
+                "duty_rate": 45
+            }
+        }
+    },
+    "household_essential": {
+        "text": "Household Essential",
+        "sub_categories": {
+            "air_fresheners_canned_spray": {
+                "text": "Air Fresheners (Canned/Spray)",
+                "duty_rate": 45
+            },
+            "all_detergent_washing": {
+                "text": "All Detergent (Washing)",
+                "duty_rate": 0
+            },
+            "aluminum_foil": {
+                "text": "Aluminum Foil",
+                "duty_rate": 30
+            },
+            "bleach": {
+                "text": "Bleach",
+                "duty_rate": 60
+            },
+            "broom": {
+                "text": "Broom",
+                "duty_rate": 45
+            },
+            "can_opener_electric": {
+                "text": "Can Opener (Electric)",
+                "duty_rate": 45
+            },
+            "can_opener_portable": {
+                "text": "Can Opener (Portable)",
+                "duty_rate": 25
+            },
+            "candles": {
+                "text": "Candles",
+                "duty_rate": 45
+            },
+            "carpet": {
+                "text": "Carpet",
+                "duty_rate": 45
+            },
+            "chafing_pans_stainless_steel": {
+                "text": "Chafing Pans (Stainless Steel)",
+                "duty_rate": 45
+            },
+            "clock_time__payroll_wall": {
+                "text": "Clock (Time - Payroll & Wall)",
+                "duty_rate": 45
+            },
+            "dishes_ceramic": {
+                "text": "Dishes (Ceramic)",
+                "duty_rate": 45
+            },
+            "dishes_porcelain_china": {
+                "text": "Dishes (Porcelain/China)",
+                "duty_rate": 5
+            },
+            "fabric_softener": {
+                "text": "Fabric Softener",
+                "duty_rate": 45
+            },
+            "fabric_softner": {
+                "text": "Fabric Softner",
+                "duty_rate": 45
+            },
+            "flashlights": {
+                "text": "Flashlights",
+                "duty_rate": 45
+            },
+            "flatware_knife_fork_spoon": {
+                "text": "Flatware (Knife/Fork/Spoon)",
+                "duty_rate": 25
+            },
+            "furniture": {
+                "text": "Furniture",
+                "duty_rate": 45
+            },
+            "garbage_bags": {
+                "text": "Garbage bags",
+                "duty_rate": 45
+            },
+            "glassware": {
+                "text": "Glassware",
+                "duty_rate": 45
+            },
+            "glassware_crystal": {
+                "text": "Glassware (Crystal)",
+                "duty_rate": 5
+            },
+            "hand_towels_paper": {
+                "text": "Hand Towels (Paper)",
+                "duty_rate": 25
+            },
+            "iron": {
+                "text": "Iron",
+                "duty_rate": 35
+            },
+            "keys_locks": {
+                "text": "Keys & Locks",
+                "duty_rate": 20
+            },
+            "mirrors_unframed": {
+                "text": "Mirrors (Unframed)",
+                "duty_rate": 45
+            },
+            "mop": {
+                "text": "Mop",
+                "duty_rate": 45
+            },
+            "padlocks": {
+                "text": "Padlocks",
+                "duty_rate": 20
+            },
+            "plastic_bags_degradable": {
+                "text": "Plastic Bags (Degradable)",
+                "duty_rate": 5
+            },
+            "pots_potting_soil": {
+                "text": "Pots & Potting Soil",
+                "duty_rate": 25
+            },
+            "rugs": {
+                "text": "Rugs",
+                "duty_rate": 45
+            },
+            "sanitary_cups_plates_paper_plastic": {
+                "text": "Sanitary (Cups/Plates - Paper/Plastic)",
+                "duty_rate": 45
+            },
+            "tableware_kitchenware_bio_degradable": {
+                "text": "Tableware, Kitchenware (Bio-degradable)",
+                "duty_rate": 5
+            },
+            "toaster": {
+                "text": "Toaster",
+                "duty_rate": 35
+            },
+            "vacuum_cleaner": {
+                "text": "Vacuum Cleaner",
+                "duty_rate": 45
+            }
+        }
+    },
+    "kids_baby": {
+        "text": "Kids and Baby",
+        "sub_categories": {
+            "baby_toddler_clothing_size_6": {
+                "text": "Baby & Toddler Clothing (<size 6)",
+                "duty_rate": 0
+            },
+            "baby_bottle": {
+                "text": "Baby Bottle",
+                "duty_rate": 0
+            },
+            "baby_bottle_and_bottle_nipples": {
+                "text": "Baby Bottle and Bottle Nipples",
+                "duty_rate": 0
+            },
+            "baby_car_seat": {
+                "text": "Baby Car Seat",
+                "duty_rate": 0
+            },
+            "baby_cribs_and_baby_playpen": {
+                "text": "Baby Cribs and Baby Playpen",
+                "duty_rate": 0
+            },
+            "baby_high_chair": {
+                "text": "Baby High Chair",
+                "duty_rate": 0
+            },
+            "baby_pampers": {
+                "text": "Baby Pampers",
+                "duty_rate": 0
+            },
+            "baby_stroller": {
+                "text": "Baby Stroller",
+                "duty_rate": 0
+            },
+            "baby_wipes": {
+                "text": "Baby Wipes",
+                "duty_rate": 0
+            },
+            "dolls": {
+                "text": "Dolls",
+                "duty_rate": 20
+            },
+            "incubators": {
+                "text": "Incubators",
+                "duty_rate": 0
+            },
+            "toys": {
+                "text": "Toys",
+                "duty_rate": 0
+            }
+        }
+    },
+    "office_supplies": {
+        "text": "Office Supplies",
+        "sub_categories": {
+            "calculator": {
+                "text": "Calculator",
+                "duty_rate": 5
+            },
+            "calendars": {
+                "text": "Calendars",
+                "duty_rate": 60
+            },
+            "copy_paper_multi_purpose": {
+                "text": "Copy Paper (Multi-purpose)",
+                "duty_rate": 5
+            },
+            "flyers_advertising": {
+                "text": "Flyers (advertising)",
+                "duty_rate": 40
+            },
+            "fountain_pens": {
+                "text": "Fountain Pens",
+                "duty_rate": 0
+            },
+            "glue": {
+                "text": "Glue",
+                "duty_rate": 45
+            },
+            "ink_computer": {
+                "text": "Ink (Computer)",
+                "duty_rate": 5
+            },
+            "labels_printed": {
+                "text": "Labels (printed)",
+                "duty_rate": 45
+            },
+            "magic_jack": {
+                "text": "Magic Jack",
+                "duty_rate": 10
+            },
+            "paper_printing_multipurpose": {
+                "text": "Paper (Printing/Multipurpose)",
+                "duty_rate": 5
+            },
+            "pencils": {
+                "text": "Pencils",
+                "duty_rate": 10
+            },
+            "pens_other": {
+                "text": "Pens (Other)",
+                "duty_rate": 10
+            },
+            "plastic_wares": {
+                "text": "Plastic Wares",
+                "duty_rate": 45
+            },
+            "postcards_other": {
+                "text": "Postcards (Other)",
+                "duty_rate": 45
+            },
+            "postcards_w_bahamian_scenes": {
+                "text": "Postcards (w/ Bahamian Scenes)",
+                "duty_rate": 25
+            },
+            "posters": {
+                "text": "Posters",
+                "duty_rate": 40
+            },
+            "printer_multifunction": {
+                "text": "Printer Multifunction",
+                "duty_rate": 5
+            },
+            "ruler_other": {
+                "text": "Ruler (Other)",
+                "duty_rate": 45
+            },
+            "rulers_school": {
+                "text": "Rules (School)",
+                "duty_rate": 10
+            },
+            "ups_system": {
+                "text": "UPS System",
+                "duty_rate": 45
+            },
+            "visual_teaching_aids": {
+                "text": "Visual Teaching Aids",
+                "duty_rate": 0
+            }
+        }
+    },
+    "others": {
+        "text": "Others",
+        "sub_categories": {
+            "cards_atm": {
+                "text": "Cards (ATM)",
+                "duty_rate": 45
+            },
+            "cash_register": {
+                "text": "Cash Register",
+                "duty_rate": 45
+            },
+            "casket_metal": {
+                "text": "Casket (Metal)",
+                "duty_rate": 55
+            },
+            "mannequins": {
+                "text": "Mannequins",
+                "duty_rate": 45
+            }
+        }
+    },
+    "patio_and_garden": {
+        "text": "Patio and Garden",
+        "sub_categories": {
+            "flowers_artificial": {
+                "text": "Flowers (Artificial)",
+                "duty_rate": 45
+            },
+            "flowers_fresh": {
+                "text": "Flowers Fresh",
+                "duty_rate": 35
+            },
+            "insecticides": {
+                "text": "Insecticides",
+                "duty_rate": 0
+            },
+            "pesticides": {
+                "text": "Pesticides",
+                "duty_rate": 0
+            },
+            "rodenticides": {
+                "text": "Rodenticides",
+                "duty_rate": 0
+            }
+        }
+    },
+    "pets": {
+        "text": "Pets",
+        "sub_categories": {
+            "flowers_artificial": {
+                "text": "All Animal Food",
+                "duty_rate": 0
+            }
+        }
+    },
+    "security": {
+        "text": "Security",
+        "sub_categories": {
+            "alarm_system": {
+                "text": "Alarm System",
+                "duty_rate": 0
+            },
+            "car_alarm": {
+                "text": "Car Alarm",
+                "duty_rate": 45
+            },
+            "surveillance_security_system": {
+                "text": "Surveillance Security System",
+                "duty_rate": 0
+            },
+            "pesticides": {
+                "text": "Pesticides",
+                "duty_rate": 0
+            },
+            "rodenticides": {
+                "text": "Rodenticides",
+                "duty_rate": 0
+            }
+        }
+    },
+    "shoes_and_apparels": {
+        "text": "Shoes and Apparels",
+        "sub_categories": {
+            "beadies": {
+                "text": "Beadies",
+                "duty_rate": 200
+            },
+            "belts_leather_other": {
+                "text": "Belts (Leather/Other)",
+                "duty_rate": 20
+            },
+            "bras": {
+                "text": "Bras",
+                "duty_rate": 20
+            },
+            "caps_graduation_nurse": {
+                "text": "Caps (Graduation/Nurse)",
+                "duty_rate": 45
+            },
+            "clothing_outer_wear": {
+                "text": "Clothing (Outer Wear)",
+                "duty_rate": 20
+            },
+            "clothing_underwear": {
+                "text": "Clothing (Underwear)",
+                "duty_rate": 20
+            },
+            "clothing_used": {
+                "text": "Clothing (Used)",
+                "duty_rate": 20
+            },
+            "costumes_of_textile": {
+                "text": "Costumes of Textile",
+                "duty_rate": 20
+            },
+            "costumes_other_than_textile": {
+                "text": "Costumes other than Textile",
+                "duty_rate": 45
+            },
+            "disposable_underwear": {
+                "text": "Disposable Underwear",
+                "duty_rate": 0
+            },
+            "gowns_graduation": {
+                "text": "Gowns (Graduation)",
+                "duty_rate": 20
+            },
+            "other_wearing_apparel": {
+                "text": "Other Wearing Apparel",
+                "duty_rate": 20
+            },
+            "pantyhose": {
+                "text": "Pantyhose",
+                "duty_rate": 20
+            },
+            "Sandals": {
+                "text": "Sandals",
+                "duty_rate": 20
+            },
+            "shoes_slippers": {
+                "text": "Shoes/Slippers",
+                "duty_rate": 20
+            },
+            "socks": {
+                "text": "Socks",
+                "duty_rate": 20
+            },
+            "stockings": {
+                "text": "Stockings",
+                "duty_rate": 20
+            },
+            "t_shirts_no_collar": {
+                "text": "T-Shirts: No Collar",
+                "duty_rate": 20
+            },
+            "t_shirts_with_collar": {
+                "text": "T-Shirts: With Collar",
+                "duty_rate": 20
+            },
+            "tennis": {
+                "text": "Teenis",
+                "duty_rate": 20
+            }
+        }
+    },
+    "sports_and_outdoors": {
+        "text": "Sports and Outdoors",
+        "sub_categories": {
+            "asphalt_road_surfacing": {
+                "text": "Asphalt (Road Surfacing)",
+                "duty_rate": 45
+            },
+            "cement": {
+                "text": "Cement",
+                "duty_rate": 0
+            },
+            "degradable_bags": {
+                "text": "Degradable bags",
+                "duty_rate": 5
+            },
+            "exercise_machines": {
+                "text": "Exercise Machines",
+                "duty_rate": 20
+            },
+            "fertilizers": {
+                "text": "Fertilizers",
+                "duty_rate": 0
+            },
+            "fish_bait": {
+                "text": "Fish Bait",
+                "duty_rate": 0
+            },
+            "life_jackets": {
+                "text": "Life Jackets",
+                "duty_rate": 0
+            },
+            "shrimp_bait": {
+                "text": "Shrimp Bait",
+                "duty_rate": 0
+            }
+        }
+    },
+    "tools": {
+        "text": "Sports and Outdoors",
+        "sub_categories": {
+            "compressor_air": {
+                "text": "Compressor (Air)",
+                "duty_rate": 45
+            },
+            "tools_hand": {
+                "text": "Tools (Hand)",
+                "duty_rate": 25
+            },
+            "garden_hose": {
+                "text": "Garden Hose",
+                "duty_rate": 45
+            },
+            "generators": {
+                "text": "Generators",
+                "duty_rate": 5
+            },
+            "ladder_aluminum": {
+                "text": "Ladder (Aluminum)",
+                "duty_rate": 45
+            },
+            "lawn_mower_parts": {
+                "text": "Lawn Mower & Parts",
+                "duty_rate": 35
+            },
+            "fire_extinguishers": {
+                "text": "Fire Extinguishers",
+                "duty_rate": 45
+            }
+        }
+    },
+    "vehicle": {
+        "text": "Vehicle",
+        "sub_categories": {
+            "bicycle": {
+                "text": "Bicycle",
+                "duty_rate": 0
+            },
+            "boats_pleasure_tug": {
+                "text": "Boats (Pleasure/Tug)",
+                "duty_rate": 10
+            },
+            "electric_motorcycles": {
+                "text": "Electric Motorcycles",
+                "duty_rate": 25
+            },
+            "golf_carts": {
+                "text": "Golf Carts",
+                "duty_rate": 30
+            },
+            "jet_skis": {
+                "text": "Jet Skis",
+                "duty_rate": 10
+            },
+            "motorcycles": {
+                "text": "Motorcycles",
+                "duty_rate": 75
+            },
+            "tricycle": {
+                "text": "Tricycle",
+                "duty_rate": 0
+            },
+            "vehicles_10001_to_40000": {
+                "text": "Vehicles ($10,001 to $40,000)",
+                "duty_rate": 65
+            },
+            "vehicles_all_hybrids_or_all_electric": {
+                "text": "Vehicles (All Hybrids or All Electric)",
+                "duty_rate": 25
+            },
+            "vehicles_over_40000": {
+                "text": "Vehicles (over $40,000)",
+                "duty_rate": 65
+            },
+            "vehicles_up_to_10000": {
+                "text": "Vehicles (up to $10,000)",
+                "duty_rate": 65
+            },
+            "vehicles_trucks_cargo_carrying": {
+                "text": "Vehicles/Trucks (Cargo Carrying)",
+                "duty_rate": 65
+            },
+            "vehicles_trucks_over_20_tons": {
+                "text": "Vehicles/Trucks (over 20 tons)",
+                "duty_rate": 85
+            },
+            "backhoe": {
+                "text": "Backhoe",
+                "duty_rate": 45
+            }
+        }
+    },
+    "vehicle_accessories": {
+        "text": "Vehicle Accessories",
+        "sub_categories": {
+            "brake_fluid": {
+                "text": "Brake Fluid",
+                "duty_rate": 40
+            },
+            "helmets": {
+                "text": "Helmets",
+                "duty_rate": 10
+            },
+            "anti_freeze": {
+                "text": "Anti Freeze",
+                "duty_rate": 40
+            },
+            "batteries_lead_acid_or_auto": {
+                "text": "Batteries (Lead Acid or Auto)",
+                "duty_rate": 60
+            },
+            "degreasers": {
+                "text": "Degreasers",
+                "duty_rate": 45
+            },
+            "transmission_fluids": {
+                "text": "Transmission Fluids",
+                "duty_rate": 75
+            }
+        }
+    },
+    "vehicle_parts": {
+        "text": "Vehicle Parts",
+        "sub_categories": {
+            "auto_parts": {
+                "text": "Auto Parts",
+                "duty_rate": 60
+            },
+            "batteries_deep_cycle": {
+                "text": "Batteries (Deep Cycle)",
+                "duty_rate": 35
+            },
+            "belt_transmission_other": {
+                "text": "Belt (Transmission/Other)",
+                "duty_rate": 45
+            },
+            "brake_pads": {
+                "text": "Brake Pads",
+                "duty_rate": 60
+            },
+            "engine_aircraft": {
+                "text": "Engine (Aircraft)",
+                "duty_rate": 5
+            },
+            "engine_car": {
+                "text": "Engine (Car)",
+                "duty_rate": 60
+            },
+            "jack_car": {
+                "text": "Jack (Car)",
+                "duty_rate": 45
+            },
+            "oil_motor": {
+                "text": "Oil (Motor)",
+                "duty_rate": 45
+            },
+            "rims_auto": {
+                "text": "Rims Auto",
+                "duty_rate": 60
+            },
+            "stereo_system": {
+                "text": "Stereo System",
+                "duty_rate": 35
+            },
+            "tires_auto_mounted": {
+                "text": "Tires (Auto-Mounted)",
+                "duty_rate": 60
+            },
+            "tires_auto_unmounted": {
+                "text": "Tires (Auto-Unmounted)",
+                "duty_rate": 25
+            },
+            "water_pump_vehicle": {
+                "text": "Water Pump (vehicle)",
+                "duty_rate": 45
+            }
+        }
+    }
+}
