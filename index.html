@@ -47,21 +47,13 @@
         <!-- Form  -->
         <form>
             <div class="form-group">
-                <select class="form-control" id="product_category">
-                    <option>Choose Product's category</option>
-                    <option>Category 1</option>
-                    <option>Category 2</option>
-                    <option>Category 3</option>
-                    <option>Category 4</option>
+                <select class="form-control" id="product_category" onchange="populate(this.id,'product_subcategory')">
+                    <option value="">Choose Product's category</option>
                 </select>
             </div>
             <div class="form-group">
                 <select class="form-control" id="product_subcategory">
-                    <option>Choose Product's sub-category</option>
-                    <option>Sub-category 1</option>
-                    <option>Sub-category 2</option>
-                    <option>Sub-category 3</option>
-                    <option>Sub-category 4</option>
+                    <option value="">Choose Product's sub-category</option>
                 </select>
             </div>
 
@@ -192,13 +184,10 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <!-- This should be moved to script.js file  -->
-    <!-- Script to enable popovers -->
-    <script>
-        $(document).ready(function () {
-            $('[data-toggle="popover"]').popover();
-        });
-    </script>
+    
+    <!-- My JS  -->
+    <script src="js/script.js"></script>
+    <script src="js/get-data.js"></script>
 </body>
 
 </html>
