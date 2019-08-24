@@ -83,3 +83,11 @@ body {
     color:#ffffff;
     text-decoration:none;
 }
+
+.navbar-brand {
+    color: orange !important;
+    
+      }
+      .width-control {
+          max-width: 1024px;
+      }
