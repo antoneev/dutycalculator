@@ -1,108 +1,105 @@
 <!DOCTYPE html>
-<html>
-<title>Know Da Price - Duty Calculation</title>
+<html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145112772-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-145112772-1');
-    </script>
-
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="SketchIcon.png">
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="description" content="Calculate the import tax to bring in items through a thirdparty shipper">
-    <meta name="keywords" content="Duty, Duty Calculator, Duty Calculation, Calculator, Bahamas Duty Calculator, Bahamas
-  Duty Calculation, Bahamas Duty Calculator">
-    <meta name="author" content="Antone Evans, Bry'Ton Rolle, Tim">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/SketchIcon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Know Da Price - Duty Estimation</title>
 </head>
 
 <body>
-
-    <!--Navigation Bar-->
-    <div class="topnav" id="myTopnav">
-        <img src="NavLogo.png" style="width:225px;height:80px;" align="left">
-        <a href="contact">Contact</a>
-        <a href="about">About Us</a>
-        <a href="glossary">Glossary</a>
-        <a href="cart">Cart</a>
-        <a href="index">Home</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/navLogo.png" width="225" height="80" alt="Duty Estimator Logo">
         </a>
-    </div>
-
-
-    <div class="contact1">
-        <div class="container-aboutus">
-
-
-            <div class="two">
-                <h1>
-                    <center>What We Do</center>
-                </h1>
-                <br>
-                <p>Provide the most accurate data when dealing with importing items into the country through a third
-                    party
-                    shipper or otherwise.</p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-right" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link active" href="#">About <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="glossary.html">Glossary</a>
             </div>
-
-            <div class="one">
-                <h1>
-                    <center>Who Are We</center>
-                </h1>
-                <br>
-                <p>Know Da Price, was a concept created by three ambitious college students who wanted to solve one of
-                    the many problems individuals face when shipping items into the country. <b>Everyone is
-                        guessing.</b> After seeing the demand of islanders refusal of clearing personal items and
-                    allowing shipping companies to seize their acquired goods, something had to be done! There are
-                    endless testimonies of individuals who go to cash out at their respective freight carrier and
-                    realize that their items were doubled the expected price. Or, not being able to see how much it
-                    would be to clear their item until after they’ve bought it and submitted their invoices.</p>
-                <p>The goal of the duty calculator is to reduce patron’s time spent at shipping companies bewildered at
-                    invoice totals. By focusing on customer awareness and satisfaction, we hope to diminish the hassle
-                    of collecting items once they are provided with accurate estimates beforehand.</p>
-                <p>Our website model is quite simple. We provide a general estimate of how much you should pay for your
-                    items before you even add them to your shopping cart! You can sit in the comfort of your home, add
-                    all of your items to your shopping cart, then you can jump onto Know Da Price and add each of those
-                    items into our simple interface and receive an estimate of how much you should pay your courier
-                    service. </p>
-                <center>
-                    <p><b><i>These prices are not 100% guaranteed; however, it should be a close estimator!</i></b></p>
-                </center>
-            </div>
-
         </div>
+    </nav>
+
+    <!-- Container -->
+    <div class="container" id="about_main_container">
+        <h3>
+            <center>What We Do</center>
+        </h3>
+        <p>Provide the most accurate data when dealing with importing items into the country through a third
+            party
+            shipper or otherwise.</p>
+
+        <h3>
+            <center>What We Do</center>
+        </h3>
+        <p>Know Da Price, was a concept created by three ambitious college students who wanted to solve one of
+            the many problems individuals face when shipping items into the country. <b>Everyone is
+                guessing.</b> After seeing the demand of islanders refusal of clearing personal items and
+            allowing shipping companies to seize their acquired goods, something had to be done! There are
+            endless testimonies of individuals who go to cash out at their respective freight carrier and
+            realize that their items were doubled the expected price. Or, not being able to see how much it
+            would be to clear their item until after they’ve bought it and submitted their invoices.</p>
+        <p>The goal of the duty calculator is to reduce patron’s time spent at shipping companies bewildered at
+            invoice totals. By focusing on customer awareness and satisfaction, we hope to diminish the hassle
+            of collecting items once they are provided with accurate estimates beforehand.</p>
+        <p>Our website model is quite simple. We provide a general estimate of how much you should pay for your
+            items before you even add them to your shopping cart! You can sit in the comfort of your home, add
+            all of your items to your shopping cart, then you can jump onto Know Da Price and add each of those
+            items into our simple interface and receive an estimate of how much you should pay your courier
+            service. </p>
     </div>
 
-    <!--Upper Footer-->
-    <div class="upper-footer">
-        <font size="3">
-            <nav>
-                <a style="color:#ffffff; text-decoration:none" href="terms">Terms of Use | </a>
-                <a style="color:#ffffff; text-decoration:none" href="privacy">Privacy Policy | </a>
-                <a style="color:#ffffff; text-decoration:none" target="_blank" href="ratesofduty.pdf">Bahamas
-                    Duty Guide | </a>
-                <a style="color:#ffffff; text-decoration:none" target="_blank"
-                    href="https://bahamas.prod.3ceonline.com/bsgov">Tariff Code</a>
-            </nav>
-        </font>
-    </div>
+    <footer class="footer">
+        <nav>
+            <a href="terms">Terms of Use | </a>
+            <a href="privacy">Privacy Policy | </a>
+            <a target="_blank" href="ratesofduty.pdf">Bahamas
+                Duty Guide | </a>
+            <a target="_blank" href="https://bahamas.prod.3ceonline.com/bsgov">Tariff Code</a>
+        </nav>
 
-    <!--Footer-->
-    <div class="footer">
-        <font size="2">
-            <p style="color:lightgray;">&copy Know Da Price 2019</p>
-        </font>
-    </div>
+        <br>
+
+        <p>&copy Know Da Price 2019</p>
+
+    </footer>
+
+
+    <!-- Bootstrap Required Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <!-- This should be moved to script.js file  -->
+    <!-- Script to enable popovers -->
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
 
 </body>
 
