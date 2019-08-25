@@ -22,17 +22,12 @@ body {
     font-size: 16px;
 }
 
-
-#info_msg {
-    text-align: center;
-}
-
 .my_icon a {
     vertical-align: -50%;
 }
 
 /* For listed items */
-#list_item {
+.preview_item {
     width: 95%;
     margin: auto;
     border: 1px solid Black;
@@ -82,4 +77,14 @@ body {
 .footer a {
     color:#ffffff;
     text-decoration:none;
+}
+
+.alert {
+    margin-bottom: 0;
+    display: none; 
+}
+
+#info_msg {
+    text-align: center;
+    display: block;
 }

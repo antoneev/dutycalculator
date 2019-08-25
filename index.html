@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -18,6 +17,28 @@
 </head>
 
 <body>
+    <!-- Alert  -->
+    <div class="alert alert-danger alert-dismissible fade show" id="category_alert" role="alert">
+        You must put a value in category.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="alert alert-danger alert-dismissible fade show" id="subcategory_alert" role="alert">
+        You must put a value in sub-category.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="alert alert-danger alert-dismissible fade show" id="value_alert" role="alert">
+        You must put a price in the value of item.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
@@ -59,13 +80,14 @@
 
             <div class="form-group row">
                 <div class="col-5">
-                    <input class="form-control" type="number" min="0" placeholder="No of items" id="quantity">
+                    <input class="form-control" type="number" min="0" placeholder="Value of item(s)" id="value_of_item">
                 </div>
             </div>
 
             <div class="form-group row">
                 <div class="col-7">
-                    <input class="form-control" type="number" min="0" placeholder="Processing fee ($)" id="quantity">
+                    <input class="form-control" type="number" min="0" placeholder="Processing fee ($)"
+                        id="processing_fee">
                 </div>
                 <div class="my_icon">
                     <a href="#" class="fa fa-question-circle-o" data-toggle="popover" title="Popover Header"
@@ -76,8 +98,9 @@
             <div class="form-group row">
                 <div class="col-7">
                     <input class="form-control" type="number" min="0" placeholder="Environmental levy fee ($)"
-                        id="quantity">
+                        id="levy_fee">
                 </div>
+
                 <div class="my_icon">
                     <a href="#" class="fa fa-question-circle-o" data-toggle="popover" title="Popover Header"
                         data-content="Some content inside the popover"></a>
@@ -86,79 +109,14 @@
 
             <div class="row">
                 <div class="col text-center">
-                    <button type="button" class="btn btn-primary" id="preview_btn">Preview</button>
-                </div>
-            </div>
-
-            <div id="preview_container">
-                <div id="list_item">
-                    <button id="x">x</button>
-                    <table class="table">
-                        <tbody>
-                            <tr>
-                                <th scope="row">Item Price</th>
-                                <td>$400.26</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Qty</th>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Duty rate</th>
-                                <td>40%</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Environmental Levy fee</th>
-                                <td>$50</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Processing fee</th>
-                                <td>$50</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div id="list_item">
-                    <button id="x">x</button>
-                    <table class="table">
-                        <tbody>
-                            <tr>
-                                <th scope="row">Item Price</th>
-                                <td>$400.26</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Qty</th>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Duty rate</th>
-                                <td>40%</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Environmental Levy fee</th>
-                                <td>$50</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Processing fee</th>
-                                <td>$50</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="row" id="preview_buttons">
-                    <div class="col text-center">
-                        <button type="button" class="btn btn-danger" id="preview_btn">Add more</button>
-                        <button type="button" class="btn btn-primary" id="preview_btn">Calculate</button>
-                    </div>
+                    <button type="button" class="btn btn-primary" id="preview_btn" onclick="preview()">Preview</button>
                 </div>
             </div>
         </form>
 
-        <div id="result">
+        <!-- <div id="result">
             <p>$10324.49</p>
-        </div>
+        </div> -->
     </div>
 
     <footer class="footer">
@@ -184,10 +142,10 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    
     <!-- My JS  -->
     <script src="js/script.js"></script>
     <script src="js/get-data.js"></script>
+    <script src="js/functions.js"></script>
 </body>
 
 </html>
