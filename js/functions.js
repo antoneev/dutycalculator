@@ -111,28 +111,28 @@ function generate_preview_item(category, subcategory, value_of_item, processing_
     preview_item.setAttribute("class", "preview_item");
 
     preview_item.innerHTML = `
-    <button id="x" onclick="remove_preview_item(this.parentNode.id)">x</button>
-    <table class="table">
-        <tbody>
-            <tr>
-                <th scope="row">Item Price</th>
-                <td>$` + item_price + `</td>
-            </tr>
-            <tr>
-                <th scope="row">Duty rate</th>
-                <td>` + duty_rate + `%</td>
-            </tr>
-            <tr>
-                <th scope="row">Environmental Levy fee</th>
-                <td>$` + l_fee + `</td>
-            </tr>
-            <tr>
-                <th scope="row">Processing fee</th>
-                <td>$` + p_fee + `</td>
-            </tr>
-        </tbody>
-    </table>
-`
+        <button id="x" onclick="remove_preview_item(this.parentNode.id)">x</button>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th scope="row">Item Price</th>
+                    <td>$` + item_price + `</td>
+                </tr>
+                <tr>
+                    <th scope="row">Duty rate</th>
+                    <td>` + duty_rate + `%</td>
+                </tr>
+                <tr>
+                    <th scope="row">Environmental Levy fee</th>
+                    <td>$` + l_fee + `</td>
+                </tr>
+                <tr>
+                    <th scope="row">Processing fee</th>
+                    <td>$` + p_fee + `</td>
+                </tr>
+            </tbody>
+        </table>
+    `
 
     return preview_item;
 }
