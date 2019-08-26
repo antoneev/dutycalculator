@@ -2,7 +2,7 @@
 body {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("../images/background.jpg");
+    background-image: url("images/background.jpg");
     background-size: 100%;
 }
 
@@ -10,7 +10,7 @@ body {
     opacity: 0.8;
     border-radius: 5px;
     background-color: #f2f2f2;
-    margin: asuto;
+    /* margin: auto; */
     margin-top: 20px;
     padding: 15px;
 }
