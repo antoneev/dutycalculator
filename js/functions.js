@@ -8,7 +8,7 @@ function generate_preview_container() {
     <div class="row" id="preview_buttons">
         <div class="col text-center">
             <button type="button" class="btn btn-danger" id="preview_btn">Add more</button>
-            <button type="button" class="btn btn-primary" id="preview_btn">Calculate</button>
+            <button type="button" class="btn btn-primary" id="preview_btn" onclick="calulate_duty_estimate()">Calculate</button>
         </div>
     </div>
 `
@@ -27,11 +27,13 @@ function calculate_processing_fee(value_of_item) {
 }
 
 function remove_preview_item(id_of_preview_item) {
-    console.log(id_of_preview_item);
     var preview_item = document.getElementById(id_of_preview_item);
-    console.log(preview_item);
     preview_item.parentNode.removeChild(preview_item);
 
+    if (preview_items.length === 1){
+        document.getElementById("preview_container").remove();
+    }
+    
     // Remove from the preview_items_object
     var index = parseInt(id_of_preview_item[id_of_preview_item.length - 1]) - 1;
     preview_items.splice(index, 1);
@@ -154,4 +156,32 @@ function preview() {
         var preview_buttons = document.getElementById("preview_buttons");
         preview_buttons.parentNode.insertBefore(preview_item, preview_buttons);
     }
+}
+
+function calulate_duty_estimate() {
+
+    if (document.getElementById("result")) {
+        document.getElementById("result").remove();
+    }
+    var result = 0;
+    for (var i = 0; i < preview_items.length; i++) {
+
+        var item_price = parseFloat(preview_items[i].item_price);
+        var duty_rate = parseFloat(preview_items[i].duty_rate);
+        var processing_fee = parseFloat(preview_items[i].processing_fee);
+        var levy_fee = parseFloat(preview_items[i].levy_fee);
+
+
+        result += item_price + ((duty_rate/100) * item_price) + processing_fee + levy_fee;
+    }
+
+    result = result.toFixed(2);
+
+    var result_elem = document.createElement("div");
+    result_elem.setAttribute("id", "result");
+    result_elem.innerHTML = `
+        <p>$` + result + `</p>
+    
+    `
+    document.getElementById("main_container").appendChild(result_elem);
 }
