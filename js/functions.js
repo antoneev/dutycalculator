@@ -33,7 +33,7 @@ function remove_preview_item(id_of_preview_item) {
     if (preview_items.length === 1){
         document.getElementById("preview_container").remove();
     }
-    
+
     // Remove from the preview_items_object
     var index = parseInt(id_of_preview_item[id_of_preview_item.length - 1]) - 1;
     preview_items.splice(index, 1);
