@@ -82,6 +82,8 @@ function remove_preview_item(id_of_preview_item) {
     // Remove from the preview_items_object
     var index = parseInt(id_of_preview_item[id_of_preview_item.length - 1]) - 1;
     preview_items.splice(index, 1);
+
+    remove_result();
 }
 
 // Populate Sub-category function
