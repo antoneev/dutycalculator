@@ -1,5 +1,7 @@
 var preview_items = [];
 
+var cigarette_types = ["cigarettes", "cigarillos_etc_other", "cigars"];
+
 function generate_preview_container() {
     var preview_container = document.createElement('div');
     preview_container.setAttribute("id", "preview_container");
@@ -13,6 +15,33 @@ function generate_preview_container() {
     </div>
 `
     document.getElementById("main_container").appendChild(preview_container);
+}
+
+function generate_qty_field(){
+    var subcategory = document.getElementById("product_subcategory");
+
+    if (cigarette_types.includes(subcategory.value)) {
+        var qty = document.createElement("div");
+        qty.setAttribute("class", "form-group row");
+
+        qty.innerHTML = `
+            <div class="col-7">
+                <input class="form-control" type="number" min="0" placeholder="No. of sticks"
+                    id="quantity">
+            </div>
+            <div class="my_icon">
+                <a href="#" class="fa fa-question-circle-o" data-toggle="popover" title="Enter no. of cigarrete sticks"
+                    data-content="Cigarretes duty rates are calculated per stick"></a>
+            </div>
+        `
+        subcategory.parentNode.parentNode.insertBefore(qty, subcategory.parentNode.nextSibling);
+
+    } else {
+        var quantity_field = document.getElementById("quantity");
+        if (quantity_field) {
+            quantity_field.parentNode.parentNode.removeChild(quantity_field.parentNode);
+        }
+    }
 }
 
 function calculate_processing_fee(value_of_item) {
@@ -61,6 +90,7 @@ function is_valid() {
     var category = document.getElementById("product_category").value;
     var subcategory = document.getElementById("product_subcategory").value;
     var value_of_item = document.getElementById("value_of_item").value;
+    var qty = document.getElementById("quantity");
 
     var is_valid = true;
     if (category === "") {
@@ -75,11 +105,17 @@ function is_valid() {
         document.getElementById("value_alert").style.display = "block";
         is_valid = false;
     }
+    if (qty) {
+        if (!qty.value) {
+            document.getElementById("quantity_alert").style.display = "block";
+            is_valid = false;
+        }
+    }
 
     return is_valid;
 }
 
-function generate_preview_item(category, subcategory, value_of_item, processing_fee, levy_fee) {
+function generate_preview_item(category, subcategory, value_of_item, processing_fee, levy_fee, quantity) {
     var item_price = value_of_item;
     var duty_rate = duty_rates[category].sub_categories[subcategory].duty_rate;
     var p_fee;
@@ -99,7 +135,8 @@ function generate_preview_item(category, subcategory, value_of_item, processing_
         item_price: item_price,
         duty_rate: duty_rate,
         processing_fee: p_fee,
-        levy_fee: l_fee
+        levy_fee: l_fee,
+        quantity: quantity
     };
 
     preview_items.push(preview_item_object);
@@ -112,30 +149,60 @@ function generate_preview_item(category, subcategory, value_of_item, processing_
     preview_item.setAttribute("id", preview_item_id);
     preview_item.setAttribute("class", "preview_item");
 
-    preview_item.innerHTML = `
-        <button id="x" onclick="remove_preview_item(this.parentNode.id)">x</button>
-        <table class="table">
-            <tbody>
-                <tr>
-                    <th scope="row">Item Price</th>
-                    <td>$` + item_price + `</td>
-                </tr>
-                <tr>
-                    <th scope="row">Duty rate</th>
-                    <td>` + duty_rate + `%</td>
-                </tr>
-                <tr>
-                    <th scope="row">Environmental Levy fee</th>
-                    <td>$` + l_fee + `</td>
-                </tr>
-                <tr>
-                    <th scope="row">Processing fee</th>
-                    <td>$` + p_fee + `</td>
-                </tr>
-            </tbody>
-        </table>
-    `
-
+    if (!quantity) {
+        preview_item.innerHTML = `
+            <button id="x" onclick="remove_preview_item(this.parentNode.id)">x</button>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th scope="row">Item Price</th>
+                        <td>$` + item_price + `</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Duty rate</th>
+                        <td>` + duty_rate + `%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Environmental Levy fee</th>
+                        <td>$` + l_fee + `</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Processing fee</th>
+                        <td>$` + p_fee + `</td>
+                    </tr>
+                </tbody>
+            </table>
+        `
+    } else {
+        preview_item.innerHTML = `
+            <button id="x" onclick="remove_preview_item(this.parentNode.id)">x</button>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th scope="row">Item Price</th>
+                        <td>$` + item_price + `</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Qty</th>
+                        <td>` + quantity + ` sticks</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Duty rate</th>
+                        <td>` + duty_rate + `</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Environmental Levy fee</th>
+                        <td>$` + l_fee + `</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Processing fee</th>
+                        <td>$` + p_fee + `</td>
+                    </tr>
+                </tbody>
+            </table>
+        `
+    }
+    
     return preview_item;
 }
 
@@ -151,13 +218,31 @@ function preview() {
         var processing_fee = document.getElementById("processing_fee").value;
         var levy_fee = document.getElementById("levy_fee").value;
 
-        var preview_item = generate_preview_item(category, subcategory, value_of_item, processing_fee, levy_fee);
+        var quantity = document.getElementById("quantity");
+        if (quantity) {
+            quantity = quantity.value;
+        }
+
+        var preview_item = generate_preview_item(category, subcategory, value_of_item, processing_fee, levy_fee, quantity);
         // Insert before preview buttons
         var preview_buttons = document.getElementById("preview_buttons");
         preview_buttons.parentNode.insertBefore(preview_item, preview_buttons);
     }
 }
 
+function parse_duty_rate(duty_rate) {
+
+    var price_per_stick = parseFloat(duty_rate.slice(0, duty_rate.indexOf('p') - 1));
+    var additional_duty_rate = 0;
+
+    var i = duty_rate.indexOf("+");
+
+    if (i > 0) {
+        additional_duty_rate = parseFloat(duty_rate.slice(i+2, duty_rate.length - 1));
+    } 
+
+    return [price_per_stick, additional_duty_rate];
+}
 function calulate_duty_estimate() {
 
     if (document.getElementById("result")) {
@@ -167,12 +252,21 @@ function calulate_duty_estimate() {
     for (var i = 0; i < preview_items.length; i++) {
 
         var item_price = parseFloat(preview_items[i].item_price);
-        var duty_rate = parseFloat(preview_items[i].duty_rate);
+        
         var processing_fee = parseFloat(preview_items[i].processing_fee);
         var levy_fee = parseFloat(preview_items[i].levy_fee);
 
+        if (preview_items[i].quantity) {
+            var quantity = parseFloat(preview_items[i].quantity);
+            var x = parse_duty_rate(preview_items[i].duty_rate);
+            console.log(x[0]);
+            console.log(x[1]);
+            result += item_price + ((x[1]/100) * item_price) + (quantity * x[0]) + processing_fee + levy_fee;
 
-        result += item_price + ((duty_rate/100) * item_price) + processing_fee + levy_fee;
+        } else {
+            var duty_rate = parseFloat(preview_items[i].duty_rate);
+            result += item_price + ((duty_rate/100) * item_price) + processing_fee + levy_fee;
+        }
     }
 
     result = result.toFixed(2);

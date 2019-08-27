@@ -48,6 +48,13 @@
         </button>
     </div>
 
+    <div class="alert alert-danger alert-dismissible fade show" id="quantity_alert" role="alert">
+        You must enter the no of sticks of cigars
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav_bar">
         <a class="navbar-brand" href="#">
@@ -82,7 +89,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <select class="form-control" id="product_subcategory">
+                <select class="form-control" id="product_subcategory" onchange="generate_qty_field()">
                     <option value="">Choose Product's sub-category</option>
                 </select>
             </div>
