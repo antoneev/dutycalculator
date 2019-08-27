@@ -14,12 +14,15 @@
     <link rel="icon" href="images/SketchIcon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Get data js  -->
+    <script src="js/get-data.js"></script>
+
     <title>Know Da Price - Duty Estimation</title>
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav_bar">
         <a class="navbar-brand" href="index.html">
             <img src="images/navLogo.png" width="225" height="80" alt="Duty Estimator Logo">
         </a>
@@ -65,7 +68,7 @@
             service. </p>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <nav>
             <a href="terms">Terms of Use | </a>
             <a href="privacy">Privacy Policy | </a>
@@ -92,15 +95,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-
-    <!-- This should be moved to script.js file  -->
-    <!-- Script to enable popovers -->
-    <script>
-        $(document).ready(function () {
-            $('[data-toggle="popover"]').popover();
-        });
-    </script>
-
+    <!-- My JS  -->
+    <script src="js/script.js"></script>
+    <script src="js/functions.js"></script>
 </body>
 
 </html>

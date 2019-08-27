@@ -5,15 +5,18 @@ var cigarette_types = ["cigarettes", "cigarillos_etc_other", "cigars"];
 function fill_category_data(){
     // Fill Product category list
     var select = document.getElementById("product_category");
-    var keys = Object.keys(duty_rates);
-    console.log(keys);
-    console.log(duty_rates[keys[0]].text);
-    for (var i = 0; i < keys.length; i++) {
-        var option = document.createElement("option");
-        option.textContent = duty_rates[keys[i]].text
-        option.value = keys[i];
-        select.appendChild(option);
+    if (select) {
+        var keys = Object.keys(duty_rates);
+        console.log(keys);
+        console.log(duty_rates[keys[0]].text);
+        for (var i = 0; i < keys.length; i++) {
+            var option = document.createElement("option");
+            option.textContent = duty_rates[keys[i]].text
+            option.value = keys[i];
+            select.appendChild(option);
+        }
     }
+    
 }
 
 function generate_preview_container() {
