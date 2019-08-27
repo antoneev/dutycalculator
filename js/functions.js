@@ -2,6 +2,20 @@ var preview_items = [];
 
 var cigarette_types = ["cigarettes", "cigarillos_etc_other", "cigars"];
 
+function fill_category_data(){
+    // Fill Product category list
+    var select = document.getElementById("product_category");
+    var keys = Object.keys(duty_rates);
+    console.log(keys);
+    console.log(duty_rates[keys[0]].text);
+    for (var i = 0; i < keys.length; i++) {
+        var option = document.createElement("option");
+        option.textContent = duty_rates[keys[i]].text
+        option.value = keys[i];
+        select.appendChild(option);
+    }
+}
+
 function generate_preview_container() {
     var preview_container = document.createElement('div');
     preview_container.setAttribute("id", "preview_container");
@@ -9,7 +23,9 @@ function generate_preview_container() {
     preview_container.innerHTML = `
     <div class="row" id="preview_buttons">
         <div class="col text-center">
-            <button type="button" class="btn btn-danger" id="preview_btn">Add more</button>
+            <button type="button" class="btn btn-danger" id="preview_btn" onclick="reset()">
+                <a id="preview_btn_link" href="#main_container" style="color: white; text-decoration: none;">Add more</a>
+            </button>
             <button type="button" class="btn btn-primary" id="preview_btn" onclick="calulate_duty_estimate()">Calculate</button>
         </div>
     </div>
@@ -206,7 +222,14 @@ function generate_preview_item(category, subcategory, value_of_item, processing_
     return preview_item;
 }
 
+function remove_result() {
+    if (document.getElementById("result")) {
+        document.getElementById("result").remove();
+    }
+}
+
 function preview() {
+    remove_result();
     if (is_valid()) {
         var preview_container = document.getElementById("preview_container");
         if (!preview_container) {
@@ -243,11 +266,10 @@ function parse_duty_rate(duty_rate) {
 
     return [price_per_stick, additional_duty_rate];
 }
-function calulate_duty_estimate() {
 
-    if (document.getElementById("result")) {
-        document.getElementById("result").remove();
-    }
+function calulate_duty_estimate() {
+    remove_result();
+
     var result = 0;
     for (var i = 0; i < preview_items.length; i++) {
 
@@ -278,4 +300,58 @@ function calulate_duty_estimate() {
     
     `
     document.getElementById("main_container").appendChild(result_elem);
+}
+
+function reset() {
+    var form = document.getElementById("main_form");
+
+    form.innerHTML = `
+        <div class="form-group">
+            <select class="form-control" id="product_category" onchange="populate(this.id,'product_subcategory')">
+                <option value="">Choose Product's category</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select class="form-control" id="product_subcategory" onchange="generate_qty_field()">
+                <option value="">Choose Product's sub-category</option>
+            </select>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-5">
+                <input class="form-control" type="number" min="0" placeholder="Value of item(s)" id="value_of_item">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-7">
+                <input class="form-control" type="number" min="0" placeholder="Processing fee ($)"
+                    id="processing_fee">
+            </div>
+            <div class="my_icon">
+                <a href="#" class="fa fa-question-circle-o" data-toggle="popover" title="Popover Header"
+                    data-content="Some content inside the popover"></a>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-7">
+                <input class="form-control" type="number" min="0" placeholder="Environmental levy fee ($)"
+                    id="levy_fee">
+            </div>
+
+            <div class="my_icon">
+                <a href="#" class="fa fa-question-circle-o" data-toggle="popover" title="Popover Header"
+                    data-content="Some content inside the popover"></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary" id="preview_btn" onclick="preview()">Preview</button>
+            </div>
+        </div>
+    `
+
+    fill_category_data();
 }
