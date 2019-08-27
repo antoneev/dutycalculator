@@ -110,20 +110,20 @@ function is_valid() {
 
     var is_valid = true;
     if (category === "") {
-        document.getElementById("category_alert").style.display = "block";
+        alert("You must put a value in category");
         is_valid = false;
     }
     if (subcategory === "") {
-        document.getElementById("subcategory_alert").style.display = "block";
+        alert("You must put a value in sub-category");
         is_valid = false;
     }
     if (!value_of_item) {
-        document.getElementById("value_alert").style.display = "block";
+        alert("You must put a price in the value of item");
         is_valid = false;
     }
     if (qty) {
         if (!qty.value) {
-            document.getElementById("quantity_alert").style.display = "block";
+            alert("You must enter the no of sticks of cigars");
             is_valid = false;
         }
     }

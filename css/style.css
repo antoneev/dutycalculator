@@ -81,12 +81,10 @@ html, body {
     text-decoration:none;
 }
 
-.alert {
-    margin-bottom: 0;
-    display: none; 
-}
-
 #info_msg {
     text-align: center;
-    display: block;
+}
+
+form {
+    margin-top: 10px;
 }
