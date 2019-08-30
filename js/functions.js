@@ -7,6 +7,20 @@ function put_percentage(duty_rate) {
     }
     return duty_rate;
 }
+
+function stick_footer() {
+    var window_height = window.innerHeight;
+    var navbar_height = document.getElementById("nav_bar").offsetHeight;
+    var container_height = document.getElementById("main_container").offsetHeight;
+    var footer_height = document.getElementById("footer").offsetHeight;
+    var height = window_height - (navbar_height + 20 + container_height + footer_height) ;
+    console.log(height);
+    if (height < 10) {
+        $('#main_container').css('margin-bottom', 20);
+    } else {
+        $('#footer').css('margin-top', height);
+    }
+}
 function generate_duty_rate_table(id) {
 
     if (document.getElementById("duty_rate_table")) {
