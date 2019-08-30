@@ -229,6 +229,10 @@ function generate_preview_item(category, subcategory, value_of_item, processing_
                         <td>` + duty_rate + `%</td>
                     </tr>
                     <tr>
+                        <th scope="row">VAT</th>
+                        <td>12%</td>
+                    </tr>
+                    <tr>
                         <th scope="row">Environmental Levy fee</th>
                         <td>$` + l_fee + `</td>
                     </tr>
@@ -255,6 +259,10 @@ function generate_preview_item(category, subcategory, value_of_item, processing_
                     <tr>
                         <th scope="row">Duty rate</th>
                         <td>` + duty_rate + `</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">VAT</th>
+                        <td>12%</td>
                     </tr>
                     <tr>
                         <th scope="row">Environmental Levy fee</th>
@@ -333,11 +341,11 @@ function calulate_duty_estimate() {
             var x = parse_duty_rate(preview_items[i].duty_rate);
             console.log(x[0]);
             console.log(x[1]);
-            result += item_price + ((x[1] / 100) * item_price) + (quantity * x[0]) + processing_fee + levy_fee;
+            result += item_price + ((x[1] / 100) * item_price) + (quantity * x[0]) + processing_fee + levy_fee + (0.12 * item_price);
 
         } else {
             var duty_rate = parseFloat(preview_items[i].duty_rate);
-            result += item_price + ((duty_rate / 100) * item_price) + processing_fee + levy_fee;
+            result += item_price + ((duty_rate / 100) * item_price) + processing_fee + levy_fee + (0.12 * item_price);
         }
     }
 
