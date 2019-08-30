@@ -12,12 +12,9 @@ $(document).ready(function () {
     var footer_height = document.getElementById("footer").offsetHeight;
     var height = window_height - (navbar_height + 20 + container_height + footer_height) ;
     console.log(height);
-
     if (height < 10) {
         $('#main_container').css('margin-bottom', 20);
     } else {
         $('#footer').css('margin-top', height);
     }
-    
-    
 });
