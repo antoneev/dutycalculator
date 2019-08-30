@@ -94,3 +94,10 @@ html, body {
 form {
     margin-top: 10px;
 }
+
+/* Glossary Page  */
+#duty_rate_glossary,
+#levy_rates_glossary,
+#processing_fee_glossary {
+    margin: 30px;
+}

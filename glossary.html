@@ -46,6 +46,82 @@
 
     <!-- Container -->
     <div class="container" id="main_container">
+
+        <div id="duty_rate_glossary">
+            <h4>Duty Rates</h4>
+            <select class="form-control" id="product_category" onchange="generate_duty_rate_table(this.id)">
+                <option value="">Choose Product's category</option>
+            </select>
+        </div>
+
+        <div id="levy_rates_glossary">
+            <h4>Levy Rates</h4>
+            <select class="form-control">
+                <option value="">Choose Product's category</option>
+            </select>
+        </div>
+
+        <div id="processing_fee_glossary">
+            <h4>Processing Fee</h4>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Items</th>
+                        <th>Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Entry for Goods Imported Conditionally Duty free under the Hawksbill Creek Agreement</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr>
+                        <td>Reports Inwards of Vessels</td>
+                        <td>$75</td>
+                    </tr>
+                    <tr>
+                        <td>Aircraft General Declaration Inwards and Outwards</td>
+                        <td>$75</td>
+                    </tr>
+                    <tr>
+                        <td>Inward Declaration and Cruising Permit for Private Aircraft entering The Bahamas</td>
+                        <td>$50</td>
+                    </tr>
+                    <tr>
+                        <td>Application for Release of Perishable or Other Goods Prior to Payment of Duty</td>
+                        <td>$25</td>
+                    </tr>
+                    <tr>
+                        <td>Ex-Warehouse Home Consumption Entry</td>
+                        <td>$25</td>
+                    </tr>
+                    <tr>
+                        <td>Ex-Warehouse Export Entry for Goods for Exportation or for Goods for Use as Stores</td>
+                        <td>$25</td>
+                    </tr>
+                    <tr>
+                        <td>Ex-Warehouse Removal Entry</td>
+                        <td>$25</td>
+                    </tr>
+                    <tr>
+                        <td>Re-Warehousing Entry</td>
+                        <td>$25</td>
+                    </tr>
+                    <tr>
+                        <td>Entry Outwards of Vessel </td>
+                        <td>$75</td>
+                    </tr>
+                    <tr>
+                        <td>Miscellaneous Refund Claim </td>
+                        <td>$75</td>
+                    </tr>
+                    <tr>
+                        <td>Application for Payment of Proceeds of Sale of Goods </td>
+                        <td>$75</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <footer class="footer" id="footer">

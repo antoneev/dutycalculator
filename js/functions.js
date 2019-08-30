@@ -1,22 +1,48 @@
 var preview_items = [];
-
 var cigarette_types = ["cigarettes", "cigarillos_etc_other", "cigars"];
 
-function fill_category_data(){
-    // Fill Product category list
-    var select = document.getElementById("product_category");
-    if (select) {
-        var keys = Object.keys(duty_rates);
-        console.log(keys);
-        console.log(duty_rates[keys[0]].text);
-        for (var i = 0; i < keys.length; i++) {
-            var option = document.createElement("option");
-            option.textContent = duty_rates[keys[i]].text
-            option.value = keys[i];
-            select.appendChild(option);
-        }
+function put_percentage(duty_rate) {
+    if (typeof duty_rate == "number") {
+        return duty_rate + "%";
     }
-    
+    return duty_rate;
+}
+function generate_duty_rate_table(id) {
+
+    if (document.getElementById("duty_rate_table")) {
+        document.getElementById("duty_rate_table").remove();
+    }
+    var category = document.getElementById(id).value;
+    var sub_categories = Object.keys(duty_rates[category].sub_categories);
+
+    var table_content_html = ``;
+    for (var i = 0; i < sub_categories.length; i++) {
+        var row = `
+            <tr>
+                <td>` + put_percentage(duty_rates[category].sub_categories[sub_categories[i]].text) + `</td>
+                <td>` + put_percentage(duty_rates[category].sub_categories[sub_categories[i]].duty_rate) + `</td>
+            </tr>
+        `
+        console.log(typeof duty_rates[category].sub_categories[sub_categories[i]].duty_rate);
+        table_content_html += row;
+    }
+
+    var table_content = document.createElement('thead');
+    table_content.innerHTML = table_content_html;
+
+    var table = document.createElement('table');
+    table.setAttribute("class", "table table-bordered");
+    table.setAttribute("id", "duty_rate_table");
+    table.innerHTML = `
+        <thead>
+            <tr>
+                <th>Item name</th>
+                <th>Duty Rate</th>
+            </tr>
+        </thead>
+    `
+    document.getElementById("duty_rate_glossary").appendChild(table);
+    document.getElementById("duty_rate_table").appendChild(table_content);
 }
 
 function generate_preview_container() {
@@ -36,7 +62,42 @@ function generate_preview_container() {
     document.getElementById("main_container").appendChild(preview_container);
 }
 
-function generate_qty_field(){
+// Populate Sub-category function
+function populate(s1, s2) {
+    var category_select = document.getElementById(s1);
+    var subcategory_select = document.getElementById(s2);
+    subcategory_select.innerHTML = "<option value=\"\">Choose Product's sub-category</option>";
+
+    category_value = category_select.value;
+    subcategory_values = Object.keys(duty_rates[category_value].sub_categories);
+    console.log(subcategory_values);
+
+    for (var i = 0; i < subcategory_values.length; i++) {
+        var option = document.createElement("option");
+        option.value = subcategory_values[i];
+        option.innerHTML = duty_rates[category_value].sub_categories[subcategory_values[i]].text;
+        subcategory_select.options.add(option);
+    }
+}
+
+function fill_category_data() {
+    // Fill Product category list
+    var select = document.getElementById("product_category");
+    if (select) {
+        var keys = Object.keys(duty_rates);
+        console.log(keys);
+        console.log(duty_rates[keys[0]].text);
+        for (var i = 0; i < keys.length; i++) {
+            var option = document.createElement("option");
+            option.textContent = duty_rates[keys[i]].text
+            option.value = keys[i];
+            select.appendChild(option);
+        }
+    }
+
+}
+
+function generate_qty_field() {
     var subcategory = document.getElementById("product_subcategory");
 
     if (cigarette_types.includes(subcategory.value)) {
@@ -78,7 +139,7 @@ function remove_preview_item(id_of_preview_item) {
     var preview_item = document.getElementById(id_of_preview_item);
     preview_item.parentNode.removeChild(preview_item);
 
-    if (preview_items.length === 1){
+    if (preview_items.length === 1) {
         document.getElementById("preview_container").remove();
     }
 
@@ -89,23 +150,7 @@ function remove_preview_item(id_of_preview_item) {
     remove_result();
 }
 
-// Populate Sub-category function
-function populate(s1, s2) {
-    var category_select = document.getElementById(s1);
-    var subcategory_select = document.getElementById(s2);
-    subcategory_select.innerHTML = "<option value=\"\">Choose Product's sub-category</option>";
 
-    category_value = category_select.value;
-    subcategory_values = Object.keys(duty_rates[category_value].sub_categories);
-    console.log(subcategory_values);
-
-    for (var i = 0; i < subcategory_values.length; i++) {
-        var option = document.createElement("option");
-        option.value = subcategory_values[i];
-        option.innerHTML = duty_rates[category_value].sub_categories[subcategory_values[i]].text;
-        subcategory_select.options.add(option);
-    }
-}
 
 function is_valid() {
     var category = document.getElementById("product_category").value;
@@ -223,7 +268,7 @@ function generate_preview_item(category, subcategory, value_of_item, processing_
             </table>
         `
     }
-    
+
     return preview_item;
 }
 
@@ -266,8 +311,8 @@ function parse_duty_rate(duty_rate) {
     var i = duty_rate.indexOf("+");
 
     if (i > 0) {
-        additional_duty_rate = parseFloat(duty_rate.slice(i+2, duty_rate.length - 1));
-    } 
+        additional_duty_rate = parseFloat(duty_rate.slice(i + 2, duty_rate.length - 1));
+    }
 
     return [price_per_stick, additional_duty_rate];
 }
@@ -279,7 +324,7 @@ function calulate_duty_estimate() {
     for (var i = 0; i < preview_items.length; i++) {
 
         var item_price = parseFloat(preview_items[i].item_price);
-        
+
         var processing_fee = parseFloat(preview_items[i].processing_fee);
         var levy_fee = parseFloat(preview_items[i].levy_fee);
 
@@ -288,11 +333,11 @@ function calulate_duty_estimate() {
             var x = parse_duty_rate(preview_items[i].duty_rate);
             console.log(x[0]);
             console.log(x[1]);
-            result += item_price + ((x[1]/100) * item_price) + (quantity * x[0]) + processing_fee + levy_fee;
+            result += item_price + ((x[1] / 100) * item_price) + (quantity * x[0]) + processing_fee + levy_fee;
 
         } else {
             var duty_rate = parseFloat(preview_items[i].duty_rate);
-            result += item_price + ((duty_rate/100) * item_price) + processing_fee + levy_fee;
+            result += item_price + ((duty_rate / 100) * item_price) + processing_fee + levy_fee;
         }
     }
 
