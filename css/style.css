@@ -99,5 +99,6 @@ form {
 #duty_rate_glossary,
 #levy_rates_glossary,
 #processing_fee_glossary {
-    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
