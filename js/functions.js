@@ -1,11 +1,11 @@
 var preview_items = [];
 var cigarette_types = ["cigarettes", "cigarillos_etc_other", "cigars"];
 
-function put_percentage(duty_rate) {
-    if (typeof duty_rate == "number") {
-        return duty_rate + "%";
+function put_percentage(value) {
+    if (typeof value == "number") {
+        return value + "%";
     }
-    return duty_rate;
+    return value;
 }
 
 function stick_footer() {
@@ -22,6 +22,45 @@ function stick_footer() {
     }
 }
 
+function generate_levy_rate_table(id) {
+
+    if (document.getElementById("levy_rate_table")) {
+        document.getElementById("levy_rate_table").remove();
+    }
+    
+    var category = document.getElementById(id).value;
+    var items = levy_rates[category].items;
+
+    var table_content_html = ``;
+    for (var i = 0; i < items.length; i++) {
+        var row = `
+            <tr>
+                <td>` + items[i].item + `</td>
+                <td>` + put_percentage(items[i].levy_rate) + `</td>
+            </tr>
+        `
+        table_content_html += row;
+    }
+
+    var table_content = document.createElement('thead');
+    table_content.innerHTML = table_content_html;
+
+    var table = document.createElement('table');
+    table.setAttribute("class", "table table-bordered");
+    table.setAttribute("id", "levy_rate_table");
+    table.innerHTML = `
+        <thead>
+            <tr>
+                <th>Item name</th>
+                <th>Levy Rate</th>
+            </tr>
+        </thead>
+    `
+    document.getElementById("levy_rate_glossary").appendChild(table);
+    document.getElementById("levy_rate_table").appendChild(table_content);
+
+}
+
 function generate_duty_rate_table(id) {
 
     if (document.getElementById("duty_rate_table")) {
@@ -34,7 +73,7 @@ function generate_duty_rate_table(id) {
     for (var i = 0; i < sub_categories.length; i++) {
         var row = `
             <tr>
-                <td>` + put_percentage(duty_rates[category].sub_categories[sub_categories[i]].text) + `</td>
+                <td>` + duty_rates[category].sub_categories[sub_categories[i]].text + `</td>
                 <td>` + put_percentage(duty_rates[category].sub_categories[sub_categories[i]].duty_rate) + `</td>
             </tr>
         `
@@ -95,7 +134,7 @@ function populate(s1, s2) {
     }
 }
 
-function fill_category_data() {
+function fill_product_category_data() {
     // Fill Product category list
     var select = document.getElementById("product_category");
     if (select) {
@@ -110,6 +149,23 @@ function fill_category_data() {
         }
     }
 
+}
+
+function fill_levy_category_data() {
+    console.log("The levy function is working");
+    // Fill Levy Rates field form
+    var select = document.getElementById("levy_category");
+    console.log(select);
+    if (select) {
+        var keys = Object.keys(levy_rates);
+        console.log(keys);
+        for (var i = 0; i < keys.length; i++) {
+            var option = document.createElement("option");
+            option.textContent = levy_rates[keys[i]].text
+            option.value = keys[i];
+            select.appendChild(option);
+        }
+    }
 }
 
 function generate_qty_field() {
