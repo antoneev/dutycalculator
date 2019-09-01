@@ -1,0 +1,543 @@
+{
+    "household_appliance": {
+        "text": "Household Appliance",
+
+        "items": [ 
+            {
+                "item": "Other Water Heaters",
+                "levy_rate": 20
+            },
+            {
+                "item": "Other, cookers, etc",
+                "levy_rate": 20
+            },
+            {
+                "item": "Generator of an output not exceeding 75 k VA",
+                "levy_rate": 20
+            },
+            {
+                "item": "Generator of an output exceeding 75 k VA but not exceeding 375 k VA",
+                "levy_rate": 20
+            },              
+            {
+                "item": "Generator of an output exceeding 375 k VA",
+                "levy_rate": 20
+            },     
+            {
+                "item": "Washing, bleaching or drying machines",
+                "levy_rate": 15
+            },     
+            {
+                "item": "Household type dishwashing machines with an efficient rating greater than 15.0",
+                "levy_rate": 15
+            },
+            {
+                "item": "Other dish washer",
+                "levy_rate": 15
+            },
+            {
+                "item": "Solar units",
+                "levy_rate": 10
+            },
+            {
+                "item": "Other air condition",
+                "levy_rate": 10
+            },
+            {
+                "item": "Solar air condition incorporating a refrigerating unit and a valve for reversal of cooling/heat cycle (reversible heat pumps)",
+                "levy_rate": 10
+            },
+            {
+                "item": "Other air condition incorporating a refrigerating unit and a valve for reversal of cooling/heat cycle",
+                "levy_rate": 10
+            },
+            {
+                "item": "Solar air condition incorporating a refrigerating unit",
+                "levy_rate": 10
+            },
+            {
+                "item": "Chest Freezers not exceeding 800 1 (28.25 cubic ft) capacity",
+                "levy_rate": 15
+            },
+            {
+                "item": "Other upright Freezers",
+                "levy_rate": 15
+            },
+            {
+                "item": "Other furniture (chests, cabinets, display counter, show-cases) for storage and display, incorporating refrigerating or freezing equipment",
+                "levy_rate": 15
+            },
+            {
+                "item": "Stoves - gas or fuel",
+                "levy_rate": 5
+            },
+            {
+                "item": "Other liquid fuel stoves",
+                "levy_rate": 5
+            },
+            {
+                "item": "Appliances for solid fuel",
+                "levy_rate": 5
+            },
+            {
+                "item": "Other appliances - gas or fuel",
+                "levy_rate": 5
+            },
+            {
+                "item": "Appliances for liquid fuel",
+                "levy_rate": 5
+            },
+            {
+                "item": "Electric ovens, cookers, cooking plates, boiling rings, grillers and roasters",
+                "levy_rate": 5
+            },
+            {
+                "item": "Microwave oven",
+                "levy_rate": 5
+            },
+            {
+                "item": "Fully automatic washer with an efficient rating greater than 15.0",
+                "levy_rate": 15
+            },
+            {
+                "item": "Other machines w/built-in centrifugal center",
+                "levy_rate": 15
+            },
+            {
+                "item": "Other washers",
+                "levy_rate": 15
+            },
+            {
+                "item": "Machines, each of a dry linen capacity exceeding 10kg (22 lb.)",
+                "levy_rate": 15
+            },
+            {
+                "item": "Dry cleaning machines",
+                "levy_rate": 15
+            },
+            {
+                "item": "Machines, each of a dry linen capacity exceeding 10kg (22 lb.)",
+                "levy_rate": 15
+            },
+            {
+                "item": "Other dryer",
+                "levy_rate": 15
+            },
+            {
+                "item": "Combined Refrigerator Freezers fitted with separate external doors",
+                "levy_rate": 15
+            },
+            {
+                "item": "Other refrigerators",
+                "levy_rate": 15
+            },
+            {
+                "item": "Compression-type refrigerator with efficient rating greater than 15.0",
+                "levy_rate": 15
+            },
+            {
+                "item": "Other refrigerators with efficient rating greater than 15.0",
+                "levy_rate": 15
+            },
+            {
+                "item": "Generating sets with spark-ignition internal combustion piston engines",
+                "levy_rate": 20
+            }
+        ]
+    },
+
+    "household_essentials": {
+        "text": "Household Essentials",
+
+        "items": [ 
+            {
+                "item": "Ironing machines and pressers (including fusing pressers)",
+                "levy_rate": 15
+            }               
+        ]
+    },
+
+    "others": {
+        "text": "Others",
+
+        "items": [ 
+            {
+                "item": "Machinery with a 360 revolving superstructure",
+                "levy_rate": 300
+            },         
+            {
+                "item": "Automatic beverage-vending machines;incorporating heating or refrigerating devices",
+                "levy_rate": 25
+            },
+            {
+                "item": "Other Automatic beverage-vending machines",
+                "levy_rate": 25
+            },
+            {
+                "item": "Other machines; incorporating heating or refrigerating devices",
+                "levy_rate": 25
+            },
+            {
+                "item": "Machines for reeling, unreeling, folding, cutting or pinking textile fabrics",
+                "levy_rate": 15
+            },
+            {
+                "item": "Point of Sale systems",
+                "levy_rate": 5
+            }
+        ]
+    },
+
+    "vehicle": {
+        "text": "Vehicle",
+
+        "items": [ 
+            {
+                "item": "Electric Motorcycle",
+                "levy_rate": 50
+            },         
+            {
+                "item": "Other Motorcycles",
+                "levy_rate": 50
+            },
+            {
+                "item": "Fork-lift trucks: self-propelled trucks powdered by an electric motor",
+                "levy_rate": 200
+            },
+            {
+                "item": "Other self-propelled trucks",
+                "levy_rate": 200
+            },
+            {
+                "item": "Other trucks",
+                "levy_rate": 250
+            },
+            {
+                "item": "Bulldozers and angle dozers: Track laying",
+                "levy_rate": 300
+            },
+            {
+                "item": "Other Bull dozers",
+                "levy_rate": 300
+            },
+            {
+                "item": "Scrapers",
+                "levy_rate": 300
+            },
+            {
+                "item": "Tamping machines and road rollers",
+                "levy_rate": 300
+            },
+            {
+                "item": "Used vehicles of g.v.w. not exceeding 5 tonnes and not exceeding 10 years",
+                "levy_rate": "20% of Landed"
+            },
+            {
+                "item": "New vehicles of g.v.w. exceeding 5 tonnes but not exceeding 20 tonnes",
+                "levy_rate": 250
+            },
+            {
+                "item": "Used vehicles of g.v.w. exceeding 5 tonnes but not exceeding 20 tonnes and not exceeding 10 yrs.",
+                "levy_rate": 250
+            },
+            {
+                "item": "New vehicles of g.v.w exceeding 20 tonnes",
+                "levy_rate": 250
+            },
+            {
+                "item": "Used vehicles of g.v.w exceeding 20 tonnes and not exceeding 10 years",
+                "levy_rate": 250
+            },
+            {
+                "item": "Used vehicles of g.v.w exceeding 20 tonnes and exceeding 10 years",
+                "levy_rate": "20% of Landed"
+            },
+            {
+                "item": "New Vehicles of g.v.w. not exceeding 5 tonnes",
+                "levy_rate": 250
+            },
+            {
+                "item": "Used vehicles of g.v.w. not exceeding 5 tonnes and exceeding 10 years",
+                "levy_rate": 250
+            },
+            {
+                "item": "New vehicles of g.v.w. exceeding 5 tonnes",
+                "levy_rate": 250
+            },
+            {
+                "item": "Used vehicles of g.v.w. exceeding 5 tonnes and not exceeding 10 years",
+                "levy_rate": 250
+            },
+            {
+                "item": "Used vehicles of g.v.w. exceeding 5 tonnes and exceeding 10 years",
+                "levy_rate": "20% of Landed"
+            },
+            {
+                "item": "New hybrid and electric vehicles of a value exceeding $50,000",
+                "levy_rate": 250
+            },
+            {
+                "item": "New hybrid and electric vehicles of a value not exceeding $50,000",
+                "levy_rate": 250
+            },
+            {
+                "item": "Used hybrid and electric vehicles of a value exceeding $50,000",
+                "levy_rate": "20% of Landed"
+            },
+            {
+                "item": "Vintage Vehicles (vehicles 85 years & older)",
+                "levy_rate": 250
+            },
+            {
+                "item": "New motor vehicles",
+                "levy_rate": 250
+            },
+            {
+                "item": "Used motor vehicles not exceeding 10 years",
+                "levy_rate": 250
+            },
+            {
+                "item": "Used motor vehicles exceeding 10 years",
+                "levy_rate": 20
+            },
+            {
+                "item": "Antique Vehicles (vehicles between 25-84 years)",
+                "levy_rate": 250
+            },
+            {
+                "item": "New dumpers designed for off highway use",
+                "levy_rate": 250
+            },
+            {
+                "item": "Used dumpers designed for off highway use exceeding 10 years",
+                "levy_rate": "20% of Landed"
+            },
+            {
+                "item": "Used dumpers designed for off highway use not exceeding 10 years",
+                "levy_rate": 250
+            },
+            {
+                "item": "Used motor Vehicles, not exceeding 10 years",
+                "levy_rate": 250
+            },
+            {
+                "item": "Used motor Vehicles, exceeding 10 years",
+                "levy_rate": "20% of Landed"
+            },
+            {
+                "item": "Vintage Vehicles (vehicles between 25-84 years)",
+                "levy_rate": 250
+            },
+            {
+                "item": "Single axle tractors",
+                "levy_rate": 300
+            },
+            {
+                "item": "Road tractors for semi-trailer",
+                "levy_rate": 300
+            },
+            {
+                "item": "Track-laying tractors",
+                "levy_rate": 300
+            },
+            {
+                "item": "Other motor vehicle not exceeding 10 years",
+                "levy_rate": 250
+            },
+            {
+                "item": "Crane-lorries",
+                "levy_rate": 300
+            },
+            {
+                "item": "Fire fighting vehicles",
+                "levy_rate": 300
+            },
+            {
+                "item": "Concrete-mixer lorries",
+                "levy_rate": 300
+            },
+            {
+                "item": "Other - Vehicles",
+                "levy_rate": 300
+            },
+            {
+                "item": "Work trucks, self-propelled (Electric)",
+                "levy_rate": 300
+            },
+            {
+                "item": "Other work trucks",
+                "levy_rate": 250
+            },
+            {
+                "item": "Tanks and other armoured fighting vehicles, motorized, whether or not fitted with weapons, and parts of such vehicles",
+                "levy_rate": 300
+            },
+            {
+                "item": "Motor cycles: with reciprocating internal combustion; piston engine of a cylinder capacity not exceeding 50 cc",
+                "levy_rate": 50
+            }
+        ]
+    },
+
+    "vehicle_accessories": {
+        "text": "Vehicle Accessories",
+
+        "items": [ 
+            {
+                "item": "Other lead-acid accumulators",
+                "levy_rate": 5
+            },         
+            {
+                "item": "Lead-acid of a kind used for starting piston engines",
+                "levy_rate": 5
+            }
+        ]
+    },
+ 
+    "vehicle_parts": {
+        "text": "Vehicle Parts",
+
+        "items": [ 
+            {
+                "item": "Mobile drilling derricks",
+                "levy_rate": 300
+            },         
+            {
+                "item": "Graders and levelers",
+                "levy_rate": 300
+            },
+            {
+                "item": "Mechanical shovels, excavators and shovel loaders; front-end shovel loaders",
+                "levy_rate": 300
+            },         
+            {
+                "item": "Other Mechanical shovels, excavators and shovel loaders",
+                "levy_rate": 300
+            },
+            {
+                "item": "Shipping containers",
+                "levy_rate": "500 per TEU"
+            },         
+            {
+                "item": "Bicycle tyres",
+                "levy_rate": 1
+            },
+            {
+                "item": "Motorbike tyres",
+                "levy_rate": 5
+            },         
+            {
+                "item": "Aircraft tyres",
+                "levy_rate": 25
+            },
+            {
+                "item": "New car tyres",
+                "levy_rate": 5
+            },         
+            {
+                "item": "New Bus/Lorries tyres (including trucks) Other having a “herring bone” or similar tread",
+                "levy_rate": 5
+            },
+            {
+                "item": "New Agriculture/Forestry tyres",
+                "levy_rate": 10
+            },
+            {
+                "item": "Of a kind used on construction or industrial handling vehicles and machines and having a rim size not exceeding 61cm (24.02 inches)",
+                "levy_rate": 15
+            },         
+            {
+                "item": "Other tyres",
+                "levy_rate": 2
+            },
+            {
+                "item": "Retreaded car tyres",
+                "levy_rate": 3
+            },         
+            {
+                "item": "Retreaded Bus/Lorries tyres (including trucks)",
+                "levy_rate": 5
+            },
+            {
+                "item": "Retreaded Aircraft tyres",
+                "levy_rate": 25
+            },
+            {
+                "item": "Retreaded Other tyres",
+                "levy_rate": 5
+            },         
+            {
+                "item": "Used Pneumatic tyres for motor cars",
+                "levy_rate": 3
+            },
+            {
+                "item": "Used Bus, Lorries tyres (Including trucks)",
+                "levy_rate": 5
+            },         
+            {
+                "item": "Other Used Pneumatic tyres",
+                "levy_rate": 25
+            },
+            {
+                "item": "Used Cars tyres",
+                "levy_rate": 3
+            },
+            {
+                "item": "Other used tyres",
+                "levy_rate": 5
+            },         
+            {
+                "item": "Nickel-cadmium",
+                "levy_rate": 25
+            },
+            {
+                "item": "Nickel-iron",
+                "levy_rate": 5
+            },         
+            {
+                "item": "Lithium-ion",
+                "levy_rate": 5
+            },
+            {
+                "item": "Other accumulators",
+                "levy_rate": 5
+            },
+            {
+                "item": "With compression-ignition internal combustion piston engine (diesel or semi-diesel) not exceeding 10 years",
+                "levy_rate": 250
+            },         
+            {
+                "item": "With compression-ignition internal combustion piston engine (diesel or semi-diesel), exceeding 10 years",
+                "levy_rate": 250
+            },
+            {
+                "item": "Used with compression-ignition internal combustion piston engine (diesel or semi-diesel), exceeding 10 years",
+                "levy_rate": "20% of Landed"
+            },         
+            {
+                "item": "With reciprocating internal combustion; piston engine of a cylinder capacity exceeding 50 cc but not exceeding 250 cc",
+                "levy_rate": 50
+            },
+            {
+                "item": "With reciprocating internal combustion; piston engine of a cylinder capacity exceeding 250 cc but not exceeding 500 cc",
+                "levy_rate": 50
+            },
+            {
+                "item": "With reciprocating internal combustion; piston engine of a cylinder capacity exceeding 500 cc but not exceeding 800 cc",
+                "levy_rate": 50
+            },         
+            {
+                "item": "With reciprocating internal combustion; piston engine of a cylinder capacity exceeding 500 cc but exceeding 800 cc",
+                "levy_rate": 50
+            },
+            {
+                "item": "Transformers having a power handling capacity exceeding 16 k VA but not exceeding 500 k VA",
+                "levy_rate": 2
+            },         
+            {
+                "item": "Transformers having a power handling capacity exceeding 500 k VA",
+                "levy_rate": 2
+            }
+        ]
+    }
+}

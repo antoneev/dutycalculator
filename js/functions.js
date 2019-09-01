@@ -21,6 +21,7 @@ function stick_footer() {
         $('#footer').css('margin-top', height);
     }
 }
+
 function generate_duty_rate_table(id) {
 
     if (document.getElementById("duty_rate_table")) {
