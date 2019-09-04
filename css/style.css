@@ -7,7 +7,7 @@ html, body {
 }
 
 .container {
-    opacity: 0.8;
+    opacity: 0.9;
     border-radius: 5px;
     background-color: #f2f2f2;
     margin-top: 20px;
@@ -101,4 +101,8 @@ form {
 #processing_fee_glossary {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+#about_container {
+    padding: 10px;
 }
