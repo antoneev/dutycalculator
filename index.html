@@ -43,76 +43,77 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- Container -->
     <div class="container" id="main_container">
-        <div class="alert alert-info" id="info_msg">
-            These prices are not 100% guaranteed. However, it is a close estimate
+        <div id="index_container">
+            <div class="alert alert-info" id="info_msg">
+                These prices are not 100% guaranteed. However, it is a close estimate
+            </div>
+
+            <strong>Enter Information:</strong>
+
+            <!-- Form  -->
+            <form id="main_form">
+                <div class="form-group">
+                    <select class="form-control" id="product_category"
+                        onchange="populate(this.id,'product_subcategory')">
+                        <option value="">Choose Product's category</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="product_subcategory" onchange="generate_qty_field()">
+                        <option value="">Choose Product's sub-category</option>
+                    </select>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-5">
+                        <input class="form-control" type="number" min="0" placeholder="Value of item(s)"
+                            id="value_of_item">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-7">
+                        <input class="form-control" type="number" min="0" placeholder="Processing fee ($)"
+                            id="processing_fee">
+                    </div>
+                    <div class="my_icon">
+                        <a href="#" class="fa fa-question-circle-o fa-lg pop" data-toggle="popover" data-html="true"
+                            data-trigger="click" data-content="Most items have a 1% Processing Fee
+                                    <br>
+                                    (Min: $10 - Max: $500)
+                                    <br>
+                                    Only a few <a href=glossary.html#processing_fee_glossary>exceptions</a>
+                                    "></a>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-7">
+                        <input class="form-control" type="number" min="0" placeholder="Environmental levy fee ($)"
+                            id="levy_fee">
+                    </div>
+
+                    <div class="my_icon">
+                        <a href="#" class="fa fa-question-circle-o fa-lg pop" data-toggle="popover" data-html="true"
+                            data-trigger="click" data-content="Check <a href=glossary.html#levy_rate_glossary>Levy Fee Table</a> for your item
+                                    <br>
+                                    If value is not entered, the fee will be $0"></a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col text-center">
+                        <button type="button" class="btn btn-primary" id="preview_btn" type="submit"
+                            onclick="preview()">Preview</button>
+                    </div>
+                </div>
+            </form>
         </div>
-
-        <strong>Enter Information:</strong>
-
-        <!-- Form  -->
-        <form id="main_form">
-            <div class="form-group">
-                <select class="form-control" id="product_category" onchange="populate(this.id,'product_subcategory')">
-                    <option value="">Choose Product's category</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <select class="form-control" id="product_subcategory" onchange="generate_qty_field()">
-                    <option value="">Choose Product's sub-category</option>
-                </select>
-            </div>
-
-            <div class="form-group row">
-                <div class="col-5">
-                    <input class="form-control" type="number" min="0" placeholder="Value of item(s)" id="value_of_item">
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <div class="col-7">
-                    <input class="form-control" type="number" min="0" placeholder="Processing fee ($)"
-                        id="processing_fee">
-                </div>
-                <div class="my_icon">
-                    <a href="#" class="fa fa-question-circle-o fa-lg pop" data-toggle="popover" data-html="true" data-trigger="click"
-                        data-content=
-                        "Most items have a 1% Processing Fee
-                        <br>
-                        (Min: $10 - Max: $500)
-                        <br>
-                        Only a few <a href=glossary.html#processing_fee_glossary>exceptions</a>
-                        "
-                        ></a>
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <div class="col-7">
-                    <input class="form-control" type="number" min="0" placeholder="Environmental levy fee ($)"
-                        id="levy_fee">
-                </div>
-
-                <div class="my_icon">
-                    <a href="#" class="fa fa-question-circle-o fa-lg pop" data-toggle="popover" data-html="true" data-trigger="click"
-                        data-content=
-                        "Check <a href=glossary.html#levy_rate_glossary>Levy Fee Table</a> for your item
-                        <br>
-                        If value is not entered, the fee will be $0"
-                        ></a>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col text-center">
-                    <button type="button" class="btn btn-primary" id="preview_btn" type="submit"
-                        onclick="preview()">Preview</button>
-                </div>
-            </div>
-        </form>
     </div>
+
 
     <footer class="footer" id="footer">
         <nav>
