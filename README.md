@@ -14,6 +14,3 @@ A responsive web application that estimates the full costs (including customs/in
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/antoneev/dutycalculator/blob/master/LICENSE) file for details
-
-## Acknowledgement
-[How to Make Bootstrap Popover keep open while hovering](https://embed.plnkr.co/plunk/x2VMhh)
